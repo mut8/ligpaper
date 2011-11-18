@@ -1,0 +1,84 @@
+<<startup, echo=F, fig=F, results=hide>>=
+setwd("~/ligpaper")
+source("startup.R")
+options(SweaveHooks=list(fig=function() par(tck=0.01, las=1)))
+@
+
+<<homeostastis, echo=F, results=h>>=
+lm<-lm(log(alldata$C.N_mic[alldata$days==14])~log(alldata$C.N_lit[alldata$days==14]),)
+H.cn.h1<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.N_mic[alldata$days==97])~log(alldata$C.N_lit[alldata$days==97]),)
+H.cn.h2<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.N_mic[alldata$days==181])~log(alldata$C.N_lit[alldata$days==181]),)
+H.cn.h3<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.N_mic[alldata$days==475])~log(alldata$C.N_lit[alldata$days==475]),)
+H.cn.h4<-1/lm$coefficients[2]
+
+lm<-lm(log(alldata$C.Pmic[alldata$days==14])~log(alldata$C.P_lit[alldata$days==14]),)
+H.cp.h1<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.Pmic[alldata$days==97])~log(alldata$C.P_lit[alldata$days==97]),)
+H.cp.h2<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.Pmic[alldata$days==181])~log(alldata$C.P_lit[alldata$days==181]),)
+H.cp.h3<-1/lm$coefficients[2]
+lm<-lm(log(alldata$C.Pmic[alldata$days==475])~log(alldata$C.P_lit[alldata$days==475]),)
+H.cp.h4<-1/lm$coefficients[2]
+
+lm<-lm(log(alldata$N.Pmic[alldata$days==14])~log(alldata$N.P_lit[alldata$days==14]),)
+H.np.h1<-1/lm$coefficients[2]
+lm<-lm(log(alldata$N.Pmic[alldata$days==97])~log(alldata$N.P_lit[alldata$days==97]),)
+H.np.h2<-1/lm$coefficients[2]
+lm<-lm(log(alldata$N.Pmic[alldata$days==181])~log(alldata$N.P_lit[alldata$days==181]),)
+H.np.h3<-1/lm$coefficients[2]
+lm<-lm(log(alldata$N.Pmic[alldata$days==475])~log(alldata$N.P_lit[alldata$days==475]),)
+H.np.h4<-1/lm$coefficients[2]
+@
+
+<<init.stoech, echo=F, fig=F, results=hide>>=
+  cond <- alldata$Harvest=="I"
+stoech.init <-data.frame (
+paste( formatC(tapply(alldata$C_lit[cond], alldata$Litter[cond], mean), digits=2, format="f") , " (", formatC(tapply(alldata$C_lit[cond], alldata$Litter[cond], stderr), digits=2, format="f") , ")", sep=""),
+paste( formatC(tapply(alldata$N_lit[cond], alldata$Litter[cond], mean), digits=3, format="f") , " (", formatC(tapply(alldata$N_lit[cond], alldata$Litter[cond], stderr), digits=3, format="f"), ")", sep=""),
+paste( formatC(tapply(alldata$P_lit[cond], alldata$Litter[cond], mean), digits=3, format="f"), " (", formatC(tapply(alldata$P_lit[cond], alldata$Litter[cond], stderr), digits=3, format="f"), ")", sep=""),
+paste(formatC( tapply(alldata$C.N_lit[cond], alldata$Litter[cond], mean), digits=2, format="f"), " (", formatC(tapply(alldata$C.N_lit[cond], alldata$Litter[cond], stderr), digits=2, format="f"), ")", sep=""),
+paste(formatC(tapply(alldata$C.P_lit[cond], alldata$Litter[cond], mean) , digits=0, format="f"), " (", formatC(tapply(alldata$C.P_lit[cond], alldata$Litter[cond], stderr), digits=0, format="f"), ")", sep=""),
+paste(formatC(tapply(alldata$N.P_lit[cond], alldata$Litter[cond], mean) , digits=2, format="f"), " (", formatC(tapply(alldata$N.P_lit[cond], alldata$Litter[cond], stderr), digits=2, format="f"), ")", sep=""))
+colnames(stoech.init) <- c("C (% d.w.)", "N (%d.w.)", "P (%d.w.)", "C:N (w/w)", "C:P(w/w)", "N:P(w/w)")
+rownames(stoech.init) <- typlev
+@
+
+<<lig6monthcor,results=hide, echo=F>>=
+h3<-harvest==6
+alldata$pyr.excl<-c(rep(T,5), rep(F, 15), rep(T,5), rep(F,4), T, rep(F, 10), rep(T, 5), rep(F, 15), rep(T,5), rep(F, 14),T)
+alldata$days [alldata$pyr.excl==F]
+@
+
+<<barplotfunction, results=hide, echo=F, fig=F>>=
+  barp<-function(data, cond1, cond2, ylim=c(-3,3), ...)
+{
+  height<- tapply(data[cond1], type[cond1], mean) - tapply(data[cond2], type[cond2], mean)
+  error<-sqrt(tapply(data[cond1], type[cond1], stderr)^2 + tapply(data[cond1], type[cond1], stderr)^2)
+                                        #ci<-sqrt(tapply(data[cond1], type[cond1], CI(alpha=0.05)^2 + tapply(data[cond1], type[cond1], CI(alpha=0.05))^2)
+  barplot.def(height, error, ylim=ylim, ...)
+}
+
+barpr<-function(data1, data2, cond1, cond2, ylim=c(-3,3), ...)
+{
+  dif1<-tapply(data1[cond1], type[cond1], mean)- tapply(data1[cond2], type[cond2], mean)
+  dif2<-tapply(data2[cond1], type[cond1], mean)- tapply(data2[cond2], type[cond2], mean)
+  ste1<-sqrt(tapply(data1[cond1], type[cond1], stderr)^2 + tapply(data1[cond2], type[cond2], stderr)^2)
+  ste2<-sqrt(tapply(data2[cond1], type[cond1], stderr)^2 + tapply(data2[cond2], type[cond2], stderr)^2)  
+  height<- dif1/dif2
+  error<-height*sqrt((ste1/dif1)^2 + (ste2/dif2)^2)
+  
+                                        #ci<-sqrt(tapply(data[cond1], type[cond1], CI(alpha=0.05)^2 + tapply(data[cond1], type[cond1], CI(alpha=0.05))^2)
+  barplot.def(height, error, ylim=ylim, ...)
+}
+
+barpr2<-function(data1, data2, cond1, cond2, ylim=c(-3,3), ...)
+{
+height<- (tapply(data1[cond1], type[cond1], mean)- tapply(data1[cond2], type[cond2], mean))/(tapply(data2[cond1], type[cond1], mean)- tapply(data2[cond2], type[cond2], mean))
+error<-sqrt(tapply(data1[cond1], type[cond1], stderr)^2 + tapply(data1[cond1], type[cond1], stderr)^2)/(tapply(data2[cond1], type[cond1], mean)- tapply(data2[cond2], type[cond2], mean))
+                                        #ci<-sqrt(tapply(data[cond1], type[cond1], CI(alpha=0.05)^2 + tapply(data[cond1], type[cond1], CI(alpha=0.05))^2)
+  barplot.def(height, error, ylim=ylim, ...)
+}
+@

@@ -1,0 +1,274 @@
+\SweaveInput{rscripts}
+
+% Template for PLoS
+% Version 1.0 January 2009
+%
+% To compile to pdf, run:
+% latex plos.template
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+
+\documentclass[10pt]{article}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+\usepackage{color} 
+
+% Use doublespacing - comment out for single spacing
+\usepackage{setspace} 
+\doublespacing
+
+
+% Text layout
+\topmargin 0.0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 16cm 
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+%load my own packages (not PLoS template)
+\usepackage{textcomp, fixltx2e}
+\usepackage{fullpage, lscape}
+\usepackage{lineno}
+
+% Use the PLoS provided bibtex style
+\bibliographystyle{plos2009}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+% Leave date blank
+\date{}
+
+\pagestyle{myheadings}
+%% ** EDIT HERE **
+
+
+%% ** EDIT HERE **
+%% PLEASE INCLUDE ALL MACROS BELOW
+
+%% END MACROS SECTION
+
+\begin{document}
+
+% Title must be 150 characters or less
+\begin{flushleft}
+{\Large
+\textbf{Controls of litter chemistry over early lignin decomposition in beech litter}
+}
+% Insert Author names, affiliations and corresponding author email.
+\include{authors_paper}
+
+% Please keep the abstract between 250 and 300 words
+\include{abstract}
+
+\linenumbers %not from the template: start line numbers here.
+\newpage%not in original layout
+\include{introduction}
+% Results and Discussion can be combined.
+\include{results}
+\include{discussion}
+\include{mm}
+% You may title this section "Methods" or "Models". 
+% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
+% authors may use "Analysis" 
+\include{mm}
+% Do NOT remove this, even if you are not including acknowledgments
+\section*{Acknowledgments}
+%\section*{References}
+% The bibtex filename
+\bibliography{library}
+
+\newpage
+\section*{Figure Legends}
+
+\newpage
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_enz}
+\end{center}
+\caption{
+{\bf Respiration rates, concentration of soluble organic C and potential extracellular enzyme activities} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klaus-nleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001, b.d. - below detection limit.}
+\label{fig:enz}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_mb}
+\end{center}
+\caption{
+{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource/consumer stoichiometric imbalance in these elements}in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:mb}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+\setkeys{Gin}{width=0.8\textwidth}
+%\includegraphics[width=4in]{figure_name.2.eps}
+\SweaveInput{fig_f2b}
+\end{center}
+\caption{
+{\bf Fungi/Bacteria ratios and their correlations with LCI change:} Top: Fungi/bacteria ratios derived from metaproteome (left) and qPCR (right) analysis. Bottom: The correlations between metaproteomic fungi/bacteria ratios with Lignin decomposition rates (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:f2b}
+\end{figure}
+
+\newpage
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_lci}
+\end{center}
+\caption{
+{\bf Develoment of the LCI (lignin/(lignin+carbohydrates))} during time of beech litter decomposition (A) or plotted against cumulative C loss (B). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:lci}
+\end{figure}
+
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_degr}
+\end{center}
+\caption{
+{\bf Carbon loss corrected amounts of lignin and carbohydrates} degraded in beech litter collected in Achenkirch (AK), Klausenleopoldsdorf (KL), Ossiach (OS) and Schottenwald (SW). Carbon loss was calculated based on accumulated respiration for each mesocosm. Error bars indicate standard errors (n=4-5). The dashed line marks no discrimation during decomposition between lignin, carbohydrates and bulk carbon}
+\label{fig:degr}
+\end{figure*}
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_graphcorr}
+\end{center}
+\caption{
+{\bf Correlation between the LCI change or the ratio of lignin/carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter/microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:cor1}
+\end{figure*}
+
+\section*{Tables}
+%\begin{table}[!ht]
+%\caption{
+%\bf{Table title}}
+%\begin{tabular}{|c|c|c|}
+%table information
+%\end{tabular}
+%\begin{flushleft}Table caption
+%\end{flushleft}
+%\label{tab:label}
+% \end{table}
+
+\newpage
+\include{tab_init}
+
+\include{tab_pyrprod}
+
+\newpage
+<<corrtable, results=tex, echo=F, fig=F>>=
+
+tmp<-data.frame(tapply(f2b[alldata$days==181, "f2b_prot"], alldata$Litter[alldata$days==181], mean))
+colnames(tmp)<-"Fungi/bacteria (metaproteome)"
+
+hmw.means<-data.frame(matrix(ncol=ncol(hmw.proc), nrow=4))
+for (i in 1: ncol(hmw.proc))
+hmw.means[,i]<-tapply(hmw.proc[,i], type[days==181], mean)
+
+colnames(hmw.means)<-colnames(hmw.proc)
+
+tmp.cor<-corr.ab(tmp,hmw.means, tex=T)
+
+corr1<-alldata[alldata$days==181,c(10,37, 71,11,14,13,12,15:16,20,22,24, 38, 56, 39:43, 53:55,  75:77, 73)]
+corr2<-hmw.proc
+mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
+#rownames cor corraltion table
+rownames(mighty.corr.matrix) <- 
+  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
+"N mineralization", #"NH4 immobilization", 
+"Nitrification", #"NO3 immobilization",
+"P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
+"C litter", "extractable C", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter",
+#"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
+"C:N mic", "C:P mic", "N:P mic", "C:N imbalance", "C:P imbalance", "N:P imbalance", "Fungi/bacteria(qPCR)")
+
+colnames(mighty.corr.matrix)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec", "L resp", "C resp", "L/C dec", "Per/Cell", "Phen/Cell")
+
+#write table for export if needed
+#write.csv(mighty.corr.matrix, "corrmatrix.csv")
+#convert table to latex
+
+mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
+
+tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable", align=c("l", rep("r",10)) )
+
+print(tab, size="tiny", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+@
+
+\newpage
+<<corrtable2, results=tex, echo=F, fig=F>>=
+tmp<-data.frame(tapply(f2b[alldata$days==475, "f2b_prot"], alldata$Litter[alldata$days==475], mean))
+colnames(tmp)<-"Fungi/bacteria (metaproteome)"
+tmp
+
+hmw.means2<-data.frame(matrix(ncol=ncol(hmw.proc), nrow=4))
+for (i in 1: ncol(hmw.proc2))
+hmw.means2[,i]<-tapply(hmw.proc2[,i], type[days==475], mean)
+
+colnames(hmw.means2)<-colnames(hmw.proc2)
+
+tmp.cor<-corr.ab(tmp,hmw.means2, tex=T)
+
+corr1<-alldata[alldata$days==475,c(10,37, 71,11,14,13,12, 15:16,20,22,24, 38, 56, 39:43, 53:55,  75:77, 73)]
+corr2<-hmw.proc2
+mighty.corr.matrix2<-corr.ab(corr1, corr2, tex=T)
+#rownames cor corraltion table
+rownames(mighty.corr.matrix2) <- 
+  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Phosphatase activity","Chitinase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
+"N mineralization", #"NH4 immobilization", 
+"Nitrification", #"NO3 immobilization",
+"P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
+"C litter", "extractable C", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter",
+#"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
+"C:N mic", "C:P mic", "N:P mic", "C:N imbalance", "C:P imbalance", "N:P imbalance", "Fungi/bacteria(qPCR)")
+
+
+colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec", "L resp", "C resp", "L/C dec", "Per/Cell", "Phen/Cell")
+
+#write table for export if needed
+#write.csv(mighty.corr.matrix, "corrmatrix.csv")
+#convert table to latex
+
+mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
+
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
+
+print(tab, size="tiny", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+@
+
+\end{document}
+

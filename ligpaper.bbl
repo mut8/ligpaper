@@ -1,0 +1,232 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Berg2008}
+{Berg, B \& McClaugherty} C (2008) {Plant Litter. Decomposition, Humus
+  Formation, Carbon Sequestration.}
+\newblock Berlin: Springer.
+\bibAnnoteFile{Berg2008}
+
+\bibitem{Don2005}
+Don A, Kalbitz K (2005) {Amounts and degradability of dissolved organic carbon
+  from foliar litter at different decomposition stages}.
+\newblock Soil Biology and Biochemistry 37: 2171--2179.
+\bibAnnoteFile{Don2005}
+
+\bibitem{Sinsabaugh2010}
+Sinsabaugh RL (2010) {Phenol oxidase, peroxidase and organic matter dynamics of
+  soil}.
+\newblock Soil Biology and Biochemistry 42: 391--404.
+\bibAnnoteFile{Sinsabaugh2010}
+
+\bibitem{Berg1980}
+Berg B, Staaf H (1980) {Decomposition rate and chemical changes of Scots pine
+  needle litter. II. Influence of chemical composition}.
+\newblock Ecological Bulletins : 373--390.
+\bibAnnoteFile{Berg1980}
+
+\bibitem{Couteaux1995}
+Co\^{u}teaux MM, Bottner P, Berg B (1995) {Litter decomposition, climate and
+  liter quality.}
+\newblock Trends in ecology \& evolution 10: 63--66.
+\bibAnnoteFile{Couteaux1995}
+
+\bibitem{Moorhead2006}
+Moorhead DL, Sinsabaugh RL (2006) {A theoretical model of litter decay and
+  microbial interaction}.
+\newblock Ecological Monographs 76: 151--174.
+\bibAnnoteFile{Moorhead2006}
+
+\bibitem{Adair2008}
+Adair EC, Parton WJ, {Del Grosso} SJ, Silver WL, Harmon ME, et~al. (2008)
+  {Simple three-pool model accurately describes patterns of long-term litter
+  decomposition in diverse climates}.
+\newblock Global Change Biology : 2636--2660.
+\bibAnnoteFile{Adair2008}
+
+\bibitem{Hatfield2005}
+Hatfield RD, Romualdo SF (2005) {Can Lignin Be Accurately Measured?}
+\newblock Crop Science 45: 832--839.
+\bibAnnoteFile{Hatfield2005}
+
+\bibitem{Preston1997}
+Preston CM, Trofymow JA, Sayer BG, Niu J (1997) {13C nuclear magnetic resonance
+  spectroscopy with cross-polarization and magic–angle spinning investigation
+  of the proximate analysis fractions used to assess litter quality in
+  decomposition studies}.
+\newblock Canadian Journal of Botany 75: 1601--1613.
+\bibAnnoteFile{Preston1997}
+
+\bibitem{Thevenot2010a}
+Thevenot M, Dignac MF, Rumpel C (2010) {Fate of lignins in soils: A review}.
+\newblock Soil Biology and Biochemistry 42: 1200--1211.
+\bibAnnoteFile{Thevenot2010a}
+
+\bibitem{Bol2009}
+Bol R, Poirier N, Balesdent J, Gleixner G (2009) {Molecular turnover time of
+  soil organic matter in particle - size fractions of an arable soil}.
+\newblock Rapid Communications in Mass Spectrometry 23: 2551--2558.
+\bibAnnoteFile{Bol2009}
+
+\bibitem{Bugg2011}
+Bugg TD, Ahmad M, Hardiman EM, Singh R (2011) {The emerging role for bacteria
+  in lignin degradation and bio-product formation.}
+\newblock Current opinion in biotechnology 22: 394--400.
+\bibAnnoteFile{Bugg2011}
+
+\bibitem{Klotzbucher2011}
+Klotzb\"{u}cher T, Kaiser K, Guggenberger G, Gatzek C, Kalbitz K (2011) {A new
+  conceptual model for the fate of lignin in decomposing plant litter}.
+\newblock America 92: 1052--1062.
+\bibAnnoteFile{Klotzbucher2011}
+
+\bibitem{Achyuthan2010}
+Achyuthan KE, Achyuthan AM, Adams PD, Dirk SM, Harper JC, et~al. (2010)
+  {Supramolecular self-assembled chaos: polyphenolic lignin's barrier to
+  cost-effective lignocellulosic biofuels.}
+\newblock Molecules (Basel, Switzerland) 15: 8641--88.
+\bibAnnoteFile{Achyuthan2010}
+
+\bibitem{Dyckmans2002}
+Dyckmans J, Flessa H, Brinkmann K, Mai C, Polle A (2002) {Carbon and nitrogen
+  dynamics in acid detergent fibre lignins of beech (Fagus sylvatica L.) during
+  the growth phase}.
+\newblock Plant, Cell \& Environment 25: 469--478.
+\bibAnnoteFile{Dyckmans2002}
+
+\bibitem{Craine2007}
+Craine JM, Morrow C, Fierer N (2007) {Microbial nitrogen limitation increases
+  decomposition.}
+\newblock Ecology 88: 2105--13.
+\bibAnnoteFile{Craine2007}
+
+\bibitem{Knorr2005}
+Knorr M, Frey S, Curtis P (2005) {Nitrogen addition and litter decomposition :
+  A meta-analysis}.
+\newblock Ecology 86: 3252--3257.
+\bibAnnoteFile{Knorr2005}
+
+\bibitem{Fontaine2011}
+Fontaine S, Henault C, Aamor a, Bdioui N, Bloor J, et~al. (2011) {Fungi mediate
+  long term sequestration of carbon and nitrogen in soil through their priming
+  effect}.
+\newblock Soil Biology and Biochemistry 43: 86--96.
+\bibAnnoteFile{Fontaine2011}
+
+\bibitem{Talbot2011}
+Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
+  nitrogem drive litter chemistry - decay relationships}.
+\newblock Ecology in press.
+\bibAnnoteFile{Talbot2011}
+
+\bibitem{Mooshammer2011}
+Mooshammer M, Wanek W, Schnecker J, Wild B, Leitner S, et~al. (2011)
+  {Stoichiometric controls of nitrogen and phosphorus cycling in decomposing
+  beech leaf litter}.
+\newblock Ecology in press.
+\bibAnnoteFile{Mooshammer2011}
+
+\bibitem{Sterner2002}
+Sterner RW, Elser JJ (2002) {Ecological stoichiometry: the biology of elements
+  from molecules to the biosphere}.
+\newblock Princeton University Press, 439 pp.
+\bibAnnoteFile{Sterner2002}
+
+\bibitem{Leitner2011}
+Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
+  resource quality to decomposition processes: Influence iof litter chemistry
+  and stoichiometry on glucan depolymerization during decomposition of beech
+  (Fagus silvatica L. ) litter}.
+\newblock Soil Biology and Biochemistry in review.
+\bibAnnoteFile{Leitner2011}
+
+\bibitem{Janshekar1988}
+Janshekar H, Fiechter A (1988) {Cultivation of Phanerochaete chrysosporium and
+  production of lignin peroxidases in submerged stirred tank reactors}.
+\newblock Journal of Biotechnology 8: 97--112.
+\bibAnnoteFile{Janshekar1988}
+
+\bibitem{Wanek2010}
+Wanek W, Mooshammer M, Bl\"{o}chl A, Hanreich A, Keiblinger K, et~al. (2010)
+  {Determination of gross rates of amino acid production and immobilization in
+  decomposing leaf litter by a novel N-15 isotope pool dilution technique}.
+\newblock Soil Biology and Biochemistry 42: 1293--1302.
+\bibAnnoteFile{Wanek2010}
+
+\bibitem{Kolmer}
+Kolmer J, Spaulding E, Robinson H (1951) {Approved Laboratory Techniques}.
+\newblock New York: Appleton Century Crafts.
+\bibAnnoteFile{Kolmer}
+
+\bibitem{Brooks1985}
+Brooks P, Kragt J, Powlson D, Jenkinson D (1985) {Chloroform fumigation and the
+  release of soil nitrogen e the effects of fumigation time and temperature.}
+\newblock Soil Biology \& Biochemistry 17: 831--835.
+\bibAnnoteFile{Brooks1985}
+
+\bibitem{Schinner1996}
+Schinner F, \"{O}hlinger R, Kandeler E, Margesin R (1996) {Methods in Soil
+  Biology}.
+\newblock Berlin: Springer Verlag, pp. 389 pp.
+\bibAnnoteFile{Schinner1996}
+
+\bibitem{Kaiser2010b}
+Kaiser C, Koranda M, Kitzler B, Fuchslueger L, Schnecker J, et~al. (2010)
+  {Belowground carbon allocation by trees drives seasonal patterns of
+  extracellular enzyme activities by altering microbial community composition
+  in a beech forest soil}.
+\newblock New Phytologist 187: 843--858.
+\bibAnnoteFile{Kaiser2010b}
+
+\bibitem{Tringe2005}
+Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
+  {Comparative metagenomics of microbial communities.}
+\newblock Science (New York, NY) 308: 554--7.
+\bibAnnoteFile{Tringe2005}
+
+\bibitem{Schneider2010}
+Schneider T, Gerrits B, Gassmann R, Schmid E, Gessner MO, et~al. (2010)
+  {Proteome analysis of fungal and bacterial involvement in leaf litter
+  decomposition.}
+\newblock Proteomics 10: 1819--30.
+\bibAnnoteFile{Schneider2010}
+
+\bibitem{Inselsbacher2010}
+Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,
+  et~al. (2010) {Short-term competition between crop plants and soil microbes
+  for inorganic N fertilizer}.
+\newblock Soil Biology and Biochemistry 42: 360--372.
+\bibAnnoteFile{Inselsbacher2010}
+
+\bibitem{Schellekens2009}
+Schellekens J, Buurman P, Pontevedra-Pombal X (2009) {Selecting parameters for
+  the environmental interpretation of peat molecular chemistry - A
+  pyrolysis-GC/MS study}.
+\newblock Organic Geochemistry 40: 678--691.
+\bibAnnoteFile{Schellekens2009}
+
+\bibitem{Kuder1998}
+Kuder T, Kruge MA (1998) {Preservation of biomolecules in sub-fossil plants
+  from raised peat bogs - a potential paleoenvironmental proxy}.
+\newblock Organic Geochemistry 29: 1355--1368.
+\bibAnnoteFile{Kuder1998}
+
+\bibitem{R}
+{R Development Core Team} (2008).
+\newblock {R: A Language and Environment for Statistical Computing}.
+\newblock \urlprefix\url{http://www.r-project.org}.
+\bibAnnoteFile{R}
+
+\end{thebibliography}

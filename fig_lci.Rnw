@@ -1,0 +1,16 @@
+<<lci, fig=T, echo=F, results=hide, width=10, height=5>>=
+par( mfrow=c(1,2), mar=c(4.1,4.1,2.1,.1), tck=0.01)
+timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, endsig=T, ylab="Lignin/(Lignin+Carbohydrates)", xlab="Litter incubation (days)", lwd=2, cex=1.5)
+axis(4, labels=F)
+axis(3, labels=F)
+
+par(mar=c(4.1,.1,2.1,4.1))
+timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, normalize=1, legsig=F, endsig=F, massloss=samples$cons_acc_resp_litC, masslossSE=samples$cons_acc_resp_litC_se, yaxt="n", xlab="carbon loss (g CO2-C g-1 litter-C)", lwd=2, cex=1.5)
+abline(h=100, lty=2)
+axis(2, labels=F)
+axis(3, labels=F)
+axis(4)
+mtext("LCI (% of initial LCI)", side=4, padj=5, las=0)
+legend("topleft", pch=pch, lty=1, lwd=2, pt.bg=colscale, typlev)
+
+@

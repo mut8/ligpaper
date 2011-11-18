@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: ligpaper.aux
+The style file: plos2009.bst
+Database file #1: library.bib
+Repeated entry---line 1419 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2098 of file library.bib
+ : @article{Talbot2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2327 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3110 of file library.bib
+ : @article{Schellekens2009
+ :                         ,
+I'm skipping whatever remains of this entry
+You've used 34 entries,
+            2441 wiz_defined-function locations,
+            818 strings with 14297 characters,
+and the built_in function-call counts, 30369 in all, are:
+= -- 2827
+> -- 508
+< -- 0
++ -- 254
+- -- 127
+* -- 2635
+:= -- 3612
+add.period$ -- 69
+call.type$ -- 34
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 68
+duplicate$ -- 3011
+empty$ -- 3171
+format.name$ -- 158
+if$ -- 6763
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 366
+newline$ -- 186
+num.names$ -- 34
+pop$ -- 439
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 253
+stack$ -- 0
+substring$ -- 4451
+swap$ -- 702
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 216
+width$ -- 36
+write$ -- 384
+(There were 4 error messages)

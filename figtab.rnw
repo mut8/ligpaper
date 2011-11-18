@@ -1,0 +1,393 @@
+\chapter*{Figures}
+\addcontentsline{toc}{chapter}{Figures}
+
+\begin{figure}[!ht]
+\begin{center}
+\setkeys{Gin}{width=.7\textwidth}
+\includegraphics{lk_dip_manuscript-enz}
+\end{center}
+\caption{
+{\bf Respiration rates, concentration of soluble organic C and potential extracellular enzyme activities} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001, b.d. - below detection limit.}
+\label{fig:enz}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\includegraphics{lk_dip_manuscript-mb}
+\end{center}
+\caption{
+{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource/consumer stoichiometric imbalance in these elements}in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:mb}
+\end{figure}
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=.7\textwidth}
+\includegraphics{lk_dip_manuscript-f2bnew}
+\end{center}
+\caption{
+{\bf Fungi/Bacteria ratios and their correlations with LCI change:} Top: Fungi/bacteria ratios derived from metaproteome (left) and qPCR (right) analysis. Bottom: The correlations between metaproteomic fungi/bacteria ratios with Lignin decomposition rates (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:f2b}
+\end{figure*}
+
+\begin{landscape}
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=1.3\textwidth}
+\includegraphics{lk_dip_manuscript-lci}
+\end{center}
+\caption{
+{\bf Develoment of the LCI (lignin/(lignin+carbohydrates))} during time of beech litter decomposition (A) or plotted against cumulative C loss (B). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:lci}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=1.3\textwidth}
+\includegraphics{lk_dip_manuscript-degrdiff}
+\end{center}
+\caption{
+{\bf Carbon loss corrected amounts of lignin and carbohydrates} degraded in beech litter collected in Achenkirch (AK), Klausenleopoldsdorf (KL), Ossiach (OS) and Schottenwald (SW). Carbon loss was calculated based on accumulated respiration for each mesocosm. Error bars indicate standard errors (n=4-5). The dashed line marks no discrimation during decomposition between lignin, carbohydrates and bulk carbon}
+\label{fig:degr}
+\end{figure*}
+\end{landscape}
+
+
+\begin{landscape}
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=1.3\textwidth}
+\includegraphics{lk_dip_manuscript-graphcorr}
+\end{center}
+\caption{
+{\bf Correlation between the LCI change or the ratio of lignin/carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter/microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:cor1}
+\end{figure*}
+\end{landscape}
+
+
+
+
+\chapter*{Tables}
+\addcontentsline{toc}{chapter}{Tables}
+
+\begin{landscape}
+% latex table generated in R 2.12.1 by xtable 1.5-6 package
+% Sat Nov  5 23:56:54 2011
+\begin{table}[h!]
+%\begin{center}
+\caption{Element concentrations, elemental stoichiometry and cellulose and lignin concentrations in beech litter measured after 14 days incubation. Standard errors are given in brackets (n=5). C extr represents for soluble organic carbon. Beech litter was collected in AK, Achenkirch, KL, Klausenleopoldsdorf, OS, Ossiach, and SW, Schottenwald.}
+\label{initstoech}
+
+{\small
+\begin{tabular}{lrlrlrlrlrlr}
+  \hline
+ & AK & (SE) & KL & (SE) & OS & (SE) & SW & (SE) & p value \\ 
+  \hline
+C (\% d.w.) & 50.86 & (0.39) & 49.41 & (0.53) & 48.15 & (0.39) & 48.90 & (0.34) & 0.002 \\ 
+  C extr (mg g-1) & 0.46 & (0.03) & 0.14 & (0.01) & 0.21 & (0.01) & 0.64 & (0.03) & $<$0.001 \\ 
+  N (\% d.w.) & 0.878 &  (0.012) & 0.938 &  (0.012) & 0.806 &  (0.013) & 1.172 &  (0.016) & $<$0.001 \\ 
+  P (\% d.w.) & 0.040 & (0.000) & 0.030 & (0.000) & 0.052 & (0.002) & 0.070 & (0.000) & $<$0.001 \\ 
+  C:N (w/w) & 57.86 &  (0.57) & 52.60 &  (0.49) & 59.97 &  (0.72) & 41.78 &  (0.76) & $<$0.001 \\ 
+  C:P (w/w) & 1282 & (21) & 1548 & (25) & 905 & (15) & 699 & (9) & $<$0.001 \\ 
+  N:P (w/w) & 22.17 & (0.47) & 29.45 & (0.60) & 15.10 & (0.29) & 16.75 & (0.39) & $<$0.001 \\ 
+  K (mg g-1) & 0.26 & (0.00) & 0.54 & (0.00) & 0.21 & (0.00) & 0.55 & (0.00) & $<$0.001 \\ 
+  Ca (mg g-1) & 1.33 & (0.01) & 1.26 & (0.01) & 1.63 & (0.01) & 1.23 & (0.01) & $<$0.001 \\ 
+  Mg (mg g-1) & 0.27 &  (0.00) & 0.14 &  (0.00) & 0.20 &  (0.00) & 0.15 &  (0.00) & $<$0.001 \\ 
+  Fe (ppm) & 210 & (2) & 208 & (4) & 453 & (12) & 192 & (4) & $<$0.001 \\ 
+  Mn (ppm) & 172 &  (2) & 1430 &  (10) & 776 &  (9) & 2137 &  (51) & $<$0.001 \\ 
+  Zn (ppm) & 30.8 & (0.4) & 33.0 & (0.3) & 36.0 & (1.0) & 42.4 & (0.7) & $<$0.001 \\ 
+  Lignin & 28.9 & (28.9) & 29.9 & (29.9) & 31.2 & (31.2) & 30.5 & (30.5) & $<$0.001 \\ 
+  Carbohydrates & 25.9 & (25.9) & 26.1 & (26.1) & 29.2 & (29.2) & 26.9 & (26.9) & $<$0.001 \\ 
+   \hline
+\end{tabular}
+}
+%\end{center}
+\end{table}
+\end{landscape}
+
+
+% latex table generated in R 2.12.1 by xtable 1.6-0 package
+% Tue Nov  8 06:46:38 2011
+\begin{table}[h!]
+\begin{center}
+\caption{Lignin derrived and other phenolic pyrolysis products}
+\label{tab:phprod}
+
+{\small
+\begin{tabular}{lcccccc}
+  \hline
+Name & RT & MW & integrated framents & Origin & Class \\ 
+  \hline
+Guaiacol & 18.87 & 124 & 109+124 &Lignin&Guaiacyl\\ 
+Methylguaiacol & 20.32 & 138 & 123+138 &Lignin&Guaiacyl\\ 
+Ethylguaiacol & 21.40 & 152 & 137+152 &Lignin&Guaiacyl\\ 
+Propenylguaiacol & 23.29 & 164 & 149+164 &Lignin&Guaiacyl\\ 
+Vinylguaiacol & 23.69 & 150 & 135+150 &Lignin&Guaiacyl\\ 
+Propenylguaiacol & 24.48 & 164 & 149+164 &Lignin&Guaiacyl\\ 
+Syringol & 24.58 & 154 & 139+154 &Lignin&Syringyl\\ 
+Propenylguaiacol & 25.66 & 164 & 149+164 &Lignin&Guaiacyl\\ 
+Methylsyringol & 25.67 & 168 & 153+168 &Lignin&Syringyl\\ 
+Ethylsysringol & 26.39 & 182 & 167+182 &Lignin&Syringyl\\ 
+Propenylsyringol & 27.97 & 194 & 179+194 &Lignin&Syringyl\\ 
+Vinylsyringol & 28.37 & 180 & 165+180 &Lignin&Syringyl\\ 
+Guaiacolaldehyde & 28.40 & 152 & 109+152 &Lignin&Guaiacyl\\ 
+Propylguaiacol & 28.72 & 166 & 137+166 &Lignin&Guaiacyl\\ 
+Oxo-hydroxy-etylguaiacol & 28.77 & 182 & 182 &Lignin&Guaiacyl\\ 
+Propenylsyringol & 28.91 & 194 & 179+194 &Lignin&Syringyl\\ 
+Oxo-ethylguaiacol & 29.20 & 166 & 151+166 &Lignin&Guaiacyl\\ 
+Oxo-propylguaiacol & 29.36 & 180 & 137+180 &Lignin&Guaiacyl\\ 
+Propenylsyringol & 30.16 & 194 & 194+179 &Lignin&Syringyl\\ 
+Syringolaldehyde & 32.68 & 182 & 139+182 &Lignin&Syringyl\\ 
+Oxo-hydroxy-ethylsyringol & 32.80 & 212 & 212 &Lignin&Syringyl\\ 
+Guaiacolacetic acid & 32.88 & 182 & 137+182 &Lignin&Guaiacyl\\ 
+Propylsyringol & 33.15 & 196 & 181+196 &Lignin&Syringyl\\ 
+Oxo-propylsyringol & 33.32 & 210 & 167+210 &Lignin&Syringyl\\ 
+Oxopropenylguaiacol & 35.30 & 178 & 135+178 &Lignin&Guaiacyl\\ 
+Hydroxypropenylguaiacol & 37.10 & 180 & 137+180 &Lignin&Guaiacyl\\ 
+Syringolacetic acid & 38.78 & 212 & 212 &Lignin&Syringyl\\ 
+Oxo-propenylsyringol & 43.06 & 208 & 165+208 &Lignin&Syringyl\\ 
+Phenol & 21.02 & 94 & 65+66+94 &Phenolic&\\ 
+4-Methylphenol & 22.11 & 108 & 107+108 &Phenolic&\\ 
+3-Methylphenol & 22.22 & 108 & 107+108 &Phenolic&\\ 
+Ethylphenol & 23.38 & 122 & 107+122 &Phenolic&\\ 
+Propenylphenol & 26.93 & 134 & 133+134 &Phenolic&\\ 
+Propenylphenol & 27.76 & 134 & 133+134 &Phenolic&\\ 
+Propylphenol & 31.11 & 136 & 151+166 &Phenolic&\\ 
+Butylphenol & 31.86 & 150 & 107+150 &Phenolic&\\ 
+4-Hydroxybenzaldehyde & 32.70 & 122 & 121+122 &Phenolic&\\ 
+Hydroquinone & 33.40 & 110 & 81+110 &Phenolic&\\ 
+   \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+\newpage
+
+% latex table generated in R 2.12.1 by xtable 1.6-0 package
+% Tue Nov  8 06:46:38 2011
+\begin{table}[h!]
+\begin{center}
+\caption{Carbohydrate derrived pyrolysis products}
+\label{tab:chprod}
+{\small
+\begin{tabular}{lcccccc}
+  \hline
+Name & RT & MW & integrated framents & Origin & Class \\ 
+  \hline
+Acetaldehyde & 2.06 & 44 & 29+44 &Carbohydrates&  \\ 
+Furan & 2.35 & 68 & 39+68 &Carbohydrates&Furan\\ 
+Methylfuran & 2.74 & 82 & 81+82 &Carbohydrates&Furan\\ 
+Methylfuran & 2.91 & 82 & 81+82 &Carbohydrates&Furan\\ 
+Dimethylfuran & 3.43 & 96 & 95+96 &Carbohydrates&Furan\\ 
+Dimethylfuran & 3.66 & 96 & 95+96 &Carbohydrates&Furan\\ 
+Vinylfuran & 5.01 & 94 & 65+94 &Carbohydrates&Furan\\ 
+Unknown furan & 6.36 & 108 & 107+108 &Carbohydrates&Furan\\ 
+Cyclopentanone & 6.99 & 105? & 84+105? &Carbohydrates&Cyclopentenone\\ 
+Methylfuran & 7.62 & 82 & 53+82+83 &Carbohydrates&Furan\\ 
+2-Oxopropanoic acid, methylester & 7.92 & 102 & 43+102 &Carbohydrates& \\ 
+1-Hydroxypropanone & 9.24 & 74 & 43 &Carbohydrates& \\ 
+2-Cyclopenten-1-one & 10.26 & 82 & 53+54+52 &Carbohydrates&Cyclopentenone\\ 
+2-Methyl-2-cyclopenten-1-one & 10.51 & 96 & 53+96 &Carbohydrates&Cyclopentenone\\ 
+1-Hydroxy-2-propanone & 10.69 & 88 & 57+88 &Carbohydrates&Cyclopentenone\\ 
+Unknown & 11.38 & unk & 65+66+94 &Carbohydrates& \\ 
+3-Furaldehyd & 11.57 & 96 & 95+96 &Carbohydrates&Furan\\ 
+2(5H)Furanon & 11.69 & 98 & 55+98 &Carbohydrates&Furan\\ 
+Propanoic acid, methylester & 12.10 & 102 & 43+102 &Carbohydrates& \\ 
+2-Furaldehyd & 12.22 & 96 & 95+96 &Carbohydrates&Furan\\ 
+Acetylfuran & 12.99 & 110 & 95+110 &Carbohydrates&Cyclopentenone\\ 
+3-Methyl-cyclopentanone & 13.31 & 96 & 67+96 &Carbohydrates&Cyclopentenone\\ 
+Dimethylcyclopentenone & 13.69 & 110 & 67+95+110 &Carbohydrates&Cyclopentenone\\ 
+5-Methyl-2-furancarboxaldehyde & 14.23 & 110 & 109+110 &Carbohydrates&Furan\\ 
+2-Cyclopenten-1,4-dione & 14.44 & 96 & 54+68+96 &Carbohydrates&Cyclopentenone\\ 
+Butyrolactone & 15.22 & 86 & 56+86 &Carbohydrates& \\ 
+Unknown & 15.56 &  &  &Carbohydrates&  \\ 
+Furanmethanol & 15.61 & 98 & 98 &Carbohydrates&Cyclopentenone\\ 
+5-Methyl-2(5H)-furanone & 16.06 & 98 & 55+98 &Carbohydrates&Furan\\ 
+Unknown & 16.17 & unk & 110 &Carbohydrates&  \\ 
+1,2-Cylopentandione & 17.51 & 98 & 55+98 &Carbohydrates&Cyclopentenone\\ 
+Unknown & 17.67 & unk & 42+70 &Carbohydrates&  \\ 
+2-Hydroxy-3-methyl-2-cyclopenten-1-one & 18.14 & 98 & 98 &Carbohydrates&Cyclopentenone\\ 
+3-Methy-l1,2-cyclopentanedione & 18.42 & 112 & 69+112 &Carbohydrates&Cyclopentenone\\ 
+Unknown & 19.06 && 58+86+114 &Carbohydrates&\\ 
+Unknown & 19.35 && 98+126 &Carbohydrates&\\ 
+Unknown & 21.77 && 116 &Carbohydrates&\\ 
+Unknown & 22.33 && 44 &Carbohydrates&\\ 
+Unknown & 26.18 && 57+69 &Carbohydrates&\\ 
+5-Hydroxymethylfuran-1-carboxaldehyde & 27.51 & 126 & 97+126 &Carbohydrates&Furan\\ 
+Unknown & 31.67 && 73+135 &Carbohydrates&\\ 
+Laevoglucosan & 40.44 & 172 & 60+73 &Carbohydrates& \\ 
+   \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+\newpage
+% latex table generated in R 2.12.1 by xtable 1.6-0 package
+% Tue Nov  8 06:46:38 2011
+\begin{table}[h!]
+\begin{center}
+\caption{Other pyrolysis products quantified}
+\label{tab:nprod}
+{\small
+\begin{tabular}{lcccccc}
+  \hline
+Name & RT & MW & integrated framents & Origin & Class \\ 
+  \hline
+25:0 Alkan & 27.74 & 352 & 57+71 &aliphatic& Alkan \\ 
+25:1 Alken & 28.34 & 350 & 57+69 &aliphatic& Alken \\ 
+27:0 Alkan & 30.04 & 380 & 57+67 &aliphatic& Alkan \\ 
+27:1 Alken & 30.63 & 378 & 57+65 &aliphatic& Alken \\ 
+29:0 Alkan & 32.20 & 408 & 57+63 &aliphatic& Alkan \\ 
+29:1 Alken & 32.82 & 406 & 57+61 &aliphatic& Alken \\ 
+Myristic acid (14:0) & 2.35 & 68 & 39+68 & Lipid & Fatty Acid \\ 
+Palmitic acid (16:0) & 2.74 & 82 & 81+82 & Lipid & Fatty Acid \\ 
+Stearuc acid (18:0) & 2.91 & 82 & 81+82 & Lipid & Fatty Acid \\ 
+N-methyl-pyrrol & 6.15 & 81 & 80+81 &Protein& Pyrrol \\ 
+Pyridine & 6.90 & 95 & 52+79+95 &Protein& Pyridine \\ 
+Methylpyridine & 7.50 & 93 & 66+92+93 &Protein& Pyridine \\ 
+Methylpyridine & 7.54 & 93 & 66+92+93 &Protein& Pyridine \\ 
+methylpyridine & 9.02 & 93 & 66+93 &Protein& Pyridine \\ 
+Pyrrol & 13.11 & 67 & 39+41+67 &Protein& Pyrrol \\ 
+Methylpyrrol & 13.81 & 81 & 80+81 &Protein& Pyrrol \\ 
+Methylpyrrol & 14.10 & 81 & 80+81 &Protein& Pyrrol \\ 
+3-Hydroxypyridine & 26.52 & 95 & 67+95 &Protein& Pyridine \\ 
+Indole & 26.85 & 117 & 89+117 &Protein& Indole \\ 
+Methylindole & 27.42 & 131 & 130+131 &Protein& Indole \\ 
+Toluene & 4.54 & 92 & 91+92 &&Aromatic\\ 
+Xylene & 5.94 & 106 & 91+105+106 &&Aromatic\\ 
+Xylene & 6.09 & 106 & 91+105+106 &&Aromatic\\ 
+Xylene & 6.20 & 106 & 91+105+106 &&Aromatic\\ 
+Xylene & 6.99 & 105? & 84+105? &&Aromatic\\ 
+Methoxytoluene & 11.78 & 122 & 121+122 &&Aromatic\\ 
+Indene & 12.64 & 116 & 115+116 &&Aromatic\\ 
+Benzaldehyde & 13.35 & 106 & 77+106 &&Aromatic\\ 
+Dihydrobenzofuran & 26.19 & 120 & 91+119+120 &  & Aromatic \\ 
+Limonene & 7.22 & 136 & 93 && Terpene \\ 
+Phytol & 20.00 & 276 & 95+123 & Chlorophyll & Terpene \\ 
+Unknown aliphatic & 22.82 && 58+71 && aliphatic \\ 
+Aceton & 2.46 & 58 & 43 &  &  \\ 
+2-Propenal & 2.60 & 56 & 55+56 &  &\\ 
+Methanol & 2.88 & 32 & 29+31+32 &  &\\ 
+3-Buten-2-one & 3.39 & 70 & 55+70 &  &\\ 
+2,3-Butandione & 3.67 & 86 & 69+86 &&\\ 
+3-Penten-2-one & 3.89 & 86 & 69+86 &&\\ 
+2-Butanal & 4.56 & 70 & 69+70 &&\\ 
+2,3-Pentadione & 4.77 & 100 & 57+100 &&\\ 
+Hexanal & 5.16 & 82 & 56+72+82 &&\\ 
+1-Penten-3-one & 11.28 & 84 & 55+84 &&\\ 
+Hexan-2,4-dion & 23.92 & 114 & 56+84+114 &&  \\ 
+unknown & 15.98 && 119+134 &&\\ 
+Unknown & 20.85 && 81 &&\\ 
+Unknown & 20.86 && 82+95 &&\\ 
+Unknown & 22.43 && 98+128 &&\\ 
+Unknown & 27.76 && 138 &&\\ 
+   \hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+\begin{landscape}
+% latex table generated in R 2.12.1 by xtable 1.5-6 package
+% Sat Nov  5 23:56:55 2011
+\begin{table}[h!]
+%\begin{center}
+\caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.}
+\label{corrtable}
+{\small
+\begin{tabular}{lrrrrrrrrrr}
+  \hline
+ & L acc & Ch acc & LCI diff & L dec & C dec & L resp & C resp & L/C dec & Per/Cell & Phen/Cell \\ 
+  \hline
+Massloss & 0.291 & -0.150 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.048 & 0.0534 \\ 
+  Actual respiration & 0.333 & \textbf{-0.723} & \textbf{0.606} & -0.082 & \textbf{0.771} & -0.195 & \textbf{0.594} & -0.368 & -0.268 & -0.362 \\ 
+  Accumulated Respiration & \textbf{0.494} & \textbf{-0.704} & \textbf{0.688} & -0.132 & \textbf{0.856} & -0.332 & \textbf{0.557} & \textbf{-0.525} & \textbf{-0.506} & \textbf{-0.534} \\ 
+  Cellulase activity & \textbf{0.657} & \textbf{-0.760} & \textbf{0.803} & -0.431 & \textbf{0.801} & \textbf{-0.497} & \textbf{0.664} & \textbf{-0.589} & -0.436 & \textbf{-0.539} \\ 
+  Protease activity & 0.186 & -0.296 & 0.264 & -0.132 & 0.274 & -0.157 & 0.301 & -0.270 & -0.260 & -0.180 \\ 
+  Chitinase activity & 0.409 & \textbf{-0.749} & \textbf{0.663} & -0.170 & \textbf{0.795} & -0.312 & \textbf{0.677} & \textbf{-0.559} & \textbf{-0.490} & \textbf{-0.607} \\ 
+  Phosphatase activity & \textbf{0.549} & \textbf{-0.813} & \textbf{0.776} & -0.302 & \textbf{0.851} & -0.407 & \textbf{0.702} & \textbf{-0.556} & -0.418 & \textbf{-0.522} \\ 
+  Phenoloxidase activity & \textbf{0.632} & \textbf{-0.669} & \textbf{0.737} & -0.415 & \textbf{0.719} & \textbf{-0.449} & \textbf{0.552} & \textbf{-0.484} & -0.305 & -0.356 \\ 
+  Peroxidase activity & \textbf{0.599} & \textbf{-0.588} & \textbf{0.677} & -0.412 & \textbf{0.639} & -0.438 & \textbf{0.470} & -0.435 & -0.173 & -0.302 \\ 
+  N mineralization & \textbf{0.466} & \textbf{-0.664} & \textbf{0.650} & -0.167 & \textbf{0.739} & -0.299 & \textbf{0.527} & -0.387 & -0.282 & -0.367 \\ 
+  Nitrification & \textbf{0.587} & \textbf{-0.707} & \textbf{0.732} & -0.380 & \textbf{0.740} & -0.432 & \textbf{0.621} & \textbf{-0.499} & -0.369 & -0.450 \\ 
+  P mineralization & \textbf{0.665} & \textbf{-0.550} & \textbf{0.684} & \textbf{-0.544} & \textbf{0.596} & \textbf{-0.576} & 0.414 & \textbf{-0.478} & -0.212 & -0.255 \\ 
+  C litter & \textbf{-0.545} & \textbf{0.506} & \textbf{-0.578} & \textbf{0.604} & -0.368 & \textbf{0.643} & \textbf{-0.618} & \textbf{0.698} & \textbf{0.525} & \textbf{0.581} \\ 
+  extractable C & \textbf{0.609} & \textbf{-0.766} & \textbf{0.782} & -0.370 & \textbf{0.814} & \textbf{-0.446} & \textbf{0.658} & \textbf{-0.540} & -0.392 & \textbf{-0.484} \\ 
+  N litter & 0.354 & \textbf{-0.517} & \textbf{0.503} & -0.140 & \textbf{0.587} & -0.187 & 0.366 & -0.203 & -0.119 & -0.159 \\ 
+  P litter & \textbf{0.682} & -0.222 & \textbf{0.517} & \textbf{-0.747} & 0.175 & \textbf{-0.680} & 0.188 & \textbf{-0.491} & -0.0728 & -0.160 \\ 
+  C:N litter & -0.405 & \textbf{0.586} & \textbf{-0.570} & 0.175 & \textbf{-0.654} & 0.234 & -0.440 & 0.273 & 0.195 & 0.242 \\ 
+  C:P litter & \textbf{-0.636} & 0.174 & \textbf{-0.453} & \textbf{0.754} & -0.082 & \textbf{0.649} & -0.176 & 0.418 & 0.049 & 0.080 \\ 
+  N:P litter & \textbf{-0.512} & -0.029 & -0.264 & \textbf{0.714} & 0.147 & \textbf{0.577} & -0.020 & 0.316 & -0.031 & -0.019 \\ 
+  C:N mic & \textbf{0.666} & \textbf{-0.758} & \textbf{0.799} & -0.430 & \textbf{0.798} & \textbf{-0.515} & \textbf{0.678} & \textbf{-0.609} & \textbf{-0.584} & \textbf{-0.596} \\ 
+  C:P mic & \textbf{0.692} & \textbf{-0.787} & \textbf{0.834} & \textbf{-0.476} & \textbf{0.814} & \textbf{-0.562} & \textbf{0.726} & \textbf{-0.672} & \textbf{-0.564} & \textbf{-0.648} \\ 
+  N:P mic & \textbf{0.582} & \textbf{-0.729} & \textbf{0.740} & -0.415 & \textbf{0.729} & \textbf{-0.508} & \textbf{0.715} & \textbf{-0.670} & \textbf{-0.545} & \textbf{-0.671} \\ 
+  C:N imbalance & \textbf{-0.560} & \textbf{0.810} & \textbf{-0.772} & 0.288 & \textbf{-0.859} & 0.391 & \textbf{-0.710} & \textbf{0.531} & \textbf{0.564} & \textbf{0.560} \\ 
+  C:P imbalance & \textbf{-0.817} & \textbf{0.663} & \textbf{-0.833} & \textbf{0.757} & \textbf{-0.610} & \textbf{0.799} & \textbf{-0.668} & \textbf{0.839} & \textbf{0.575} & \textbf{0.670} \\ 
+  N:P imbalance & \textbf{-0.724} & 0.351 & \textbf{-0.602} & \textbf{0.810} & -0.253 & \textbf{0.764} & -0.397 & \textbf{0.668} & 0.301 & 0.410 \\ 
+  Fungi/bacteria(qPCR) & 0.002 & -0.122 & 0.079 & -0.024 & 0.087 & -0.066 & 0.135 & -0.072 & 0.199 & -0.033 \\ 
+  Fungi/bacteria (metaproteome) & \textbf{0.998} & -0.854 & \textbf{0.958} & -0.882 & 0.801 & \textbf{-0.961} & 0.824 & -0.873 & -0.679 & -0.676 \\ 
+ \hline
+\end{tabular}
+}
+%\end{center}
+\end{table}
+
+\newpage
+% latex table generated in R 2.12.1 by xtable 1.5-6 package
+% Sat Nov  5 23:56:55 2011
+\begin{table}[h!]
+%\begin{center}
+\caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.}
+\label{corrtable2}
+
+{\small
+\begin{tabular}{lrrrrrrrrrr}
+  \hline
+ & L acc & Ch acc & LCI diff & L dec & C dec & L resp & C resp & L/C dec & Per/Cell & Phen/Cell \\ 
+  \hline
+Massloss & 0.246 & 0.156 & 0.068 & \textbf{0.582} & \textbf{0.708} & 0.005 & 0.279 & -0.137 & -0.444 & 0.403 \\ 
+  Actual respiration & -0.0114 & 0.244 & -0.212 & \textbf{0.860} & \textbf{0.856} & 0.122 & 0.192 & -0.044 & -0.403 & 0.290 \\ 
+  Accumulated Respiration & 0.283 & 0.354 & -0.009 & \textbf{0.852} & \textbf{0.968} & 0.015 & 0.298 & -0.177 & \textbf{-0.608} & \textbf{0.486} \\ 
+  Cellulase activity & 0.073 & 0.218 & -0.137 & \textbf{0.848} & \textbf{0.881} & 0.148 & 0.295 & -0.081 & \textbf{-0.575} & 0.414 \\ 
+  Protease activity & 0.004 & 0.054 & -0.086 & 0.448 & 0.455 & 0.160 & 0.316 & -0.110 & \textbf{-0.456} & 0.381 \\ 
+  Phosphatase activity & 0.256 & 0.310 & 0.069 & 0.298 & 0.373 & -0.102 & -0.014 & -0.115 & -0.152 & 0.017 \\ 
+  Chitinase activity & 0.163 & 0.339 & -0.086 & \textbf{0.643} & \textbf{0.671} & 0.167 & 0.253 & -0.026 & \textbf{-0.580} & 0.395 \\ 
+  Phenoloxidase activity & 0.319 & -0.389 & 0.436 & -0.248 & -0.003 & -0.221 & \textbf{0.505} & -0.443 & \textbf{-0.483} & \textbf{0.692} \\ 
+  Peroxidase activity & -0.277 & 0.379 & -0.385 & 0.173 & -0.049 & 0.160 & \textbf{-0.510} & 0.382 & \textbf{0.546} & \textbf{-0.708} \\ 
+  N mineralization & 0.246 & 0.337 & 0.077 & 0.009 & 0.062 & -0.191 & -0.113 & -0.167 & 0.062 & 0.089 \\ 
+  Nitrification & -0.0272 & \textbf{0.567} & -0.320 & \textbf{0.630} & \textbf{0.567} & 0.090 & -0.148 & 0.114 & -0.105 & -0.023 \\ 
+  P mineralization & -0.0165 & 0.202 & -0.138 & \textbf{0.507} & \textbf{0.508} & -0.136 & -0.062 & -0.128 & 0.043 & -0.027 \\ 
+  C litter & 0.123 & -0.065 & 0.177 & -0.325 & -0.264 & -0.204 & -0.289 & 0.024 & \textbf{0.501} & -0.348 \\ 
+  extractable C & 0.231 & 0.435 & -0.0861 & \textbf{0.828} & \textbf{0.890} & 0.074 & 0.218 & -0.109 & \textbf{-0.538} & 0.409 \\ 
+  N litter & 0.210 & 0.356 & -0.0654 & \textbf{0.816} & \textbf{0.896} & -0.004 & 0.172 & -0.120 & -0.431 & 0.349 \\ 
+  P litter & -0.117 & -0.037 & -0.182 & \textbf{0.764} & \textbf{0.762} & 0.161 & 0.318 & -0.074 & \textbf{-0.464} & 0.325 \\ 
+  C:N litter & -0.272 & -0.365 & 0.016 & \textbf{-0.794} & \textbf{-0.901} & 0.027 & -0.207 & 0.155 & \textbf{0.490} & -0.404 \\ 
+  C:P litter & 0.329 & 0.122 & 0.315 & \textbf{-0.645} & \textbf{-0.541} & -0.276 & -0.218 & -0.0672 & 0.283 & -0.162 \\ 
+  N:P litter & \textbf{0.471} & 0.289 & 0.328 & -0.336 & -0.179 & -0.293 & -0.113 & -0.148 & 0.048 & 0.034 \\ 
+  C:N mic & -0.184 & -0.408 & 0.092 & \textbf{-0.658} & \textbf{-0.703} & -0.032 & -0.318 & 0.250 & \textbf{0.570} & \textbf{-0.513} \\ 
+  C:P mic & 0.237 & -0.060 & 0.312 & \textbf{-0.609} & \textbf{-0.505} & -0.192 & -0.072 & -0.063 & 0.233 & -0.223 \\ 
+  N:P mic & 0.336 & 0.127 & 0.290 & -0.373 & -0.247 & -0.180 & 0.048 & -0.157 & -0.002 & -0.009 \\ 
+  C:N imbalance & -0.145 & -0.014 & -0.076 & -0.354 & -0.447 & 0.061 & 0.044 & -0.050 & 0.027 & 0.020 \\ 
+  C:P imbalance & 0.021 & 0.246 & -0.074 & -0.137 & -0.200 & -0.020 & -0.241 & 0.095 & 0.160 & -0.032 \\ 
+  N:P imbalance & 0.025 & 0.231 & -0.085 & 0.040 & -0.007 & 0.003 & -0.268 & 0.172 & 0.160 & -0.080 \\ 
+  Fungi/bacteria(qPCR) & -0.03 & -0.008 & 0.017 & -0.236 & -0.254 & -0.089 & -0.115 & -0.003 & 0.161 & -0.219 \\ 
+  Fungi/bacteria (metaproteome) & 0.158 & 0.570 & -0.369 & \textbf{0.986} & \textbf{0.972} & 0.254 & 0.484 & -0.274 & -0.601 & 0.550 \\ 
+
+   \hline
+\end{tabular}
+}
+%\end{center}
+\end{table}
+
+\end{landscape}

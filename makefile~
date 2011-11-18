@@ -1,0 +1,34 @@
+output = .output
+rnwfile = ligpaper
+backup = .backup
+
+TEXS = abstract.tex authors_paper.tex discussion.tex figtab.tex introduction.tex mm.tex results.tex $(rnwfile)
+
+
+
+$(rnwfile).tex: $(rnwfile).rnw rscripts.R
+	R CMD Sweave $(rnwfile).rnw
+
+$(rnwfile).pdf: TEXS
+	R CMD pdflatex $(rnwfile).tex
+	R CMD pdflatex $(rnwfile).tex
+
+# 	R CMD Sweave $(rnwfile).rnw
+# 	-mkdir $(output)
+# 	-cp *.sty $(output)
+# 	-mv *.tex *.pdf *.eps $(output)
+# 	cd $(output); pdflatex -interaction=nonstopmode -synctex=1 $(rnwfile).tex; pdflatex -interaction=nonstopmode -synctex=1 $(rnwfile).tex
+    
+
+# tex:
+# 	cd $(output); pdflatex -interaction=nonstopmode -synctex=1 $(rnwfile).tex; pdflatex -interaction=nonstopmode -synctex=1 $(rnwfile).tex 
+# 
+# view:
+# 	cd $output; okular $(rnwfile).tex
+# 
+# clean:
+# 	-rm $(output)/*
+# 
+# backup:
+# 	-mkdir $(backup)
+# 	cp  $(output)/$(rnwfile).pdf $(backup)/$(rnwfile).pdf
