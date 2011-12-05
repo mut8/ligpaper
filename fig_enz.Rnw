@@ -19,7 +19,7 @@ timeseries(alldata$Cellulase, alldata$days, alldata$Litter, type="o", add=F, pch
 axis(2, axTicks(2), c("0.1", "1.0", "10", "100", "1000"))
 legend("bottomright", pch=pch, lty=1, lwd=1, pt.bg=colscale, typlev)
 
-timeseries(alldata$Phenoloxidase/alldata$Cellulase, alldata$days,alldata$Litter, type="o", pch=pch, pt.bg=colscale, log="y", endsig=T, main="Phenoloxisdase/Cellulase", lwd=1,  xlim=c(0,550), cex=1.2, ylab="Ratio of potential activities", ylim=c(0.0005,50), yaxt="n", xlab="litter incubation (days)")
+timeseries(alldata$Phenoloxidase/alldata$Cellulase, alldata$days,alldata$Litter, type="o", pch=pch, pt.bg=colscale, log="y", endsig=T, main="Phenoloxidase/Cellulase", lwd=1,  xlim=c(0,550), cex=1.2, ylab="Ratio of potential activities", ylim=c(0.0005,50), yaxt="n", xlab="litter incubation (days)")
 axis(2, axTicks(2), c("0.001", "0.01", "0.10", "1.00", "10.0"))
 
 @

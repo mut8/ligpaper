@@ -8,7 +8,7 @@ To determine dissolved organic C, dissolved N and P, 1.8 g litter (fresh weight)
 
 Substrate to consumer stoichiometric imbalances \emph{C:X$_{imbal}$} were calculated as
 \begin{equation}
- C:X_{inbal}=\frac{C:X_{litter}}{C:X_{microbial}} \label{eq:resp.acc}
+ C:X_{imbal}=\frac{C:X_{litter}}{C:X_{microbial}} \label{eq:imbal}
 \end{equation}
 where \emph{X} stand for the element N or P.
 
@@ -19,9 +19,7 @@ Respiration was monitored weekly during the entire incubation in mesocosms remov
 
 Potential activities of $\beta$-1,4-cellubiosidase (``cellulase''), phenoloxidase and peroxidase were measured immidiately after sampling. 1 g of litter (fresh weight) was suspended in sodium acetate buffer (pH 5.5) and ultrasonicated. To determine cellulase activity, 200 \textmu l suspension were mixed with 25 nmol 4-methylumbelliferyl-$\beta$-D-cellobioside (dissolved in 50 \textmu l of the same buffer) in black microtiter plates and incubated for 140 min in the dark. The amount of methylumbelliferyl (MUF) set free in by the enzymatic reaction was measured flourimetrically (Tecan Infinite M200, exitation at 365 nm, detection at 450 nm). To measure phenoloxidase and peroxidase activity litter suspension was mixed 1:1 with a solution of L-3,4-dihydroxyphenylalanin (DOPA) to a final concentration of 10 mM. Samples were incubated in microtiter plates for 20h to determine phenoloxidase activity. For peroxidase activity, 1 nmol of $H_2O_2$ was added before incubation. Absortion at 450 nm was measured before and after incubation. All enzyme activities were measured in three analytical replicates. The assay is described in detail in \cite{Kaiser2010b}.
 
-\subsection*{Metaproteome analysis and quantitative PCR}
-
-For metaproteome analysis, 3 g of each sample were gounded in liquid nitrogen and extracted with Tris/KOH buffer (pH 7.0) containing 1\% SDS. Samples were sonicated for 2 min, boiled for 20 min and shaken at 4 \textdegree C for 1 h. Extracts were centrifuged twice to remove debris and concentrated by vaccum-centrifugation. An aliquot of the sample was applied to a 1D-SDS-PAGE and subjected to in-gel tryptic digestion. The resulting mixtures were analyzed on a hybrid LTQ-Orbitrap MS (Thermo Fisher Scientific). Protein database serach against the UniRef library, the translated metagenome of the microbial community of a Mennesota farm silage soil \cite{Tringe2005} and known contaminants was performed using the MASCOT Search Engine. A detailed description of the extraction procedure and search criteria was published by \cite{Schneider2010}. Additionally, fungi/bacteria ratios were determined with quantitative PCR as described recently \cite{Inselsbacher2010}.
+\input{metaprot}
 
 \subsection*{Pyrolysis-GC/MS}
 

@@ -19,10 +19,6 @@ Respiration was monitored weekly during the entire incubation in mesocosms remov
 
 Potential activities of $\beta$-1,4-cellubiosidase (``cellulase''), phenoloxidase and peroxidase were measured immidiately after sampling. 1 g of litter (fresh weight) was suspended in sodium acetate buffer (pH 5.5) and ultrasonicated. To determine cellulase activity, 200 \textmu l suspension were mixed with 25 nmol 4-methylumbelliferyl-$\beta$-D-cellobioside (dissolved in 50 \textmu l of the same buffer) in black microtiter plates and incubated for 140 min in the dark. The amount of methylumbelliferyl (MUF) set free in by the enzymatic reaction was measured flourimetrically (Tecan Infinite M200, exitation at 365 nm, detection at 450 nm). To measure phenoloxidase and peroxidase activity litter suspension was mixed 1:1 with a solution of L-3,4-dihydroxyphenylalanin (DOPA) to a final concentration of 10 mM. Samples were incubated in microtiter plates for 20h to determine phenoloxidase activity. For peroxidase activity, 1 nmol of $H_2O_2$ was added before incubation. Absortion at 450 nm was measured before and after incubation. All enzyme activities were measured in three analytical replicates. The assay is described in detail in \cite{Kaiser2010b}.
 
-\subsection*{Metaproteome analysis and quantitative PCR}
-
-For metaproteome analysis, 3 g of each sample were gounded in liquid nitrogen and extracted with Tris/KOH buffer (pH 7.0) containing 1\% SDS. Samples were sonicated for 2 min, boiled for 20 min and shaken at 4 \textdegree C for 1 h. Extracts were centrifuged twice to remove debris and concentrated by vaccum-centrifugation. An aliquot of the sample was applied to a 1D-SDS-PAGE and subjected to in-gel tryptic digestion. The resulting mixtures were analyzed on a hybrid LTQ-Orbitrap MS (Thermo Fisher Scientific). Protein database serach against the UniRef library, the translated metagenome of the microbial community of a Mennesota farm silage soil \cite{Tringe2005} and known contaminants was performed using the MASCOT Search Engine. A detailed description of the extraction procedure and search criteria was published by \cite{Schneider2010}. Additionally, fungi/bacteria ratios were determined with quantitative PCR as described recently \cite{Inselsbacher2010}.
-
 \subsection*{Pyrolysis-GC/MS}
 
 Pyrolysis-GC/MS was performed with a Pyroprobe 5250 pyrolysis system (CDS Analytical) coupled to a Thermo Trace gas chromatograph and a DSQ II MS detector (both Thermo Scientific) equipped with a carbowax colomn (Supelcowax 10, Sigma-Aldrich). Between 2-300 \textmu g of dried and finely ground litter (MM2000 ball mill, Retsch) was heated to 600 \textdegree C for 10 seconds in a helium atmosphere. GC oven temperature was constant at 50 \textdegree C for 2 minutes, followed by an increase of 7 \textdegree C/min to a final temperature of 260 \textdegree C, which was held for 15 minutes. The MS detector was set for electron ionization at 70 eV in the scanning mode (m/z 20 to 300).
@@ -40,6 +36,8 @@ Accounting for carbon loss, we estimate \% lignin and cellulose degraded during 
  \%_{loss} = 100\cdot\frac{\%_{init}-\%_{act}}{\%_{init}}\cdot\frac{\left ( 1-R_{acc}\right ) }{C_{init}}
  \label{eq:closscorr}
 \end{equation}
+
+\input{metaprot}
 
 \subsection*{Statistical analysis}
 All statistical analyses were performed with the software and statistical computing environment R \cite{R}. If not mentioned otherwise, results were considered significant when p \textless 0.05. Due to frequent variance inhomogeneities Welch ANOVA and paired Welch's t-tests with Bonferroni corrected p limits were used. All correlations mentioned refer to Pearson correlations. 

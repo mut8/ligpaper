@@ -15,7 +15,7 @@ axis(4, labels=F)
 par(mar=c(4.1,.1,4.1,4.1))
 
 cond<-is.na(alldata$f2b_qpcr)!=T
-timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", main="Fungi/Bacteria (qPCR)", yaxt="n")
+timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", main="Fungi/Bacteria (qPCR)", yaxt="n", xlim=c(0,500))
 axis(4)
 axis(2, labels=F)
 
@@ -105,7 +105,7 @@ plot(x[1:19],y, ylab="", xlab="Fungi/bacteria ratio (metaproteome)", cex=.5, typ
 plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
 axis(2, labels=F)
 axis(3, labels=F)
-axis(4, labels=F)
+axis(4)
 
 #cor<-cor.test(x,y)
 cor<-cor.test(xmean,ymean)

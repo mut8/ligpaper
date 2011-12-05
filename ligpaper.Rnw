@@ -107,7 +107,7 @@
 \begin{figure}[!ht]
 \begin{center}
 %\setkeys{Gin}{width=4in}
-\setkeys{Gin}{width=\textwidth}
+\setkeys{Gin}{width=.7\textwidth}
 \SweaveInput{fig_enz}
 \end{center}
 \caption{
@@ -128,7 +128,7 @@
 
 \begin{figure}[!ht]
 \begin{center}
-\setkeys{Gin}{width=0.8\textwidth}
+\setkeys{Gin}{width=0.7\textwidth}
 %\inputgraphics[width=4in]{figure_name.2.eps}
 \SweaveInput{fig_f2b}
 \end{center}
@@ -141,7 +141,7 @@
 \begin{figure}[!ht]
 \begin{center}
 %\setkeys{Gin}{width=4in}
-\setkeys{Gin}{width=\textwidth}
+\setkeys{Gin}{width=.5\textwidth}
 \SweaveInput{fig_lci}
 \end{center}
 \caption{
@@ -201,7 +201,7 @@ corr2<-hmw.proc
 mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
 #rownames cor corraltion table
 rownames(mighty.corr.matrix) <- 
-  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
+  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenooxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
 "N mineralization", #"NH4 immobilization", 
 "Nitrification", #"NO3 immobilization",
 "P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 

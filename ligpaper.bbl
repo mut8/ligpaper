@@ -190,26 +190,6 @@ Kaiser C, Koranda M, Kitzler B, Fuchslueger L, Schnecker J, et~al. (2010)
 \newblock New Phytologist 187: 843--858.
 \bibAnnoteFile{Kaiser2010b}
 
-\bibitem{Tringe2005}
-Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
-  {Comparative metagenomics of microbial communities.}
-\newblock Science (New York, NY) 308: 554--7.
-\bibAnnoteFile{Tringe2005}
-
-\bibitem{Schneider2010}
-Schneider T, Gerrits B, Gassmann R, Schmid E, Gessner MO, et~al. (2010)
-  {Proteome analysis of fungal and bacterial involvement in leaf litter
-  decomposition.}
-\newblock Proteomics 10: 1819--30.
-\bibAnnoteFile{Schneider2010}
-
-\bibitem{Inselsbacher2010}
-Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,
-  et~al. (2010) {Short-term competition between crop plants and soil microbes
-  for inorganic N fertilizer}.
-\newblock Soil Biology and Biochemistry 42: 360--372.
-\bibAnnoteFile{Inselsbacher2010}
-
 \bibitem{Schellekens2009}
 Schellekens J, Buurman P, Pontevedra-Pombal X (2009) {Selecting parameters for
   the environmental interpretation of peat molecular chemistry - A
@@ -222,6 +202,73 @@ Kuder T, Kruge MA (1998) {Preservation of biomolecules in sub-fossil plants
   from raised peat bogs - a potential paleoenvironmental proxy}.
 \newblock Organic Geochemistry 29: 1355--1368.
 \bibAnnoteFile{Kuder1998}
+
+\bibitem{Laemmli1970}
+Laemmli UK (1970) {Cleavage of structural proteins during the assembly of the
+  head of bacteriophage T4}.
+\newblock Nature 227: 680--685.
+\bibAnnoteFile{Laemmli1970}
+
+\bibitem{Shevchenko1996}
+Shevchenko a, Wilm M, Vorm O, Mann M (1996) {Mass spectrometric sequencing of
+  proteins silver-stained polyacrylamide gels.}
+\newblock Analytical chemistry 68: 850--8.
+\bibAnnoteFile{Shevchenko1996}
+
+\bibitem{Schneider2010}
+Schneider T, Gerrits B, Gassmann R, Schmid E, Gessner MO, et~al. (2010)
+  {Proteome analysis of fungal and bacterial involvement in leaf litter
+  decomposition.}
+\newblock Proteomics 10: 1819--30.
+\bibAnnoteFile{Schneider2010}
+
+\bibitem{Tringe2005}
+Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
+  {Comparative metagenomics of microbial communities.}
+\newblock Science (New York, NY) 308: 554--7.
+\bibAnnoteFile{Tringe2005}
+
+\bibitem{Keller2002}
+Keller A, Nesvizhskii AI, Kolker E, Aebersold R (2002) {Empirical statistical
+  model to estimate the accuracy of peptide identifications made by MS/MS and
+  database search.}
+\newblock Analytical chemistry 74: 5383--92.
+\bibAnnoteFile{Keller2002}
+
+\bibitem{Nesvizhskii2003}
+Nesvizhskii AI, Keller A, Kolker E, Aebersold R (2003) {A Statistical Model for
+  Identifying Proteins by Tandem Mass Spectrometry abilities that proteins are
+  present in a sample on the basis}.
+\newblock Society 75: 4646--4658.
+\bibAnnoteFile{Nesvizhskii2003}
+
+\bibitem{Schneider2011}
+Schneider T, Schmid E, de~Castro JaV, Cardinale M, Eberl L, et~al. (2011)
+  {Structure and function of the symbiosis partners of the lung lichen (Lobaria
+  pulmonaria L. Hoffm.) analyzed by metaproteomics.}
+\newblock Proteomics : 2752--2756.
+\bibAnnoteFile{Schneider2011}
+
+\bibitem{Florens2006}
+Florens L, Carozza MJ, Swanson SK, Fournier M, Coleman MK, et~al. (2006)
+  {Analyzing chromatin remodeling complexes using shotgun proteomics and
+  normalized spectral abundance factors.}
+\newblock Methods (San Diego, Calif) 40: 303--11.
+\bibAnnoteFile{Florens2006}
+
+\bibitem{Zybailov2006}
+Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
+  {Statistical analysis of membrane proteome expression changes in
+  Saccharomyces cerevisiae.}
+\newblock Journal of proteome research 5: 2339--47.
+\bibAnnoteFile{Zybailov2006}
+
+\bibitem{Inselsbacher2010}
+Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,
+  et~al. (2010) {Short-term competition between crop plants and soil microbes
+  for inorganic N fertilizer}.
+\newblock Soil Biology and Biochemistry 42: 360--372.
+\bibAnnoteFile{Inselsbacher2010}
 
 \bibitem{R}
 {R Development Core Team} (2008).

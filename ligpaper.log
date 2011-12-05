@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  15 NOV 2011 19:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.17)  5 DEC 2011 16:21
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
@@ -405,11 +405,17 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[13])
+[13] (./metaprot.tex
+Overfull \hbox (15.88097pt too wide) in paragraph at lines 5--7
+\T1/aer/m/n/10 (9808438 en-tries, down-loaded from the Eu-ro-pean Bioin-for-mat
+-ics In-sti-tute web-page http://www.ebi.ac.uk/uniref/
+ []
+
+
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[14] (./ligpaper.bbl
+[14])) (./ligpaper.bbl
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
@@ -418,11 +424,6 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
 [16]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 229.
-
- (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
@@ -430,32 +431,38 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[18] <ligpaper-enz.pdf, id=70, 722.7pt x 1011.78pt>
+[18]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 276.
+
+ (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+))
+Overfull \vbox (6.43994pt too high) has occurred while \output is active []
+
+
+[19] <ligpaper-enz.pdf, id=75, 722.7pt x 1011.78pt>
 File: ligpaper-enz.pdf Graphic file (type pdf)
  <use ligpaper-enz.pdf>
-
-LaTeX Warning: Float too large for page by 129.23463pt on input line 120.
-
-<ligpaper-mb.pdf, id=71, 867.24pt x 722.7pt>
+<ligpaper-mb.pdf, id=76, 867.24pt x 722.7pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
-<ligpaper-f2bnew.pdf, id=72, 578.16pt x 867.24pt>
+<ligpaper-f2bnew.pdf, id=77, 578.16pt x 867.24pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
  <use ligpaper-f2bnew.pdf>
+Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
-LaTeX Warning: Float too large for page by 59.26933pt on input line 142.
 
-<ligpaper-lci.pdf, id=73, 722.7pt x 361.35pt>
+[20 <./ligpaper-enz.pdf>] <ligpaper-lci.pdf, id=86, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
- <use ligpaper-lci.pdf>
-<ligpaper-degrdiff.pdf, id=74, 867.24pt x 505.89pt>
+
+<use ligpaper-lci.pdf> <ligpaper-degrdiff.pdf, id=87, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=75, 1517.67pt x 1011.78pt>
+<ligpaper-graphcorr.pdf, id=88, 1517.67pt x 1011.78pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
@@ -466,23 +473,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[19 <./ligpaper-enz.pdf>]
+[21 <./ligpaper-mb.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[20 <./ligpaper-mb.pdf>]
+[22 <./ligpaper-f2bnew.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[21 <./ligpaper-f2bnew.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[22 <./ligpaper-lci.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[23 <./ligpaper-degrdiff.pdf>]
+[23 <./ligpaper-lci.pdf> <./ligpaper-degrdiff.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
@@ -523,30 +522,31 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 [30] (./ligpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 4563 strings out of 493848
- 63726 string characters out of 1152822
- 126582 words of memory out of 3000000
- 7664 multiletter control sequences out of 15000+50000
+ 4580 strings out of 493848
+ 63946 string characters out of 1152822
+ 126610 words of memory out of 3000000
+ 7671 multiletter control sequences out of 15000+50000
  40197 words of font info for 83 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  36i,9n,38p,2843b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.
-enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ligpaper.pdf (30 pages, 454742 bytes).
+enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on ligpaper.pdf (30 pages, 469403 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 196 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
