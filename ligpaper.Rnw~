@@ -33,7 +33,7 @@
 
 
 % Text layout
-\topmargin 0.0cm
+\topmargin 0cm
 \oddsidemargin 0.5cm
 \evensidemargin 0.5cm
 \textwidth 16cm 
@@ -62,7 +62,7 @@
 
 \pagestyle{myheadings}
 %% ** EDIT HERE **
-
+-
 
 %% ** EDIT HERE **
 %% PLEASE INCLUDE ALL MACROS BELOW
@@ -96,12 +96,14 @@
 % Do NOT remove this, even if you are not including acknowledgments
 \input{mm}
 \section*{Acknowledgments}
+This study was supported by the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital advice was given by C. Schwarzinger and A. Blöchl.
+
 %\section*{References}
 % The bibtex filename
 \bibliography{library}
 
 %\newpage
-%\section*{Figure Legends}
+\section*{Figure Legends}
 
 \newpage
 \begin{figure}[!ht]
@@ -133,7 +135,7 @@
 \SweaveInput{fig_f2b}
 \end{center}
 \caption{
-{\bf Fungi/Bacteria ratios and their correlations with LCI change:} Top: Fungi/bacteria ratios derived from metaproteome (left) and qPCR (right) analysis. Bottom: The correlations between metaproteomic fungi/bacteria ratios with Lignin decomposition rates (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} Top: F:B protein abundance (left) and DNA (right) ratio. Bottom: Correlations between F:B preotein abundance ratios and Lignin loss (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:f2b}
 \end{figure}
 
@@ -141,7 +143,7 @@
 \begin{figure}[!ht]
 \begin{center}
 %\setkeys{Gin}{width=4in}
-\setkeys{Gin}{width=.5\textwidth}
+\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_lci}
 \end{center}
 \caption{
@@ -174,7 +176,7 @@
 \label{fig:cor1}
 \end{figure*}
 
-%\section*{Tables}
+\section*{Supplemental Tables}
 
 
 \newpage

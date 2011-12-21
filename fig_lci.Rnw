@@ -1,4 +1,6 @@
 <<lci, fig=T, echo=F, results=hide, width=10, height=5>>=
+
+
 par( mfrow=c(1,2), mar=c(4.1,4.1,2.1,.1), tck=0.01)
 timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, endsig=T, ylab="Lignin/(Lignin+Carbohydrates)", xlab="Litter incubation (days)", lwd=2, cex=1.5)
 axis(4, labels=F)

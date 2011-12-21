@@ -1,0 +1,116 @@
+<<f2bnew, results=hide, echo=F, fig=T, height=12, width=8>>=
+par(mfrow=c(3,2), mar=c(4.1,4.1,4.1,.1))  
+prot.means<-tapply(f2b$f2b_prot, list(alldata$days, alldata$Litter), mean)
+plot(as.numeric(levels(as.factor(alldata$days))), prot.means[,1], xlim=c(0, 500), ylim=c(0, max(prot.means)), type="o", pch=pch[1], bg=colscale[1], xlab="Litter incubation (days)", main="Fungi/Bacteria (metaproteome)", ylab="ratio")
+
+for (i in 2:length(levels(type)))
+  {
+ lines(as.numeric(levels(as.factor(alldata$days))), prot.means[,i])
+ points(as.numeric(levels(as.factor(alldata$days))), prot.means[,i], pch=pch[i], bg=colscale[i])
+ #, pch=pch[i]], bg=colscale[i])
+  }
+legend("topright", levels(type), pch=pch, pt.bg=colscale, lty=1)
+axis(4, labels=F)
+
+par(mar=c(4.1,.1,4.1,4.1))
+
+cond<-is.na(alldata$f2b_qpcr)!=T
+timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", main="Fungi/Bacteria (qPCR)", yaxt="n", xlim=c(0,500))
+axis(4)
+axis(2, labels=F)
+
+par(mar=c(.1,4.1,4.1,.1))  
+
+x<-f2b$f2b_prot[alldata$days==181]
+xmean<-tapply(x, alldata$Litter[alldata$days==181], mean)
+#xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
+y<-100*hmw.proc$Ldec
+ymean<-tapply(y, type[days==181], mean)
+yse<-tapply(y, type[days==181], stderr)
+
+ymin<-0
+ymax<-25
+
+plot(x,y, ylab="Lignin loss (% of initial content)", main="0-181 days", xlab="", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n")
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+axis(1, labels=F)
+axis(4, labels=F)
+axis(3, labels=F)
+
+#cor<-cor.test(x,y)
+cor<-cor.test(xmean,ymean)
+#abline(lm(ymean~xmean))
+
+#text(cor$estimate^2)
+text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
+
+par(mar=c(.1,.1,4.1,4.1))  
+
+x<-f2b$f2b_prot[alldata$days==475]
+xmean<-tapply(x, alldata$Litter[alldata$days==475], mean)
+#xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
+y<-100*hmw.proc2$Ldec
+ymean<-tapply(y, type[days==475], mean)
+yse<-tapply(y, type[days==475], stderr)
+
+plot(x[1:19],y, main="181-475 days", xlab="", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n", yaxt="n")
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+axis(4)
+axis(2, labels=F)
+axis(1, labels=F)
+axis(3, labels=F)
+
+#cor<-cor.test(x,y)
+cor<-cor.test(xmean,ymean)
+abline(lm(ymean~xmean))
+
+#text(cor$estimate^2)
+text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
+
+par(mar=c(4.1,4.1,.1,.1))
+
+x<-f2b$f2b_prot[alldata$days==181]
+xmean<-tapply(x, alldata$Litter[alldata$days==181], mean)
+#xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
+y<-hmw.proc$Lresp
+ymean<-tapply(y, type[days==181], mean)
+yse<-tapply(y, type[days==181], stderr)
+
+ymin<-0
+ymax<-1.5
+
+plot(x,y, ylab="%Lignin loss/%carbon loss", xlab="Fungi/bacteria ratio (metaproteome)", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5))
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+
+axis(3, labels=F)
+axis(4, labels=F)
+
+#cor<-cor.test(x,y)
+cor<-cor.test(xmean,ymean)
+abline(lm(ymean~xmean))
+
+#text(cor$estimate^2)
+text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
+
+par(mar=c(4.1,.1,.1,4.1))
+
+x<-f2b$f2b_prot[alldata$days==475]
+xmean<-tapply(x, alldata$Litter[alldata$days==475], mean)
+#xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
+y<-hmw.proc2$Lresp
+ymean<-tapply(y, type[days==475], mean)
+yse<-tapply(y, type[days==475], stderr)
+
+plot(x[1:19],y, ylab="", xlab="Fungi/bacteria ratio (metaproteome)", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), yaxt="n")
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+axis(2, labels=F)
+axis(3, labels=F)
+axis(4, labels=F)
+
+#cor<-cor.test(x,y)
+cor<-cor.test(xmean,ymean)
+#abline(lm(ymean~xmean))
+
+#text(cor$estimate^2)
+text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
+@

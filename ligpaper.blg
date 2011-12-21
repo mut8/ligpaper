@@ -2,61 +2,65 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
-Repeated entry---line 1374 of file library.bib
+Repeated entry---line 1639 of file library.bib
  : @article{Talbot2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1750 of file library.bib
+Repeated entry---line 1792 of file library.bib
  : @book{Sterner2002
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2734 of file library.bib
+Repeated entry---line 2110 of file library.bib
  : @book{Sterner2002
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3078 of file library.bib
+Repeated entry---line 3109 of file library.bib
  : @article{Schellekens2009
  :                         ,
 I'm skipping whatever remains of this entry
-You've used 41 entries,
+Repeated entry---line 16758 of file library.bib
+ : @article{Bantscheff2007
+ :                        ,
+I'm skipping whatever remains of this entry
+You've used 39 entries,
             2441 wiz_defined-function locations,
-            873 strings with 16383 characters,
-and the built_in function-call counts, 37059 in all, are:
-= -- 3450
-> -- 632
+            864 strings with 16202 characters,
+and the built_in function-call counts, 36494 in all, are:
+= -- 3403
+> -- 624
 < -- 0
-+ -- 316
-- -- 158
-* -- 3222
-:= -- 4414
-add.period$ -- 83
-call.type$ -- 41
-change.case$ -- 37
++ -- 312
+- -- 156
+* -- 3193
+:= -- 4335
+add.period$ -- 79
+call.type$ -- 39
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 82
-duplicate$ -- 3659
-empty$ -- 3857
-format.name$ -- 195
-if$ -- 8251
+cite$ -- 78
+duplicate$ -- 3602
+empty$ -- 3799
+format.name$ -- 192
+if$ -- 8126
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 445
-newline$ -- 221
-num.names$ -- 41
-pop$ -- 522
+int.to.str$ -- 39
+missing$ -- 429
+newline$ -- 211
+num.names$ -- 39
+pop$ -- 510
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 310
+skip$ -- 304
 stack$ -- 0
-substring$ -- 5450
-swap$ -- 860
+substring$ -- 5419
+swap$ -- 830
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 268
-width$ -- 43
-write$ -- 460
-(There were 4 error messages)
+while$ -- 261
+width$ -- 41
+write$ -- 437
+(There were 5 error messages)

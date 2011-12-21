@@ -1,5 +1,3 @@
-source("~/R/functions.R")
-
 addpeaks<-function(source, sep=",") {
 
   for (i in 1:length(source))
@@ -127,10 +125,13 @@ for (i in 1:nrow(alldata.stat))
 }
 
 colscale<-c(grey(0), grey(.2), grey(.4), grey(.6))
+colscale2<-c("red", "blue", "yellow", "black")
+
 colscale.all<-c(rep(colscale[1], 4), rep(colscale[2], 5), rep(colscale[3], 5), rep(colscale[4], 5),
                 rep(colscale[1], 4), rep(colscale[2], 4), rep(colscale[3], 5), rep(colscale[4], 5),
                 rep(colscale[1], 4), rep(colscale[2], 5), rep(colscale[3], 5), rep(colscale[4], 5),
                 rep(colscale[1], 4), rep(colscale[2], 5), rep(colscale[3], 5), rep(colscale[4], 4))
+
 pch<-21:24
 pch.all<-c(rep(pch[1],19),rep(pch[2],18),rep(pch[3],19),rep(pch[4],18))
 

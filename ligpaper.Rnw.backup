@@ -18,8 +18,9 @@
 \usepackage{amssymb}
 
 % graphicx package, useful for including eps and pdf graphics
-% include graphics with the command \includegraphics
+% include graphics with the command \inputgraphics
 \usepackage{graphicx}
+\usepackage{lscape}
 
 % cite package, to clean up citations in the main text. Do not remove.
 \usepackage{cite}
@@ -75,37 +76,40 @@
 {\Large
 \textbf{Controls of litter chemistry over early lignin decomposition in beech litter}
 }
+\\
 % Insert Author names, affiliations and corresponding author email.
-\include{authors_paper}
-
+\input{authors_paper}
+\newpage
 % Please keep the abstract between 250 and 300 words
-\include{abstract}
+\input{abstract}
 
 \linenumbers %not from the template: start line numbers here.
 \newpage%not in original layout
-\include{introduction}
+\input{introduction}
 % Results and Discussion can be combined.
-\include{results}
-\include{discussion}
-\include{mm}
+\input{results}
+\input{discussion}
+
 % You may title this section "Methods" or "Models". 
 % "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
 % authors may use "Analysis" 
-\include{mm}
 % Do NOT remove this, even if you are not including acknowledgments
+\input{mm}
 \section*{Acknowledgments}
+This study was supported by the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital analytical advice was given by C. Schwarzinger and A. Blöchl.
+
 %\section*{References}
 % The bibtex filename
 \bibliography{library}
 
-\newpage
-\section*{Figure Legends}
+%\newpage
+%\section*{Figure Legends}
 
 \newpage
 \begin{figure}[!ht]
 \begin{center}
 %\setkeys{Gin}{width=4in}
-\setkeys{Gin}{width=\textwidth}
+\setkeys{Gin}{width=.7\textwidth}
 \SweaveInput{fig_enz}
 \end{center}
 \caption{
@@ -126,12 +130,12 @@
 
 \begin{figure}[!ht]
 \begin{center}
-\setkeys{Gin}{width=0.8\textwidth}
-%\includegraphics[width=4in]{figure_name.2.eps}
+\setkeys{Gin}{width=0.7\textwidth}
+%\inputgraphics[width=4in]{figure_name.2.eps}
 \SweaveInput{fig_f2b}
 \end{center}
 \caption{
-{\bf Fungi/Bacteria ratios and their correlations with LCI change:} Top: Fungi/bacteria ratios derived from metaproteome (left) and qPCR (right) analysis. Bottom: The correlations between metaproteomic fungi/bacteria ratios with Lignin decomposition rates (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} Top: F:B protein abundance (left) and DNA (right) ratio. Bottom: Correlations between F:B preotein abundance ratios and Lignin loss (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:f2b}
 \end{figure}
 
@@ -172,26 +176,17 @@
 \label{fig:cor1}
 \end{figure*}
 
-\section*{Tables}
-%\begin{table}[!ht]
-%\caption{
-%\bf{Table title}}
-%\begin{tabular}{|c|c|c|}
-%table information
-%\end{tabular}
-%\begin{flushleft}Table caption
-%\end{flushleft}
-%\label{tab:label}
-% \end{table}
+%\section*{Tables}
+
 
 \newpage
-\include{tab_init}
+\input{tab_init}
 
-\include{tab_pyrprod}
+\input{tab_pyrprod}
 
-\newpage
+\begin{landscape}
+
 <<corrtable, results=tex, echo=F, fig=F>>=
-
 tmp<-data.frame(tapply(f2b[alldata$days==181, "f2b_prot"], alldata$Litter[alldata$days==181], mean))
 colnames(tmp)<-"Fungi/bacteria (metaproteome)"
 
@@ -208,7 +203,7 @@ corr2<-hmw.proc
 mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
 #rownames cor corraltion table
 rownames(mighty.corr.matrix) <- 
-  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
+  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenooxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
 "N mineralization", #"NH4 immobilization", 
 "Nitrification", #"NO3 immobilization",
 "P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
@@ -226,14 +221,13 @@ mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
 
 tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable", align=c("l", rep("r",10)) )
 
-print(tab, size="tiny", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
 
 \newpage
 <<corrtable2, results=tex, echo=F, fig=F>>=
 tmp<-data.frame(tapply(f2b[alldata$days==475, "f2b_prot"], alldata$Litter[alldata$days==475], mean))
 colnames(tmp)<-"Fungi/bacteria (metaproteome)"
-tmp
 
 hmw.means2<-data.frame(matrix(ncol=ncol(hmw.proc), nrow=4))
 for (i in 1: ncol(hmw.proc2))
@@ -267,8 +261,10 @@ mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
 tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
 
-print(tab, size="tiny", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
+
+\end{landscape}
 
 \end{document}
 

@@ -1,0 +1,43 @@
+\section*{Material and methods}
+\subsection*{Litter decomposition experiment}
+Beech litter was collected at four different sites in Austria (Achenkirch (AK), Klausenleopoldsdorf (KL), Ossiach (OS), and Schottenwald (SW); referred to as litter types) in October 2008. Litter was cut to pieces of approximately 0.25cm\textsuperscript{2}, homogenized, sterilized twice by $\gamma$-radiation (35 kGy, 7 days between irradiations) and inoculated (1.5\% w/w) with a mixture of litter and soil to assure that all litter types share the same initial microbial community. From each type, four samples of litter were taken immediately after inoculation, dried and stored at room temperature. Batches of 60g litter (fresh weight) were incubated at 15 \textdegree C and 60\% relative water content in mesocosms for 15 months. For each litter type 5 replicates were removed and analyzed after 14, 97, 181 and 475 days. A detailed description of the litter decomposition experiment was published by \cite{Wanek2010}.
+
+\subsection*{Bulk litter, extractable, and microbial biomass nutrient content}
+To calculate litter mass loss, litter dry mass content was measurement in 5 g litter (fresh weight) after 48 h at 80  \textdegree C. Dried litter was ball-milled for further chemical analysis. Litter C and N content was determined using an elemental analyzer (Leco CN2000, Leco Corp., St. Joseph, MI, USA). Litter phosphorus content was measured with ICP-AES (Vista-Pro, Varian, Darmstadt, Germany) after acid digestion \cite{Kolmer}).
+To determine dissolved organic C, dissolved N and P, 1.8 g litter (fresh weight) were extracted with 50 ml 0.5 M K\textsubscript{2}SO\textsubscript{4}. Samples were shaken on a reciprocal shaker with the extractant for 30 minutes, filtered through ash-free cellulose filters and frozen at -20 \textdegree C until analysis. To quantify microbial biomass C, N and P, further samples were additionally extracted under the same conditions after chloroform fumigation for 24 h  \cite{Brooks1985}. Microbial biomass was determined as the difference between fumigated and non-fumigated extractions . C and N concentration in extracts were determined with a TOC/TN analyzer (TOC-VCPH and TNM, Schimadzu), P was determined photometrically as inorganig P after persulfate digestion \cite{Schinner1996}.
+
+Substrate to consumer stoichiometric imbalances \emph{C:X$_{imbal}$} were calculated as
+\begin{equation}
+ C:X_{imbal}=\frac{C:X_{litter}}{C:X_{microbial}} \label{eq:imbal}
+\end{equation}
+where \emph{X} stand for the element N or P.
+
+\subsection*{Microbial Respiration}
+Respiration was monitored weekly during the entire incubation in mesocosms removed after 6 month and on the last incubation day for all mesocosms using an infrared gas analyzer (IRGA, EGM4 with SRC1, PPSystems, USA). CO2 concentration was measured over 70 seconds and increase per second was calculated based on initial dry mass. Accumulated respiration after 6 month was calculated assuming linear transition between measurements, accumulated respiration after 15 month was estimated from respiration rates after 181 and 475 days.
+
+\subsection*{Potential enzyme activities}
+
+Potential activities of $\beta$-1,4-cellubiosidase (``cellulase''), phenoloxidase and peroxidase were measured immidiately after sampling. 1 g of litter (fresh weight) was suspended in sodium acetate buffer (pH 5.5) and ultrasonicated. To determine cellulase activity, 200 \textmu l suspension were mixed with 25 nmol 4-methylumbelliferyl-$\beta$-D-cellobioside (dissolved in 50 \textmu l of the same buffer) in black microtiter plates and incubated for 140 min in the dark. The amount of methylumbelliferyl (MUF) set free in by the enzymatic reaction was measured flourimetrically (Tecan Infinite M200, exitation at 365 nm, detection at 450 nm). To measure phenoloxidase and peroxidase activity litter suspension was mixed 1:1 with a solution of L-3,4-dihydroxyphenylalanin (DOPA) to a final concentration of 10 mM. Samples were incubated in microtiter plates for 20h to determine phenoloxidase activity. For peroxidase activity, 1 nmol of $H_2O_2$ was added before incubation. Absortion at 450 nm was measured before and after incubation. All enzyme activities were measured in three analytical replicates. The assay is described in detail in \cite{Kaiser2010b}.
+
+\subsection*{Pyrolysis-GC/MS}
+
+Pyrolysis-GC/MS was performed with a Pyroprobe 5250 pyrolysis system (CDS Analytical) coupled to a Thermo Trace gas chromatograph and a DSQ II MS detector (both Thermo Scientific) equipped with a carbowax colomn (Supelcowax 10, Sigma-Aldrich). Between 2-300 \textmu g of dried and finely ground litter (MM2000 ball mill, Retsch) was heated to 600 \textdegree C for 10 seconds in a helium atmosphere. GC oven temperature was constant at 50 \textdegree C for 2 minutes, followed by an increase of 7 \textdegree C/min to a final temperature of 260 \textdegree C, which was held for 15 minutes. The MS detector was set for electron ionization at 70 eV in the scanning mode (m/z 20 to 300).
+
+Peaks were assignment was based on NIST 05 MS library after comparison with measured reference materials. 128 peaks were identified and selected for integration either because of their abundance or diagnostic value. This included 28 lignin and 45 carbohydrate derived substances. The pyrolysis products used are stated in tables \ref{tab:phprod} -\ref{tab:nprod} For each peak between one and four dominant and specific mass fragments were selected, integrated and converted to TIC peak areas by multiplication with a MS response coefficient \cite{Schellekens2009, Kuder1998}. Peak areas are stated as \% of the sum of all integrated peaks.
+
+A pyrolysis-based lignin to carbohydrate index ($LCI$) was calculated to derive a ratio between these two substance classes without influences of changes in the abundance of other compounds . 
+
+\begin{equation}
+ LCI=\frac{Lignin}{Lignin + Carbohydrates}
+\end{equation}
+
+Accounting for carbon loss, we estimate \% lignin and cellulose degraded during decomposition according to equation \ref{eq:closscorr}, where \emph{$\%_{init}$} and \emph{$\%_{act}$} stand for initial and actual \%TIC area of lignin or cellulose pyrolysis products, \emph{$C_{init}$} for the initial amount of C and \emph{$R_{acc}$} for the accumulated CO$_2$-C respired by a mesocosm.
+\begin{equation}
+ \%_{loss} = 100\cdot\frac{\%_{init}-\%_{act}}{\%_{init}}\cdot\frac{\left ( 1-R_{acc}\right ) }{C_{init}}
+ \label{eq:closscorr}
+\end{equation}
+
+\input{metaprot}
+
+\subsection*{Statistical analysis}
+All statistical analyses were performed with the software and statistical computing environment R \cite{R}. If not mentioned otherwise, results were considered significant when p \textless 0.05. Due to frequent variance inhomogeneities Welch ANOVA and paired Welch's t-tests with Bonferroni corrected p limits were used. All correlations mentioned refer to Pearson correlations. 

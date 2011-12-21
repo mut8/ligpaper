@@ -1,8 +1,10 @@
-<<graphcorr, fig=T, echo=F, results=hide, width=21, height=14>>=
+<<graphcorr, fig=T, echo=F, results=hide, width=24, height=16>>=
 h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
 h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
 
-par(mfrow=c(2,3), cex=2.3, cex.axis=1, cex.lab=.8)
+par()
+
+par(mfrow=c(2,3), cex=2.3, cex.axis=.7, cex.lab=.8)
 
 var1<-alldata$CN_inbal[alldata$days==181]
 var2<-alldata$CP_inbal[alldata$days==181]
@@ -16,17 +18,40 @@ var3lab<-"N:P resource / N:P microbial"
 var4lab<-"LCI change"
 var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
 
-par(mar=c(4,5,1,0))
-corplot(var1, var4, xlab="", ylab=var4lab, bg=h3.col, pch=h3.pch)
-par(mar=c(4,4,1,1))
-corplot(var2, var4, xlab="", ylab="", bg=h3.col, pch=h3.pch)
-par(mar=c(4,4,1,1))
-corplot(var3, var4, xlab="", ylab="", bg=h3.col, pch=h3.pch)
-par(mar=c(5,5,0,0))
-corplot(var1, var5, xlab=var1lab, ylab=var5lab, bg=h3.col, pch=h3.pch)
-par(mar=c(5,4,0,1))
+par(mar=c(3,4,2,0.8))
+corplot(var1, var4, xlab="", xaxt="n", ylab=var4lab, bg=h3.col, pch=h3.pch)
+axis(4, label=F)
+axis(1)
+
+par(mar=c(3,2.4,2,2.4))
+corplot(var2, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch)
+axis(1)
+axis(2)
+axis(4, label=F)
+par(mar=c(3,0.8,2,4))
+corplot(var3, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch)
+axis(1)
+axis(2)
+axis(4)
+
+
+
+par(mar=c(5,4,0,.8))
+corplot(var1, var5, xlab=var1lab, ylab="", bg=h3.col, pch=h3.pch)
+axis(4, label=F)
+axis(1)
+mtext(var5lab, side=2, cex=1.84, las=0,padj=-2)
+#?mtext
+
+par(mar=c(5,2.4,0,2.4))
 corplot(var2, var5, xlab=var2lab, ylab="", bg=h3.col, pch=h3.pch)
-par(mar=c(5,4,0,1))
+axis(1)
+axis(2)
+axis(4, label=F)
+par(mar=c(5,0.8,0,4))
 corplot(var3, var5, xlab=var3lab, ylab="", bg=h3.col, pch=h3.pch)
+axis(1)
+axis(2)
+axis(4)
 
 @

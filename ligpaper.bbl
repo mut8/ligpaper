@@ -69,6 +69,13 @@ Preston CM, Trofymow JA, Sayer BG, Niu J (1997) {13C nuclear magnetic resonance
 \newblock Canadian Journal of Botany 75: 1601--1613.
 \bibAnnoteFile{Preston1997}
 
+\bibitem{Amelung2008}
+Amelung W, Brodowski S, Sandhage-Hofmann A, Bol R (2008) {Combining Biomarker
+  with Stable Isotope Analyses for Assessing the Transformation and Turnover of
+  Soil Organic Matter}.
+\newblock Advances in Agronomy 100: 155--250.
+\bibAnnoteFile{Amelung2008}
+
 \bibitem{Thevenot2010a}
 Thevenot M, Dignac MF, Rumpel C (2010) {Fate of lignins in soils: A review}.
 \newblock Soil Biology and Biochemistry 42: 1200--1211.
@@ -126,9 +133,9 @@ Fontaine S, Henault C, Aamor a, Bdioui N, Bloor J, et~al. (2011) {Fungi mediate
 \bibAnnoteFile{Fontaine2011}
 
 \bibitem{Talbot2011}
-Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
-  nitrogem drive litter chemistry - decay relationships}.
-\newblock Ecology in press.
+Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
+  determined by lignin chemistry}.
+\newblock Biogeochemistry : 1--17--17.
 \bibAnnoteFile{Talbot2011}
 
 \bibitem{Mooshammer2011}
@@ -203,18 +210,6 @@ Kuder T, Kruge MA (1998) {Preservation of biomolecules in sub-fossil plants
 \newblock Organic Geochemistry 29: 1355--1368.
 \bibAnnoteFile{Kuder1998}
 
-\bibitem{Laemmli1970}
-Laemmli UK (1970) {Cleavage of structural proteins during the assembly of the
-  head of bacteriophage T4}.
-\newblock Nature 227: 680--685.
-\bibAnnoteFile{Laemmli1970}
-
-\bibitem{Shevchenko1996}
-Shevchenko a, Wilm M, Vorm O, Mann M (1996) {Mass spectrometric sequencing of
-  proteins silver-stained polyacrylamide gels.}
-\newblock Analytical chemistry 68: 850--8.
-\bibAnnoteFile{Shevchenko1996}
-
 \bibitem{Schneider2010}
 Schneider T, Gerrits B, Gassmann R, Schmid E, Gessner MO, et~al. (2010)
   {Proteome analysis of fungal and bacterial involvement in leaf litter
@@ -227,20 +222,6 @@ Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
   {Comparative metagenomics of microbial communities.}
 \newblock Science (New York, NY) 308: 554--7.
 \bibAnnoteFile{Tringe2005}
-
-\bibitem{Keller2002}
-Keller A, Nesvizhskii AI, Kolker E, Aebersold R (2002) {Empirical statistical
-  model to estimate the accuracy of peptide identifications made by MS/MS and
-  database search.}
-\newblock Analytical chemistry 74: 5383--92.
-\bibAnnoteFile{Keller2002}
-
-\bibitem{Nesvizhskii2003}
-Nesvizhskii AI, Keller A, Kolker E, Aebersold R (2003) {A Statistical Model for
-  Identifying Proteins by Tandem Mass Spectrometry abilities that proteins are
-  present in a sample on the basis}.
-\newblock Society 75: 4646--4658.
-\bibAnnoteFile{Nesvizhskii2003}
 
 \bibitem{Schneider2011}
 Schneider T, Schmid E, de~Castro JaV, Cardinale M, Eberl L, et~al. (2011)
@@ -262,6 +243,12 @@ Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
   Saccharomyces cerevisiae.}
 \newblock Journal of proteome research 5: 2339--47.
 \bibAnnoteFile{Zybailov2006}
+
+\bibitem{Bantscheff2007}
+Bantscheff M, Schirle M, Sweetman G, Rick J, Kuster B (2007) {Quantitative mass
+  spectrometry in proteomics: a critical review.}
+\newblock Analytical and bioanalytical chemistry 389: 1017--31.
+\bibAnnoteFile{Bantscheff2007}
 
 \bibitem{Inselsbacher2010}
 Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,

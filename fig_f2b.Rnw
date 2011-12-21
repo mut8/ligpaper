@@ -1,7 +1,10 @@
 <<f2bnew, results=hide, echo=F, fig=T, height=12, width=8>>=
-par(mfrow=c(3,2), mar=c(4.1,4.1,4.1,.1))  
+par(mfrow=c(3,2), mar=c(4.1,4.1,4.1,.1), cex.axis=.8, cex.label=1, cex=1.1, cex.main=1.1)  
+
+par()
+
 prot.means<-tapply(f2b$f2b_prot, list(alldata$days, alldata$Litter), mean)
-plot(as.numeric(levels(as.factor(alldata$days))), prot.means[,1], xlim=c(0, 500), ylim=c(0, max(prot.means)), type="o", pch=pch[1], bg=colscale[1], xlab="Litter incubation (days)", main="Fungi/Bacteria (metaproteome)", ylab="ratio")
+plot(as.numeric(levels(as.factor(alldata$days))), prot.means[,1], xlim=c(0, 500), ylim=c(0, max(prot.means)), type="o", pch=pch[1], bg=colscale[1], xlab="Litter incubation (days)", main="Fungi/Bacteria (metaproteome)", ylab="F:B protein abundance ratio")
 
 for (i in 2:length(levels(type)))
   {
@@ -9,7 +12,7 @@ for (i in 2:length(levels(type)))
  points(as.numeric(levels(as.factor(alldata$days))), prot.means[,i], pch=pch[i], bg=colscale[i])
  #, pch=pch[i]], bg=colscale[i])
   }
-legend("topright", levels(type), pch=pch, pt.bg=colscale, lty=1)
+legend("topright", levels(type), pch=pch, pt.bg=colscale, lty=1, cex=0.8)
 axis(4, labels=F)
 
 par(mar=c(4.1,.1,4.1,4.1))
@@ -18,6 +21,7 @@ cond<-is.na(alldata$f2b_qpcr)!=T
 timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", main="Fungi/Bacteria (qPCR)", yaxt="n", xlim=c(0,500))
 axis(4)
 axis(2, labels=F)
+#mtext(4, "F:B DNA ratio")
 
 par(mar=c(.1,4.1,4.1,.1))  
 
@@ -79,7 +83,7 @@ yse<-tapply(y, type[days==181], stderr)
 ymin<-0
 ymax<-1.5
 
-plot(x,y, ylab="%Lignin loss/%carbon loss", xlab="Fungi/bacteria ratio (metaproteome)", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5))
+plot(x,y, ylab="%Lignin loss/%carbon loss", xlab="F:B protein abundance ratio", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5))
 plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
 
 axis(3, labels=F)
@@ -101,7 +105,7 @@ y<-hmw.proc2$Lresp
 ymean<-tapply(y, type[days==475], mean)
 yse<-tapply(y, type[days==475], stderr)
 
-plot(x[1:19],y, ylab="", xlab="Fungi/bacteria ratio (metaproteome)", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), yaxt="n")
+plot(x[1:19],y, ylab="", xlab="F:B DNA ratio", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), yaxt="n")
 plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
 axis(2, labels=F)
 axis(3, labels=F)
