@@ -82,4 +82,5 @@ error<-sqrt(tapply(data1[cond1], type[cond1], stderr)^2 + tapply(data1[cond1], t
                                         #ci<-sqrt(tapply(data[cond1], type[cond1], CI(alpha=0.05)^2 + tapply(data[cond1], type[cond1], CI(alpha=0.05))^2)
   barplot.def(height, error, ylim=ylim, ...)
 }
+
 @

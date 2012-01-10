@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.9)  21 DEC 2011 17:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.9)  27 DEC 2011 18:01
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
@@ -251,7 +251,7 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box28
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/share/texmf/tex/latex/R/tex/latex/Sweave.sty
+(/usr/share/R/share/texmf/tex/latex/Sweave.sty
 Package: Sweave 
 
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
@@ -268,7 +268,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count109
 \FV@StepNumber=\count110
 \FV@OutFile=\write3
-) (/usr/share/texmf/tex/latex/R/tex/latex/upquote.sty
+) (/usr/share/R/share/texmf/tex/latex/upquote.sty
 Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
 atim and verb
 )
@@ -364,7 +364,7 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 [4]
 LaTeX Font Info:    Try loading font information for TS1+aer on input line 9.
- (/usr/share/texmf/tex/latex/R/tex/latex/ts1aer.fd
+ (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
@@ -440,7 +440,7 @@ File: ligpaper-enz.pdf Graphic file (type pdf)
 <ligpaper-mb.pdf, id=75, 867.24pt x 722.7pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
-<ligpaper-f2bnew.pdf, id=76, 578.16pt x 867.24pt>
+<ligpaper-f2bnew.pdf, id=76, 578.16pt x 831.105pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
  <use ligpaper-f2bnew.pdf>
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
@@ -467,11 +467,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[21 <./ligpaper-mb.pdf>] (./tab_init.tex
+[21 <./ligpaper-mb.pdf>]
+
+LaTeX Warning: Text page 22 contains only floats.
+
+
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[22 <./ligpaper-f2bnew.pdf>]
+[22 <./ligpaper-f2bnew.pdf>] (./tab_init.tex
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
@@ -521,7 +525,7 @@ Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 [31] (./ligpaper.aux) ) 
 Here is how much of TeX's memory you used:
  4576 strings out of 493848
- 63916 string characters out of 1152823
+ 63888 string characters out of 1152823
  126641 words of memory out of 3000000
  7669 multiletter control sequences out of 15000+50000
  40197 words of font info for 83 fonts, out of 3000000 for 9000
@@ -541,7 +545,7 @@ e/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type
 sfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ligpaper.pdf (31 pages, 529051 bytes).
+Output written on ligpaper.pdf (31 pages, 534928 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
