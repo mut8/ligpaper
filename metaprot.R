@@ -4,12 +4,61 @@ metaprot.red<-metaprot[which(is.na(metaprot[6])==F),T]
 metaprot.red[6:ncol(metaprot.red)]<-metaprot.red[6:ncol(metaprot.red)]/rowSums(metaprot.red[6:ncol(metaprot.red)])
 
 cond<-which(is.na(metaprot[6])==F)
+cond2<-which(is.na(metaprot[6])==F&metaprot$Harvest!="I")
+cond2.pyr<-c(5,10,15,24,28,34,43,48,53,62,67,73)
+
+ord<-cca(cbind(metaprot[cond2, 6:ncol(metaprot)], orig_cTIC[cond2.pyr,T]))
+
+ord<-cca(metaprot.red[, 6:ncol(metaprot)])
+
+corr.ab(hmw.proc[c(1,6,11,16),T],scores(ord, display="sites", choices=1:3)[metaprot.red$Harvest=="III",T])
+c
+corr.ab(
+  cbind(
+  alldata[cond2, c(74,37, 34:36, 38:43,50:55,75:77)], 
+  alldata[cond2,11:28]/alldata$C_mic[cond& alldata$Harvest!="I"]
+  metaprot.red[metaprot.red$Harvest!="I", 6:ncol(metaprot.red)]
+  )
+  , 
+  scores(ord2, display="sites", choices=1:3)
+  )
+
+metaprot.red$Harvest!="I"
+
+
+colnames(alldata)
+
+pdf("metaprot4.pdf")
+plot(ord, type="n")
+points(scores(ord, display="sites"), pch=pch.met2, bg=col.met2, cex=1)
+text(scores(ord, display="species"), labels=labels.metaprot, cex=0.5)
+plot(envfit(ord, class_cTIC[cond2.pyr,T]), p.max=0.1, cex=0.5,col="grey")
+plot(envfit(ord, class_cTIC[cond2.pyr,T]), p.max=0.05, cex=0.5, col="black")
+plot(envfit(ord, class_cTIC[cond2.pyr,T]-initials.class_cTIC[cond2.pyr,T]), p.max=0.05, cex=0.5)
+envfit(ord, orig_cTIC$L[cond2.pyr]/(orig_cTIC$L[cond2.pyr]+orig_cTIC$C[cond2.pyr]))
+
+# xmin<-tapply(scores(ord, display="sites", choices=1), metaprot$Harvest[cond2], min)
+# xmax<-tapply(scores(ord, display="sites", choices=1), metaprot$Harvest[cond2], max)
+# ymin<-tapply(scores(ord, display="sites", choices=2), metaprot$Harvest[cond2], min)
+# ymax<-tapply(scores(ord, display="sites", choices=2), metaprot$Harvest[cond2], max)
+# 
+# site.mult<-1
+# for(i in 1:4)
+#   rect(xmin[i]*site.mult-xspa, ymin[i]*site.mult-yspa, xmax[i]*site.mult+xspa,ymax[i]*site.mult+yspa)
+# 
+
 
 
 rda.metaprot<-rda(metaprot.red[,6:ncol(metaprot)])
 
 pch.met<-c(rep(21,4), rep(22,4), rep(23,4),rep(24,4))
 col.met<-rep(colscale, 4)
+pch.met2<-c(rep(21,3), rep(22,3), rep(23,3),rep(24,3))
+col.met2<-rep(colscale[2:4], 4)
+
+envfit(ord ~ alldata$N_lit[cond]*alldata$P_lit[cond]*alldata$days[cond])
+
+
 labels.metaprot<-c("Doth","Euro","Leot","Sacc","Sord","Agar","Trem", "Usti", "Ther","Bact", "Acti", "Cyan", "Firm", "Fuso","Verr", "Dict", "Alph", "Beta", "Gamm", "Delt", "Epsi")
 
 constrains1<-data.frame(alldata$C.N_lit[cond], alldata$C.P_lit[cond], alldata$days[cond])
@@ -53,11 +102,12 @@ text(scores(ord2, display="bp",
 
 pdf("metaprot_ords2.pdf")
 
+corr.ab(metaprot.red[,6:ncol(metaprot.red)], scores(ord, display="sites", choices=1:3))
 
 plot.meta(ord, arrows=T, ylim=c(-3,4), enz=F)
 plot.meta(ord2, arrows=T, enz=F)
 plot.meta(ord, arrows=T, envfit=F, enz=F)
-plot.meta(ord2, arrows=T, envfit=F, enz=F)
+plot.meta(ord2, arrows=T, envfit=F, enz=F, choices=c(1,3))
 dev.off()
 
 arrows(rep(0,3), rep(0,3), 
@@ -72,11 +122,19 @@ plot(ord2, display=c("sp", "lc"))
 
 
 pdf("metraprot_ords3.pdf")
-plot.meta(cca(metaprot.red[,6:ncol(metaprot)], scale=T), enz=F, lab="CCA")
-plot.meta(cca(metaprot.red[,6:ncol(metaprot)], scale=T), enz=F, lab="CCA", choices=c(1,3))
+plot.meta(cca(metaprot.red[,6:ncol(metaprot)], scale=T), enz=F, lab="CA")
+plot.meta(cca(metaprot.red[,6:ncol(metaprot)], scale=T), enz=F, lab="CA", choices=c(1,3))
+plot.meta(cca(metaprot.red[,6:ncol(metaprot)], scale=T), enz=F, lab="CA", choices=c(2,3))
+dev.off()
+
+pdf("metraprot_ords3.pdf")
+plot.meta(ord2, enz=F, lab="CA")
+plot.meta(ord2, enz=F, lab="CA", choices=c(1,3))
+plot.meta(ord2, enz=F, lab="CA", choices=c(2,3))
 dev.off()
 
 ord<-cca(metaprot.red[,6:ncol(metaprot)])
+ord2<-cca(metaprot.red[metaprot.red$Harvest!="I",6:ncol(metaprot)])
 
 plot.meta<-function(ord, arrows=F, envfit=T, enz=F, spe.mult=1, site.mult=1, lab="PCA", choices=1:2, ...) {
 

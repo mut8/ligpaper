@@ -2,65 +2,66 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
-Repeated entry---line 1639 of file library.bib
+Repeated entry---line 1964 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2141 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2150 of file library.bib
  : @article{Talbot2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1792 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2110 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3109 of file library.bib
+Repeated entry---line 3425 of file library.bib
  : @article{Schellekens2009
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 16758 of file library.bib
+Repeated entry---line 14402 of file library.bib
  : @article{Bantscheff2007
  :                        ,
 I'm skipping whatever remains of this entry
-You've used 39 entries,
+Warning--missing publisher in Sterner2002
+You've used 41 entries,
             2441 wiz_defined-function locations,
-            864 strings with 16202 characters,
-and the built_in function-call counts, 36494 in all, are:
-= -- 3403
-> -- 624
+            870 strings with 16760 characters,
+and the built_in function-call counts, 38318 in all, are:
+= -- 3566
+> -- 664
 < -- 0
-+ -- 312
-- -- 156
-* -- 3193
-:= -- 4335
-add.period$ -- 79
-call.type$ -- 39
-change.case$ -- 35
++ -- 332
+- -- 166
+* -- 3348
+:= -- 4552
+add.period$ -- 83
+call.type$ -- 41
+change.case$ -- 37
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 3602
-empty$ -- 3799
-format.name$ -- 192
-if$ -- 8126
+cite$ -- 83
+duplicate$ -- 3787
+empty$ -- 3988
+format.name$ -- 204
+if$ -- 8525
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 429
-newline$ -- 211
-num.names$ -- 39
-pop$ -- 510
+int.to.str$ -- 41
+missing$ -- 450
+newline$ -- 221
+num.names$ -- 41
+pop$ -- 539
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 304
+skip$ -- 332
 stack$ -- 0
-substring$ -- 5419
-swap$ -- 830
+substring$ -- 5672
+swap$ -- 870
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 261
-width$ -- 41
-write$ -- 437
+warning$ -- 1
+while$ -- 274
+width$ -- 43
+write$ -- 457
 (There were 5 error messages)

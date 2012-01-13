@@ -133,9 +133,9 @@ Fontaine S, Henault C, Aamor a, Bdioui N, Bloor J, et~al. (2011) {Fungi mediate
 \bibAnnoteFile{Fontaine2011}
 
 \bibitem{Talbot2011}
-Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
-  determined by lignin chemistry}.
-\newblock Biogeochemistry : 1--17--17.
+Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
+  nitrogem drive litter chemistry - decay relationships}.
+\newblock Ecology in press.
 \bibAnnoteFile{Talbot2011}
 
 \bibitem{Mooshammer2011}
@@ -146,9 +146,7 @@ Mooshammer M, Wanek W, Schnecker J, Wild B, Leitner S, et~al. (2011)
 \bibAnnoteFile{Mooshammer2011}
 
 \bibitem{Sterner2002}
-Sterner RW, Elser JJ (2002) {Ecological stoichiometry: the biology of elements
-  from molecules to the biosphere}.
-\newblock Princeton University Press, 439 pp.
+Sterner RW, Elser JJ (2002) {Ecological Stoichiometry}.
 \bibAnnoteFile{Sterner2002}
 
 \bibitem{Leitner2011}
@@ -179,7 +177,7 @@ Kolmer J, Spaulding E, Robinson H (1951) {Approved Laboratory Techniques}.
 
 \bibitem{Brooks1985}
 Brooks P, Kragt J, Powlson D, Jenkinson D (1985) {Chloroform fumigation and the
-  release of soil nitrogen e the effects of fumigation time and temperature.}
+  release of soil nitrogen: the effects of fumigation time and temperature.}
 \newblock Soil Biology \& Biochemistry 17: 831--835.
 \bibAnnoteFile{Brooks1985}
 
@@ -223,6 +221,13 @@ Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
 \newblock Science (New York, NY) 308: 554--7.
 \bibAnnoteFile{Tringe2005}
 
+\bibitem{Keiblinger2011}
+Keiblinger KM, Schneider T, Roschitzki B, Schmid E, Eberl L, et~al. (2011)
+  {Effects of stoichiometry and temperature perturbations on beech litter
+  decomposition, enzyme activities and protein expression}.
+\newblock Biogeosciences Discussions 8: 11827--11861.
+\bibAnnoteFile{Keiblinger2011}
+
 \bibitem{Schneider2011}
 Schneider T, Schmid E, de~Castro JaV, Cardinale M, Eberl L, et~al. (2011)
   {Structure and function of the symbiosis partners of the lung lichen (Lobaria
@@ -262,5 +267,11 @@ Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,
 \newblock {R: A Language and Environment for Statistical Computing}.
 \newblock \urlprefix\url{http://www.r-project.org}.
 \bibAnnoteFile{R}
+
+\bibitem{vegan}
+Oksanen J, Blanchet FG, Kindt R, Legendre P, O'Hara R, et~al. (2011).
+\newblock {vegan: Community Ecology Package. R packge version 1.17-9}.
+\newblock \urlprefix\url{http://cran.r-project.org/package=vegan}.
+\bibAnnoteFile{vegan}
 
 \end{thebibliography}

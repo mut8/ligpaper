@@ -96,7 +96,7 @@
 % Do NOT remove this, even if you are not including acknowledgments
 \input{mm}
 \section*{Acknowledgments}
-This study was supported by the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital advice was given by C. Schwarzinger and A. Blöchl.
+This study formed part of the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital support regarding Pyr-GC/MS measurments was given by Clemens Schwarzinger, Andreas Bl\"{o}chl and Birgit Wild.
 
 %\section*{References}
 % The bibtex filename
@@ -174,6 +174,19 @@ This study was supported by the national research network MICDIF (Linking microb
 \caption{
 {\bf Correlation between the LCI change or the ratio of lignin/carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter/microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:cor1}
+\end{figure*}
+
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{metaprot}
+\end{center}
+\caption{
+{\bf CAPTION} more_caption}
+\label{fig:metaprot_pca}
 \end{figure*}
 
 \section*{Supplemental Tables}
@@ -263,8 +276,13 @@ tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) be
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
-
 \end{landscape}
 
+<<ca_tab, echo=F, results=tex>>=
+tab<-corr.ab(cbind(alldata[cond, c(74,37, 34:36, 38:43,50:55,75:77)], metaprot.red[,c(4,6:ncol(metaprot.red))]),scores(ord, display="sites", choices=1:2), tex=T)
+table<-xtable(tab, caption="CAPTION", label="ca_tab", align=c("l","l","r"))
+
+print(table, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+@
 \end{document}
 
