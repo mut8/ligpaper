@@ -1,8 +1,8 @@
-<<metaprot_pca>>=
+<<metaprot_pca, echo=F, results=hide, fig=T>>=
+
+
 plot.meta<-function(ord, arrows=F, envfit=T, enz=F, spe.mult=1, site.mult=1, lab="PCA", choices=1:2, ...) {
 
-  choices<-1:2
-  
 xvar<-eigenvals(ord)/sum(eigenvals(ord))
 plot(ord, choices=choices, type="n", tck=.01,
  xlab=paste(lab, choices[1], formatC(xvar[choices[1]]*100, digits=3), "% variance"),
@@ -79,7 +79,7 @@ labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti
 
 cond<-which(is.na(metaprot[6])==F)
 ord<-cca(metaprot.red[6:ncol(metaprot.red)])
-plot.meta(ord, arrows=T, envfit=T, enz=F)
+plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2)
 
 
 

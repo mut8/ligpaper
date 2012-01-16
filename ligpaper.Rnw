@@ -185,8 +185,8 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{metaprot}
 \end{center}
 \caption{
-{\bf CAPTION} more_caption}
-\label{fig:metaprot_pca}
+{\bf CAPTION} morecaption}
+\label{fig:metaprotpca}
 \end{figure*}
 
 \section*{Supplemental Tables}
@@ -279,9 +279,10 @@ print(tab, size="small", sanitize.text.function = function(x){x}, table.placemen
 \end{landscape}
 
 <<ca_tab, echo=F, results=tex>>=
-tab<-corr.ab(cbind(alldata[cond, c(74,37, 34:36, 38:43,50:55,75:77)], metaprot.red[,c(4,6:ncol(metaprot.red))]),scores(ord, display="sites", choices=1:2), tex=T)
-table<-xtable(tab, caption="CAPTION", label="ca_tab", align=c("l","l","r"))
-
+cor.merge<-cbind(alldata[cond, c(74,37, 34:36, 38:43,50:55,75:77)], metaprot.red[,c(4,6:ncol(metaprot.red))])
+colnames(cor.merge)<-c("Incubtation time","Respiration","NH4 conc.", "NO3 conc.", "PO4 conc", "C litter", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter", "C micr.", "N micr.", "P micr.", "C:N micr.", "C:P micr.", "N:P micr.", "C:N imbalance", "C:P imbalance", "N:P imbalance",  "F:B prot.", "Dothideomycetes", "Eurotiomycetes", "Leotiomycetes", "Saccharomycetes", "Sordariomycetes", "Agaricomycetes", "Tremellomycetes", "Ustilaginomycetes", "Thermotogae", "Bacteroidetes", "Actinobacteria", "Cyanobacteria", "Firmicutes", "Fusobacteria"     , "Verrucomicrobia", "Dictyoglomi", "Alphaproteobacteria", "Betaproteobacteria", "Gammaproteobacteria", "Deltaproteobacteria", "Epsilonproteobacteria")
+tab<-corr.ab(cor.merge,scores(ord, display="sites", choices=1:3), tex=T)
+table<-xtable(tab, caption="CAPTION", label="catab", align=c("l","r","r","r"))
 print(table, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
 \end{document}
