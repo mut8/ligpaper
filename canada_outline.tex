@@ -1,0 +1,107 @@
+
+
+
+
+
+% Template for PLoS
+% Version 1.0 January 2009
+%
+% To compile to pdf, run:
+% latex plos.template
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+
+\documentclass[10pt]{article}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \inputgraphics
+\usepackage{graphicx}
+\usepackage{lscape}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+\usepackage{color} 
+
+% Use doublespacing - comment out for single spacing
+\usepackage{setspace} 
+\doublespacing
+
+
+% Text layout
+\topmargin 0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 16cm 
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+%load my own packages (not PLoS template)
+\usepackage{textcomp, fixltx2e}
+\usepackage{fullpage, lscape}
+\usepackage{lineno}
+
+% Use the PLoS provided bibtex style
+\bibliographystyle{plos2009}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+% Leave date blank
+\date{}
+
+\pagestyle{myheadings}
+%% ** EDIT HERE **
+
+
+%% ** EDIT HERE **
+%% PLEASE INCLUDE ALL MACROS BELOW
+
+%% END MACROS SECTION
+
+\begin{document}
+
+% Title must be 150 characters or less
+
+
+\begin{flushleft}
+\\Research outline Lukas Kohl
+
+{\Large
+\textbf{Identification and preservation of lipophilic biomarkers for elucidating microbial contributions to surface and subsurface organic carbon reservoirs}
+}
+\\
+% Insert Author names, affiliations and corresponding author email.
+% Please keep the abstract between 250 and 300 words
+
+Lipid geochemistry has helped deciphering the presence and composition of biotic communities in past and present environments (refs). Lipids hold information pertaining to the distribution of all three domains of life and are typically well preserved in many environments. Only recently have lipid biomarkers been analyzed for their isotopic signatures to study variations in carbon cycling and climate in these environments.  Isotopic signatures of these molecules can provide carbon source and processing information for organic matter (OM) reservoirs.
+
+Soil OM holds  four times the global atmospheric carbon reservoir(refs), its potential vulnerability to climatic changes raised widespread concern regarding its role in climate feedbacks (IPCC 2007). The temperature sensitivity of soil OM is well recognized (refs), however, the large variation in temperature effects on microbial processes and turnover of soil OM (refs) suggests our current understanding is stymied by poor temporal representation. Similarly, deep Earth carbon reservoirs remain poorly understood, but findings suggest a potential role of microorganisms in the generation and processing of these reservoirs (Sherwood Lollar 1988, Ward et. al. 2002). Terrestrial sites of serpentinization are interface zones where fluids from the subsurface act as windows into subsurface biogenic and abiogenic carbon cycling.
+
+My thesis will establish biomarkers to the study of OM reservoir cycling. It aims to apply a geochemical approach to understand (1) the effect of temperature on the composition and turnover of boreal forest soil OM pools, (2) the biotic and abiotic contributions to OM reservoirs at sites of serpentinization and (3) microbial communities in these contrasting environments and how they are linked to OM cycling. Therefore, I will establish a method for the isolation of lipophilic biomarkers (e.g. fatty acids, isopreonoids, n-alkyls, and sterols) and their compound-specific isotopic analysis (d13C, dD, D14C). Exploiting contrasting environments will provide a means to investigate preservation and the relationship between biomarker signatures and OM reservoir source, processing and fate. Lipid biomarkers and their isotopic composition will be used to further estimate the input of microbial 'necromass', the composition of the communities it is derived from, and its residence time in these OM reservoirs.
+
+
+% You may title this section "Methods" or "Models". 
+% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
+% authors may use "Analysis" 
+% Do NOT remove this, even if you are not including acknowledgments
+
+%\section*{References}
+% The bibtex filename
+\bibliography{library}
+
+\end{document}
+

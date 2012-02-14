@@ -185,15 +185,29 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{metaprot}
 \end{center}
 \caption{
-{\bf CAPTION} morecaption}
+{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla).  	Doth, Dothideomycetes, Euro, Eurotiomycetes, Leot, Leotiomycetes, Sacc, Saccharomycetes, Sord, Sordariomycetes, Agar,	Agaricomycetes, Trem, Tremellomycetes, Usti, Ustilaginomycetes, Ther, Thermotogae, Bact,  Bacteroidetes, Acti, Actinobacteria, Cyan, Cyanobacteria, Firm, Firmicutes, Fuso, Fusobacteria, Verr, Verrucomicrobia, Dict, Dictyoglomi, Alph, Alphaproteobacteria, Beta, Betaproteobacteria, Gamm, Gammaproteobacteria, Delt, Deltaproteobacteria, Epsi, Epsilonproteobacteria. Rectangles indicate samples of identical incubation time. Arrows represent vectorial fittings of litter chemistry, microbial stoichiometry and other context data, calculated independently from the CA. Fittings were plotted only if p\textless0.05.}
 \label{fig:metaprotpca}
 \end{figure*}
 
-\section*{Supplemental Tables}
+\section*{Supporting Information}
 
 
 \newpage
 \input{tab_init}
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{metaprot2}
+\end{center}
+\caption{
+{\bf Protein abundance of fungal and bacterial taxa.}}
+\label{fig:metaprot_barplot}
+\end{figure*}
+
+\newpage
 
 \input{tab_pyrprod}
 
@@ -272,7 +286,7 @@ colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec"
 
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are pre  sented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @

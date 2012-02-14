@@ -33,7 +33,7 @@
 
 
 % Text layout
-\topmargin 0.0cm
+\topmargin 0cm
 \oddsidemargin 0.5cm
 \evensidemargin 0.5cm
 \textwidth 16cm 
@@ -96,14 +96,14 @@
 % Do NOT remove this, even if you are not including acknowledgments
 \input{mm}
 \section*{Acknowledgments}
-This study was supported by the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital analytical advice was given by C. Schwarzinger and A. Blöchl.
+This study formed part of the national research network MICDIF (Linking microbial diversity and functions across scales and ecosystems, S-10007-B01, -B06 and -B07) by the Austrian Research Fund (FWF). Katharina Keiblinger is a recipient of a DOC-fFORTE fellowship of the Austrian Academy of Sciences. Vital support regarding Pyr-GC/MS measurments was given by Clemens Schwarzinger, Andreas Bl\"{o}chl and Birgit Wild.
 
 %\section*{References}
 % The bibtex filename
 \bibliography{library}
 
 %\newpage
-%\section*{Figure Legends}
+\section*{Figure Legends}
 
 \newpage
 \begin{figure}[!ht]
@@ -176,7 +176,20 @@ This study was supported by the national research network MICDIF (Linking microb
 \label{fig:cor1}
 \end{figure*}
 
-%\section*{Tables}
+
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{metaprot}
+\end{center}
+\caption{
+{\bf CAPTION} morecaption}
+\label{fig:metaprotpca}
+\end{figure*}
+
+\section*{Supplemental Tables}
 
 
 \newpage
@@ -256,15 +269,21 @@ colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec"
 #write table for export if needed
 #write.csv(mighty.corr.matrix, "corrmatrix.csv")
 #convert table to latex
-
+¬
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are pre  sented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
-
 \end{landscape}
 
+<<ca_tab, echo=F, results=tex>>=
+cor.merge<-cbind(alldata[cond, c(74,37, 34:36, 38:43,50:55,75:77)], metaprot.red[,c(4,6:ncol(metaprot.red))])
+colnames(cor.merge)<-c("Incubtation time","Respiration","NH4 conc.", "NO3 conc.", "PO4 conc", "C litter", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter", "C micr.", "N micr.", "P micr.", "C:N micr.", "C:P micr.", "N:P micr.", "C:N imbalance", "C:P imbalance", "N:P imbalance",  "F:B prot.", "Dothideomycetes", "Eurotiomycetes", "Leotiomycetes", "Saccharomycetes", "Sordariomycetes", "Agaricomycetes", "Tremellomycetes", "Ustilaginomycetes", "Thermotogae", "Bacteroidetes", "Actinobacteria", "Cyanobacteria", "Firmicutes", "Fusobacteria"     , "Verrucomicrobia", "Dictyoglomi", "Alphaproteobacteria", "Betaproteobacteria", "Gammaproteobacteria", "Deltaproteobacteria", "Epsilonproteobacteria")
+tab<-corr.ab(cor.merge,scores(ord, display="sites", choices=1:3), tex=T)
+table<-xtable(tab, caption="CAPTION", label="catab", align=c("l","r","r","r"))
+print(table, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+@
 \end{document}
 

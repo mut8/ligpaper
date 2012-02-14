@@ -133,9 +133,9 @@ Fontaine S, Henault C, Aamor a, Bdioui N, Bloor J, et~al. (2011) {Fungi mediate
 \bibAnnoteFile{Fontaine2011}
 
 \bibitem{Talbot2011}
-Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
-  nitrogem drive litter chemistry - decay relationships}.
-\newblock Ecology in press.
+Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
+  determined by lignin chemistry}.
+\newblock Biogeochemistry : 1--17--17.
 \bibAnnoteFile{Talbot2011}
 
 \bibitem{Mooshammer2011}
@@ -207,60 +207,6 @@ Kuder T, Kruge MA (1998) {Preservation of biomolecules in sub-fossil plants
   from raised peat bogs - a potential paleoenvironmental proxy}.
 \newblock Organic Geochemistry 29: 1355--1368.
 \bibAnnoteFile{Kuder1998}
-
-\bibitem{Schneider2010}
-Schneider T, Gerrits B, Gassmann R, Schmid E, Gessner MO, et~al. (2010)
-  {Proteome analysis of fungal and bacterial involvement in leaf litter
-  decomposition.}
-\newblock Proteomics 10: 1819--30.
-\bibAnnoteFile{Schneider2010}
-
-\bibitem{Tringe2005}
-Tringe SG, von Mering C, Kobayashi A, Salamov Aa, Chen K, et~al. (2005)
-  {Comparative metagenomics of microbial communities.}
-\newblock Science (New York, NY) 308: 554--7.
-\bibAnnoteFile{Tringe2005}
-
-\bibitem{Keiblinger2011}
-Keiblinger KM, Schneider T, Roschitzki B, Schmid E, Eberl L, et~al. (2011)
-  {Effects of stoichiometry and temperature perturbations on beech litter
-  decomposition, enzyme activities and protein expression}.
-\newblock Biogeosciences Discussions 8: 11827--11861.
-\bibAnnoteFile{Keiblinger2011}
-
-\bibitem{Schneider2011}
-Schneider T, Schmid E, de~Castro JaV, Cardinale M, Eberl L, et~al. (2011)
-  {Structure and function of the symbiosis partners of the lung lichen (Lobaria
-  pulmonaria L. Hoffm.) analyzed by metaproteomics.}
-\newblock Proteomics : 2752--2756.
-\bibAnnoteFile{Schneider2011}
-
-\bibitem{Florens2006}
-Florens L, Carozza MJ, Swanson SK, Fournier M, Coleman MK, et~al. (2006)
-  {Analyzing chromatin remodeling complexes using shotgun proteomics and
-  normalized spectral abundance factors.}
-\newblock Methods (San Diego, Calif) 40: 303--11.
-\bibAnnoteFile{Florens2006}
-
-\bibitem{Zybailov2006}
-Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
-  {Statistical analysis of membrane proteome expression changes in
-  Saccharomyces cerevisiae.}
-\newblock Journal of proteome research 5: 2339--47.
-\bibAnnoteFile{Zybailov2006}
-
-\bibitem{Bantscheff2007}
-Bantscheff M, Schirle M, Sweetman G, Rick J, Kuster B (2007) {Quantitative mass
-  spectrometry in proteomics: a critical review.}
-\newblock Analytical and bioanalytical chemistry 389: 1017--31.
-\bibAnnoteFile{Bantscheff2007}
-
-\bibitem{Inselsbacher2010}
-Inselsbacher E, {Hinko-Najera Umana} N, Stange FC, Gorfer M, Sch\"{u}ller E,
-  et~al. (2010) {Short-term competition between crop plants and soil microbes
-  for inorganic N fertilizer}.
-\newblock Soil Biology and Biochemistry 42: 360--372.
-\bibAnnoteFile{Inselsbacher2010}
 
 \bibitem{R}
 {R Development Core Team} (2008).

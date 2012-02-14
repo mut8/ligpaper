@@ -1,0 +1,13 @@
+<<metaprot2, echo=F, results=hide, fig=T, height=10, width=12>>=
+metaprot2<-rbind(metaprot.red[1:4,T], rep(NA, 26), metaprot.red[5:8,T],rep(NA, 26), metaprot.red[9:12,T],rep(NA, 26), metaprot.red[13:16,T])
+
+names<-c("AK\n 14d", "AK\n 97d", "AK\n 181d", "AK\n 475d", NA, "KL\n 14d", "KL\n 97d", "KL\n 181d", "KL\n 475d", NA, "OS\n 14d", "OS\n 97d", "OS\n 181d", "OS\n 475d", NA, "SW\n 14d", "SW\n 97d", "SW\n 181d", "SW\n 475d")
+
+taxa<-colnames(metaprot2[,6:26])
+taxa
+
+  par(mfrow=c(2,1), mar=c(5.1, 4.1, 4.1, 10))
+  barplot(100*as.matrix(t(metaprot2[,6:13])), main="Fungal community", names.arg=names, cex.names=.7, legend.text=taxa[1:8], args.legend=c(x=28.5, y=70), ylab="Protein abundance (%)")
+  barplot(100*as.matrix(t(metaprot2[,14:26])), main="Bacterial community", names.arg=names, cex.names=.7, legend.text=taxa[9:21], args.legend=c(x=28.5, y=45), ylab="Protein abundance (%)")
+
+@
