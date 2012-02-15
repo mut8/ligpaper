@@ -84,18 +84,18 @@ labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti
 
 cond<-which(is.na(metaprot[6])==F)
 ord<-cca(metaprot.red[6:ncol(metaprot.red)])
-plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2, lab="CA")
+plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2, lab="CA", spe.mult=2)
 
 labs<-c("14 days", "97 days", "181 days", "475 days")
 
 legend("bottomleft", pch=pch, pt.bg=1, typlev)
 legend("bottomright", pch=21, pt.bg=colscale, labs)
 
-x.positions<-c(0.5, -1.3, 0.05, 2.6)
-y.positions<-c(1.55, .7, -1.6, .2 )
+x.positions<-c(-1.12, -1.3, 0.08, 2.55)
+y.positions<-c(1.55, .75, -1.61, .25 )
 
 
-text(x.positions, y.positions, labels=labs, cex=0.6)
+text(x.positions, y.positions, labels=labs, cex=0.7)
 
 colscale2 <- c("#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")
 

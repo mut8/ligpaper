@@ -132,6 +132,19 @@ This study formed part of the national research network MICDIF (Linking microbia
 \label{fig:mb}
 \end{figure}
 
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\includegraphics{ligpaper-metaprot2}
+\end{center}
+\caption{
+{\bf Protein abundance of fungal and bacterial taxa.}}
+\label{fig:metaprot_barplot}
+\end{figure*}
+
+
 \begin{figure}[!ht]
 \begin{center}
 \setkeys{Gin}{width=0.7\textwidth}
@@ -181,6 +194,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{figure*}
 
 
+
 \newpage
 \begin{figure*}[h!]
 \vspace*{2mm}
@@ -189,36 +203,24 @@ This study formed part of the national research network MICDIF (Linking microbia
 \includegraphics{ligpaper-metaprot_pca}
 \end{center}
 \caption{
-{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla).  	Doth, Dothideomycetes, Euro, Eurotiomycetes, Leot, Leotiomycetes, Sacc, Saccharomycetes, Sord, Sordariomycetes, Agar,	Agaricomycetes, Trem, Tremellomycetes, Usti, Ustilaginomycetes, Ther, Thermotogae, Bact,  Bacteroidetes, Acti, Actinobacteria, Cyan, Cyanobacteria, Firm, Firmicutes, Fuso, Fusobacteria, Verr, Verrucomicrobia, Dict, Dictyoglomi, Alph, Alphaproteobacteria, Beta, Betaproteobacteria, Gamm, Gammaproteobacteria, Delt, Deltaproteobacteria, Epsi, Epsilonproteobacteria. Rectangles indicate samples of identical incubation time. Arrows represent vectorial fittings of litter chemistry, microbial stoichiometry and other context data, calculated independently from the CA. Fittings were plotted only if p\textless0.05.}
+{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Rectangles indicate samples of identical incubation time. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla): Dothideomycetes (Doth); Eurotiomycetes (Euro); Leotiomycetes (Leot); Saccharomycetes (Sacc); Sordariomycetes (Sord); Agaricomycetes (Agar); Tremellomycetes (Trem); Ustilaginomycetes (Usti); Thermotogae (Ther); Bacteroidetes (Bact); Actinobacteria (Acti); Cyanobacteria (Cyan); Firmicutes (Firm); Fusobacteria (Fuso); Verrucomicrobia (Verr); Dictyoglomi (Dict); Alphaproteobacteria (Alph); Betaproteobacteria (Beta); Gammaproteobacteria (Gamm); Deltaproteobacteria (Delt); Epsilonproteobacteria (Epsi). Taxa factor loadings were printed x2 for better readability. Correlations between CA 1, CA 2, and litter chemistry, microbial stoichiometry, and protein abundance of microbial taxa are stated in supplemental table \ref{catab}. Arrows represent vectorial fittings of these variables calculated independently from the CA, plotted only if p\textless 0.05: Litter C content (C lit); C:X\textsubscript{Microbial}/C:X\textsubscript{Litter} (C:P imb, C:N imb).}
 \label{fig:metaprotpca}
 \end{figure*}
 
-\section*{Supporting Information}
+\newpage
 
+
+\section*{Supporting Information}
 
 \newpage
 \input{tab_init}
-
-\newpage
-\begin{figure*}[h!]
-\vspace*{2mm}
-\begin{center}
-\setkeys{Gin}{width=\textwidth}
-\includegraphics{ligpaper-metaprot2}
-\end{center}
-\caption{
-{\bf Protein abundance of fungal and bacterial taxa.}}
-\label{fig:metaprot_barplot}
-\end{figure*}
-
-\newpage
 
 \input{tab_pyrprod}
 
 \begin{landscape}
 
 % latex table generated in R 2.13.1 by xtable 1.6-0 package
-% Tue Feb 14 18:32:56 2012
+% Wed Feb 15 14:23:40 2012
 \begin{table}[h!]
 \begin{center}
 \caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.}
@@ -228,8 +230,8 @@ This study formed part of the national research network MICDIF (Linking microbia
   \hline
  & L acc & Ch acc & LCI diff & L dec & C dec & L resp & C resp & L/C dec & Per/Cell & Phen/Cell \\ 
   \hline
-Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.048 & 0.0534 \\ 
-  Actual respiration & 0.333 & \textbf{-0.723} & \textbf{0.606} & -0.0822 & \textbf{0.771} & -0.195 & \textbf{0.594} & -0.368 & -0.268 & -0.362 \\ 
+Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.048 & 0.053 \\ 
+  Actual respiration & 0.333 & \textbf{-0.723} & \textbf{0.606} & -0.082 & \textbf{0.771} & -0.195 & \textbf{0.594} & -0.368 & -0.268 & -0.362 \\ 
   Accumulated Respiration & \textbf{0.494} & \textbf{-0.704} & \textbf{0.688} & -0.132 & \textbf{0.856} & -0.332 & \textbf{0.557} & \textbf{-0.525} & \textbf{-0.506} & \textbf{-0.534} \\ 
   Cellulase activity & \textbf{0.657} & \textbf{-0.76} & \textbf{0.803} & -0.431 & \textbf{0.801} & \textbf{-0.497} & \textbf{0.664} & \textbf{-0.589} & -0.436 & \textbf{-0.539} \\ 
   Protease activity & 0.186 & -0.296 & 0.264 & -0.132 & 0.274 & -0.157 & 0.301 & -0.27 & -0.26 & -0.18 \\ 
@@ -243,17 +245,17 @@ Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.
   C litter & \textbf{-0.545} & \textbf{0.506} & \textbf{-0.578} & \textbf{0.604} & -0.368 & \textbf{0.643} & \textbf{-0.618} & \textbf{0.698} & \textbf{0.525} & \textbf{0.581} \\ 
   extractable C & \textbf{0.609} & \textbf{-0.766} & \textbf{0.782} & -0.37 & \textbf{0.814} & \textbf{-0.446} & \textbf{0.658} & \textbf{-0.54} & -0.392 & \textbf{-0.484} \\ 
   N litter & 0.354 & \textbf{-0.517} & \textbf{0.503} & -0.14 & \textbf{0.587} & -0.187 & 0.366 & -0.203 & -0.119 & -0.159 \\ 
-  P litter & \textbf{0.682} & -0.222 & \textbf{0.517} & \textbf{-0.747} & 0.175 & \textbf{-0.68} & 0.188 & \textbf{-0.491} & -0.0728 & -0.16 \\ 
+  P litter & \textbf{0.682} & -0.222 & \textbf{0.517} & \textbf{-0.747} & 0.175 & \textbf{-0.68} & 0.188 & \textbf{-0.491} & -0.073 & -0.16 \\ 
   C:N litter & -0.405 & \textbf{0.586} & \textbf{-0.57} & 0.175 & \textbf{-0.654} & 0.234 & -0.44 & 0.273 & 0.195 & 0.242 \\ 
-  C:P litter & \textbf{-0.636} & 0.174 & \textbf{-0.453} & \textbf{0.754} & -0.0823 & \textbf{0.649} & -0.176 & 0.418 & 0.049 & 0.0805 \\ 
-  N:P litter & \textbf{-0.512} & -0.0287 & -0.264 & \textbf{0.714} & 0.147 & \textbf{0.577} & -0.0202 & 0.316 & -0.0316 & -0.0192 \\ 
+  C:P litter & \textbf{-0.636} & 0.174 & \textbf{-0.453} & \textbf{0.754} & -0.082 & \textbf{0.649} & -0.176 & 0.418 & 0.049 & 0.08 \\ 
+  N:P litter & \textbf{-0.512} & -0.029 & -0.264 & \textbf{0.714} & 0.147 & \textbf{0.577} & -0.02 & 0.316 & -0.032 & -0.019 \\ 
   C:N mic & \textbf{0.666} & \textbf{-0.758} & \textbf{0.799} & -0.43 & \textbf{0.798} & \textbf{-0.515} & \textbf{0.678} & \textbf{-0.609} & \textbf{-0.584} & \textbf{-0.596} \\ 
   C:P mic & \textbf{0.692} & \textbf{-0.787} & \textbf{0.834} & \textbf{-0.476} & \textbf{0.814} & \textbf{-0.562} & \textbf{0.726} & \textbf{-0.672} & \textbf{-0.564} & \textbf{-0.648} \\ 
   N:P mic & \textbf{0.582} & \textbf{-0.729} & \textbf{0.74} & -0.415 & \textbf{0.729} & \textbf{-0.508} & \textbf{0.715} & \textbf{-0.67} & \textbf{-0.545} & \textbf{-0.671} \\ 
   C:N imbalance & \textbf{-0.56} & \textbf{0.81} & \textbf{-0.772} & 0.288 & \textbf{-0.859} & 0.391 & \textbf{-0.71} & \textbf{0.531} & \textbf{0.564} & \textbf{0.56} \\ 
   C:P imbalance & \textbf{-0.817} & \textbf{0.663} & \textbf{-0.833} & \textbf{0.757} & \textbf{-0.61} & \textbf{0.799} & \textbf{-0.668} & \textbf{0.839} & \textbf{0.575} & \textbf{0.67} \\ 
   N:P imbalance & \textbf{-0.724} & 0.351 & \textbf{-0.602} & \textbf{0.81} & -0.253 & \textbf{0.764} & -0.397 & \textbf{0.668} & 0.301 & 0.41 \\ 
-  Fungi/bacteria(qPCR) & 0.00234 & -0.122 & 0.0794 & -0.0242 & 0.0874 & -0.0664 & 0.135 & -0.072 & 0.199 & -0.0333 \\ 
+  Fungi/bacteria(qPCR) & 0.002 & -0.122 & 0.079 & -0.024 & 0.087 & -0.066 & 0.135 & -0.072 & 0.199 & -0.033 \\ 
   Fungi/bacteria (metaproteome) & \textbf{0.998} & -0.854 & \textbf{0.958} & -0.882 & 0.801 & \textbf{-0.961} & 0.824 & -0.873 & -0.679 & -0.676 \\ 
    \hline
 \end{tabular}
@@ -262,42 +264,42 @@ Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.
 \end{table}
 \newpage
 % latex table generated in R 2.13.1 by xtable 1.6-0 package
-% Tue Feb 14 18:32:56 2012
+% Wed Feb 15 14:23:41 2012
 \begin{table}[h!]
 \begin{center}
-\caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are pre  sented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.}
+\caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - potetial peroxidase activity / potential cellulase activity, Phen/Cell - potential phenol activity / potential cellulase activity.}
 \label{corrtable2}
 {\small
 \begin{tabular}{lrrrrrrrrrr}
   \hline
  & L acc & Ch acc & LCI diff & L dec & C dec & L resp & C resp & L/C dec & Per/Cell & Phen/Cell \\ 
   \hline
-Massloss & 0.246 & 0.156 & 0.068 & \textbf{0.582} & \textbf{0.708} & 0.00521 & 0.279 & -0.137 & -0.444 & 0.403 \\ 
-  Actual respiration & -0.0114 & 0.244 & -0.212 & \textbf{0.86} & \textbf{0.856} & 0.122 & 0.192 & -0.0444 & -0.403 & 0.29 \\ 
-  Accumulated Respiration & 0.283 & 0.354 & -0.00931 & \textbf{0.852} & \textbf{0.968} & 0.0149 & 0.298 & -0.177 & \textbf{-0.608} & \textbf{0.486} \\ 
-  Cellulase activity & 0.0733 & 0.218 & -0.137 & \textbf{0.848} & \textbf{0.881} & 0.148 & 0.295 & -0.0811 & \textbf{-0.575} & 0.414 \\ 
-  Protease activity & 0.00361 & 0.0538 & -0.086 & 0.448 & 0.455 & 0.16 & 0.316 & -0.11 & \textbf{-0.456} & 0.381 \\ 
-  Phosphatase activity & 0.256 & 0.31 & 0.0689 & 0.298 & 0.373 & -0.102 & -0.0136 & -0.115 & -0.152 & 0.0167 \\ 
-  Chitinase activity & 0.163 & 0.339 & -0.0858 & \textbf{0.643} & \textbf{0.671} & 0.167 & 0.253 & -0.0289 & \textbf{-0.58} & 0.395 \\ 
-  Phenoloxidase activity & 0.319 & -0.389 & 0.436 & -0.248 & -0.0034 & -0.221 & \textbf{0.505} & -0.443 & \textbf{-0.483} & \textbf{0.692} \\ 
-  Peroxidase activity & -0.277 & 0.379 & -0.385 & 0.173 & -0.0488 & 0.16 & \textbf{-0.51} & 0.382 & \textbf{0.546} & \textbf{-0.708} \\ 
-  N mineralization & 0.246 & 0.337 & 0.0777 & 0.00915 & 0.0616 & -0.191 & -0.113 & -0.167 & 0.0624 & 0.0892 \\ 
-  Nitrification & -0.0272 & \textbf{0.567} & -0.32 & \textbf{0.63} & \textbf{0.567} & 0.0904 & -0.148 & 0.114 & -0.105 & -0.0234 \\ 
-  P mineralization & -0.0165 & 0.202 & -0.138 & \textbf{0.507} & \textbf{0.508} & -0.136 & -0.0626 & -0.128 & 0.0433 & -0.0273 \\ 
-  C litter & 0.123 & -0.0651 & 0.177 & -0.325 & -0.264 & -0.204 & -0.289 & 0.0236 & \textbf{0.501} & -0.348 \\ 
-  extractable C & 0.231 & 0.435 & -0.0861 & \textbf{0.828} & \textbf{0.89} & 0.074 & 0.218 & -0.109 & \textbf{-0.538} & 0.409 \\ 
-  N litter & 0.21 & 0.356 & -0.0654 & \textbf{0.816} & \textbf{0.896} & -0.00431 & 0.172 & -0.12 & -0.431 & 0.349 \\ 
-  P litter & -0.117 & -0.037 & -0.182 & \textbf{0.764} & \textbf{0.762} & 0.161 & 0.318 & -0.0746 & \textbf{-0.464} & 0.325 \\ 
-  C:N litter & -0.272 & -0.365 & 0.0158 & \textbf{-0.794} & \textbf{-0.901} & 0.027 & -0.207 & 0.155 & \textbf{0.49} & -0.404 \\ 
-  C:P litter & 0.329 & 0.122 & 0.315 & \textbf{-0.645} & \textbf{-0.541} & -0.276 & -0.218 & -0.0672 & 0.283 & -0.162 \\ 
-  N:P litter & \textbf{0.471} & 0.289 & 0.328 & -0.336 & -0.179 & -0.293 & -0.113 & -0.148 & 0.048 & 0.0338 \\ 
-  C:N mic & -0.184 & -0.408 & 0.0928 & \textbf{-0.658} & \textbf{-0.703} & -0.0319 & -0.318 & 0.25 & \textbf{0.57} & \textbf{-0.513} \\ 
-  C:P mic & 0.237 & -0.06 & 0.312 & \textbf{-0.609} & \textbf{-0.505} & -0.192 & -0.0716 & -0.063 & 0.233 & -0.223 \\ 
-  N:P mic & 0.336 & 0.127 & 0.29 & -0.373 & -0.247 & -0.18 & 0.0482 & -0.157 & -0.00191 & -0.00931 \\ 
-  C:N imbalance & -0.145 & -0.014 & -0.0759 & -0.354 & -0.447 & 0.0611 & 0.0435 & -0.0495 & 0.0273 & 0.0196 \\ 
-  C:P imbalance & 0.0215 & 0.246 & -0.0739 & -0.137 & -0.2 & -0.02 & -0.241 & 0.0948 & 0.16 & -0.0317 \\ 
-  N:P imbalance & 0.0248 & 0.231 & -0.085 & 0.0398 & -0.00715 & 0.00271 & -0.268 & 0.172 & 0.16 & -0.0803 \\ 
-  Fungi/bacteria(qPCR) & -0.03 & -0.00782 & 0.0166 & -0.236 & -0.254 & -0.0887 & -0.115 & -0.00256 & 0.161 & -0.219 \\ 
+Massloss & 0.246 & 0.156 & 0.068 & \textbf{0.582} & \textbf{0.708} & 0.005 & 0.279 & -0.137 & -0.444 & 0.403 \\ 
+  Actual respiration & -0.011 & 0.244 & -0.212 & \textbf{0.86} & \textbf{0.856} & 0.122 & 0.192 & -0.044 & -0.403 & 0.29 \\ 
+  Accumulated Respiration & 0.283 & 0.354 & -0.009 & \textbf{0.852} & \textbf{0.968} & 0.015 & 0.298 & -0.177 & \textbf{-0.608} & \textbf{0.486} \\ 
+  Cellulase activity & 0.073 & 0.218 & -0.137 & \textbf{0.848} & \textbf{0.881} & 0.148 & 0.295 & -0.081 & \textbf{-0.575} & 0.414 \\ 
+  Protease activity & 0.004 & 0.054 & -0.086 & 0.448 & 0.455 & 0.16 & 0.316 & -0.11 & \textbf{-0.456} & 0.381 \\ 
+  Phosphatase activity & 0.256 & 0.31 & 0.069 & 0.298 & 0.373 & -0.102 & -0.014 & -0.115 & -0.152 & 0.017 \\ 
+  Chitinase activity & 0.163 & 0.339 & -0.086 & \textbf{0.643} & \textbf{0.671} & 0.167 & 0.253 & -0.029 & \textbf{-0.58} & 0.395 \\ 
+  Phenoloxidase activity & 0.319 & -0.389 & 0.436 & -0.248 & -0.003 & -0.221 & \textbf{0.505} & -0.443 & \textbf{-0.483} & \textbf{0.692} \\ 
+  Peroxidase activity & -0.277 & 0.379 & -0.385 & 0.173 & -0.049 & 0.16 & \textbf{-0.51} & 0.382 & \textbf{0.546} & \textbf{-0.708} \\ 
+  N mineralization & 0.246 & 0.337 & 0.078 & 0.009 & 0.062 & -0.191 & -0.113 & -0.167 & 0.062 & 0.089 \\ 
+  Nitrification & -0.027 & \textbf{0.567} & -0.32 & \textbf{0.63} & \textbf{0.567} & 0.09 & -0.148 & 0.114 & -0.105 & -0.023 \\ 
+  P mineralization & -0.017 & 0.202 & -0.138 & \textbf{0.507} & \textbf{0.508} & -0.136 & -0.063 & -0.128 & 0.043 & -0.027 \\ 
+  C litter & 0.123 & -0.065 & 0.177 & -0.325 & -0.264 & -0.204 & -0.289 & 0.024 & \textbf{0.501} & -0.348 \\ 
+  extractable C & 0.231 & 0.435 & -0.086 & \textbf{0.828} & \textbf{0.89} & 0.074 & 0.218 & -0.109 & \textbf{-0.538} & 0.409 \\ 
+  N litter & 0.21 & 0.356 & -0.065 & \textbf{0.816} & \textbf{0.896} & -0.004 & 0.172 & -0.12 & -0.431 & 0.349 \\ 
+  P litter & -0.117 & -0.037 & -0.182 & \textbf{0.764} & \textbf{0.762} & 0.161 & 0.318 & -0.075 & \textbf{-0.464} & 0.325 \\ 
+  C:N litter & -0.272 & -0.365 & 0.016 & \textbf{-0.794} & \textbf{-0.901} & 0.027 & -0.207 & 0.155 & \textbf{0.49} & -0.404 \\ 
+  C:P litter & 0.329 & 0.122 & 0.315 & \textbf{-0.645} & \textbf{-0.541} & -0.276 & -0.218 & -0.067 & 0.283 & -0.162 \\ 
+  N:P litter & \textbf{0.471} & 0.289 & 0.328 & -0.336 & -0.179 & -0.293 & -0.113 & -0.148 & 0.048 & 0.034 \\ 
+  C:N mic & -0.184 & -0.408 & 0.093 & \textbf{-0.658} & \textbf{-0.703} & -0.032 & -0.318 & 0.25 & \textbf{0.57} & \textbf{-0.513} \\ 
+  C:P mic & 0.237 & -0.06 & 0.312 & \textbf{-0.609} & \textbf{-0.505} & -0.192 & -0.072 & -0.063 & 0.233 & -0.223 \\ 
+  N:P mic & 0.336 & 0.127 & 0.29 & -0.373 & -0.247 & -0.18 & 0.048 & -0.157 & -0.002 & -0.009 \\ 
+  C:N imbalance & -0.145 & -0.014 & -0.076 & -0.354 & -0.447 & 0.061 & 0.043 & -0.05 & 0.027 & 0.02 \\ 
+  C:P imbalance & 0.021 & 0.246 & -0.074 & -0.137 & -0.2 & -0.02 & -0.241 & 0.095 & 0.16 & -0.032 \\ 
+  N:P imbalance & 0.025 & 0.231 & -0.085 & 0.04 & -0.007 & 0.003 & -0.268 & 0.172 & 0.16 & -0.08 \\ 
+  Fungi/bacteria(qPCR) & -0.03 & -0.008 & 0.017 & -0.236 & -0.254 & -0.089 & -0.115 & -0.003 & 0.161 & -0.219 \\ 
   Fungi/bacteria (metaproteome) & 0.158 & 0.57 & -0.369 & \textbf{0.986} & \textbf{0.972} & 0.254 & 0.484 & -0.274 & -0.601 & 0.55 \\ 
    \hline
 \end{tabular}
@@ -306,58 +308,58 @@ Massloss & 0.246 & 0.156 & 0.068 & \textbf{0.582} & \textbf{0.708} & 0.00521 & 0
 \end{table}\end{landscape}
 
 % latex table generated in R 2.13.1 by xtable 1.6-0 package
-% Tue Feb 14 18:32:56 2012
+% Wed Feb 15 14:23:41 2012
 \begin{table}[h!]
 \begin{center}
-\caption{CAPTION}
+\caption{Correlations coeffitients between correspondance analysis factors CA 1 and 2, litter and microbial stoichiometry and protein abundance of microbial taxa. Significant (p\textless 0.05) correlations are presented in bold.}
 \label{catab}
 {\small
-\begin{tabular}{lrrr}
+\begin{tabular}{lrr}
   \hline
- & CA1 & CA2 & CA3 \\ 
+ & CA1 & CA2 \\ 
   \hline
-Incubtation time & \textbf{0.872} & -0.281 & -0.239 \\ 
-  Respiration & -0.158 & \textbf{0.601} & 0.311 \\ 
-  NH4 conc. & 0.0838 & 0.0317 & \textbf{-0.726} \\ 
-  NO3 conc. & \textbf{0.53} & -0.00945 & -0.482 \\ 
-  PO4 conc & 0.161 & 0.0506 & \textbf{-0.587} \\ 
-  C litter & \textbf{-0.787} & -0.172 & 0.393 \\ 
-  N litter & -0.174 & 0.268 & -0.323 \\ 
-  P litter & -0.149 & 0.308 & \textbf{-0.499} \\ 
-  C:N litter & -0.0597 & -0.272 & 0.409 \\ 
-  C:P litter & 0.0771 & -0.334 & 0.433 \\ 
-  N:P litter & 0.112 & -0.223 & 0.264 \\ 
-  C micr. & -0.159 & -0.0404 & \textbf{-0.783} \\ 
-  N micr. & -0.22 & -0.14 & \textbf{-0.695} \\ 
-  P micr. & -0.11 & \textbf{-0.59} & -0.362 \\ 
-  C:N micr. & 0.104 & 0.0403 & 0.0383 \\ 
-  C:P micr. & -0.0223 & 0.485 & \textbf{-0.529} \\ 
-  N:P micr. & -0.174 & 0.472 & \textbf{-0.585} \\ 
-  C:N imbalance & -0.225 & -0.228 & 0.103 \\ 
-  C:P imbalance & -0.118 & \textbf{-0.714} & \textbf{0.578} \\ 
-  N:P imbalance & 0.0129 & \textbf{-0.659} & \textbf{0.578} \\ 
-  F:B prot. & -0.417 & \textbf{0.795} & 0.106 \\ 
-  Dothideomycetes & -0.0779 & \textbf{0.745} & -0.097 \\ 
-  Eurotiomycetes & \textbf{-0.578} & 0.0834 & \textbf{-0.731} \\ 
-  Leotiomycetes & \textbf{0.731} & 0.253 & 0.455 \\ 
-  Saccharomycetes & \textbf{-0.501} & 0.18 & \textbf{0.758} \\ 
-  Sordariomycetes & \textbf{-0.511} & \textbf{0.762} & 0.102 \\ 
-  Agaricomycetes & 0.167 & -0.00414 & 0.192 \\ 
-  Tremellomycetes & \textbf{0.723} & -0.000103 & 0.106 \\ 
-  Ustilaginomycetes & 0.188 & 0.37 & 0.188 \\ 
-  Thermotogae & -0.336 & -0.469 & 0.354 \\ 
-  Bacteroidetes & \textbf{0.638} & -0.267 & 0.057 \\ 
-  Actinobacteria & \textbf{0.896} & -0.0846 & -0.133 \\ 
-  Cyanobacteria & -0.319 & 0.122 & 0.0946 \\ 
-  Firmicutes & 0.183 & -0.35 & -0.142 \\ 
-  Fusobacteria & 0.227 & -0.00858 & \textbf{0.563} \\ 
-  Verrucomicrobia & 0.114 & 0.256 & 0.391 \\ 
-  Dictyoglomi & 0.027 &  0.2 & 0.0951 \\ 
-  Alphaproteobacteria & \textbf{0.924} & -0.232 & 0.0299 \\ 
-  Betaproteobacteria & \textbf{0.766} & -0.358 & -0.304 \\ 
-  Gammaproteobacteria & -0.348 & \textbf{-0.929} & 0.104 \\ 
-  Deltaproteobacteria & 0.229 & -0.0427 & -0.129 \\ 
-  Epsilonproteobacteria & -0.205 & 0.00168 & \textbf{-0.639} \\ 
+Incubatation time & \textbf{0.872} & -0.281 \\ 
+  Respiration & -0.158 & \textbf{0.601} \\ 
+  NH4 conc. & 0.084 & 0.032 \\ 
+  NO3 conc. & \textbf{0.53} & -0.009 \\ 
+  PO4 conc & 0.161 & 0.051 \\ 
+  C litter & \textbf{-0.787} & -0.172 \\ 
+  N litter & -0.174 & 0.268 \\ 
+  P litter & -0.149 & 0.308 \\ 
+  C:N litter & -0.06 & -0.272 \\ 
+  C:P litter & 0.077 & -0.334 \\ 
+  N:P litter & 0.112 & -0.223 \\ 
+  C micr. & -0.159 & -0.04 \\ 
+  N micr. & -0.22 & -0.14 \\ 
+  P micr. & -0.11 & \textbf{-0.59} \\ 
+  C:N micr. & 0.104 & 0.04 \\ 
+  C:P micr. & -0.022 & 0.485 \\ 
+  N:P micr. & -0.174 & 0.472 \\ 
+  C:N imbalance & -0.225 & -0.228 \\ 
+  C:P imbalance & -0.118 & \textbf{-0.714} \\ 
+  N:P imbalance & 0.013 & \textbf{-0.659} \\ 
+  F:B prot. & -0.417 & \textbf{0.795} \\ 
+  Dothideomycetes & -0.078 & \textbf{0.745} \\ 
+  Eurotiomycetes & \textbf{-0.578} & 0.083 \\ 
+  Leotiomycetes & \textbf{0.731} & 0.253 \\ 
+  Saccharomycetes & \textbf{-0.501} & 0.18 \\ 
+  Sordariomycetes & \textbf{-0.511} & \textbf{0.762} \\ 
+  Agaricomycetes & 0.167 & -0.004 \\ 
+  Tremellomycetes & \textbf{0.723} & 0 \\ 
+  Ustilaginomycetes & 0.188 & 0.37 \\ 
+  Thermotogae & -0.336 & -0.469 \\ 
+  Bacteroidetes & \textbf{0.638} & -0.267 \\ 
+  Actinobacteria & \textbf{0.896} & -0.085 \\ 
+  Cyanobacteria & -0.319 & 0.122 \\ 
+  Firmicutes & 0.183 & -0.35 \\ 
+  Fusobacteria & 0.227 & -0.009 \\ 
+  Verrucomicrobia & 0.114 & 0.256 \\ 
+  Dictyoglomi & 0.027 & 0.2 \\ 
+  Alphaproteobacteria & \textbf{0.924} & -0.232 \\ 
+  Betaproteobacteria & \textbf{0.766} & -0.358 \\ 
+  Gammaproteobacteria & -0.348 & \textbf{-0.929} \\ 
+  Deltaproteobacteria & 0.229 & -0.043 \\ 
+  Epsilonproteobacteria & -0.205 & 0.002 \\ 
    \hline
 \end{tabular}
 }

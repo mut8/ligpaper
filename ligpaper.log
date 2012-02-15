@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.9)  14 FEB 2012 18:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.9)  15 FEB 2012 14:23
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
@@ -440,33 +440,43 @@ File: ligpaper-enz.pdf Graphic file (type pdf)
 <ligpaper-mb.pdf, id=75, 867.24pt x 722.7pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
-<ligpaper-f2bnew.pdf, id=76, 578.16pt x 831.105pt>
-File: ligpaper-f2bnew.pdf Graphic file (type pdf)
- <use ligpaper-f2bnew.pdf>
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[20 <./ligpaper-enz.pdf>] <ligpaper-lci.pdf, id=87, 722.7pt x 361.35pt>
-File: ligpaper-lci.pdf Graphic file (type pdf)
+[20 <./ligpaper-enz.pdf>] <ligpaper-metaprot2.pdf, id=86, 867.24pt x 722.7pt>
+File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
-<use ligpaper-lci.pdf> <ligpaper-degrdiff.pdf, id=88, 867.24pt x 505.89pt>
+<use ligpaper-metaprot2.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-f2bnew.pdf, id=87, 578.16pt x 831.105pt>
+File: ligpaper-f2bnew.pdf Graphic file (type pdf)
+ <use ligpaper-f2bnew.pdf>
+<ligpaper-lci.pdf, id=88, 722.7pt x 361.35pt>
+File: ligpaper-lci.pdf Graphic file (type pdf)
+ <use ligpaper-lci.pdf>
+<ligpaper-degrdiff.pdf, id=89, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=89, 1734.48pt x 1156.32pt>
+<ligpaper-graphcorr.pdf, id=90, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot_pca.pdf, id=90, 433.62pt x 433.62pt>
+<ligpaper-metaprot_pca.pdf, id=91, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
+
+LaTeX Warning: Float too large for page by 31.03864pt on input line 208.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -474,51 +484,44 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[21 <./ligpaper-mb.pdf>]
-
-LaTeX Warning: Text page 22 contains only floats.
-
-
+[21 <./ligpaper-mb.pdf>] (./tab_init.tex
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[22 <./ligpaper-f2bnew.pdf>] (./tab_init.tex
+[22 <./ligpaper-metaprot2.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[23 <./ligpaper-lci.pdf>]
+[23 <./ligpaper-f2bnew.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[24 <./ligpaper-degrdiff.pdf>]
+[24 <./ligpaper-lci.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[25 <./ligpaper-graphcorr.pdf>]
+[25 <./ligpaper-degrdiff.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[26 <./ligpaper-metaprot_pca.pdf>]
+[26 <./ligpaper-graphcorr.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[27
-
-]) <ligpaper-metaprot2.pdf, id=153, 867.24pt x 722.7pt>
-File: ligpaper-metaprot2.pdf Graphic file (type pdf)
-
-<use ligpaper-metaprot2.pdf>
+[27 <./ligpaper-metaprot_pca.pdf>]
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
 [28
 
- <./ligpaper-metaprot2.pdf>] (./tab_pyrprod.tex
+]) (./tab_pyrprod.tex
 Overfull \vbox (6.43994pt too high) has occurred while \output is active []
 
 
-[29]
-Overfull \hbox (8.26302pt too wide) in paragraph at lines 63--112
+[29
+
+]
+Overfull \hbox (8.02014pt too wide) in paragraph at lines 63--112
  [] 
  []
 
@@ -569,9 +572,9 @@ ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ligpaper.pdf (34 pages, 598614 bytes).
+Output written on ligpaper.pdf (34 pages, 599338 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
