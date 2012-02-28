@@ -1,12 +1,10 @@
-<<mb, fig=T, echo=F, results=hide, width=12, height=10>>=
-par(mfrow=c(3,3), mar=c(4.1,4.1,2,0.1), tck=0.01)
+<<mb, fig=T, echo=F, results=hide, width=12, height=9>>=
+par(mfrow=c(3,3), mar=c(3.1,4.1,3,0.1), tck=0.01)
 data <- alldata$C_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, main="Microbial C",
-ylab="mg C g-1 d.w.", endsig=T, cex=1.5,
- #xaxt="n"
- )
+type="o", pch=pch, pt.bg=colscale, main=expression("C"[microbial]),
+ylab=expression(paste("mg C g"^{-1}, " d.w.")), endsig=T, cex=1.5)
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -14,10 +12,7 @@ axis(3, labels=F)
 data <- alldata$N_.mic
 ond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, endsig=T, main="Microbial N",cex=1.5,
-#ylab="microbial nitrogen (mg N g-1 d.w.)",
-#xaxt="n"
- )
+type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("N"[microbial]),cex=1.5,)
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -25,21 +20,18 @@ axis(3, labels=F)
 data <- alldata$P_mic/1000
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, main="Microbial P",cex=1.5,
-#ylab="microbial phosphorus (mg P g-1 d.w.)",
-#xaxt="n",
-endsig=T)
+type="o", pch=pch, pt.bg=colscale, main=expression("P"[microbial]),cex=1.5, endsig=T)
 axis(4, labels=F)
 axis(3, labels=F)
-#axis(1, labels=F)
+
 
 data <- alldata$C.N_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, endsig=T, main="Mic. C:N ratio",cex=1.5,
-ylab="w/w",
+type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("C:N"[microbial]),cex=1.5,
+ylab="w/w")
  #xaxt="n"
- )
+
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -47,21 +39,17 @@ axis(3, labels=F)
 data <- alldata$C.Pmic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, endsig=T, main="Mic. C:P ratio",cex=1.5,
- #ylab="microbial C:Pg ratio (w/w)",
- #xaxt="n"
- )
+type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("C:P"[microbial]),cex=1.5)
+                
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
 
 data <- alldata$N.Pmic
 cond <- is.na(data)!=T
-timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],main="Mic. N:P ratio",
-type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5,
- #ylab="microbial N:P ratio (w/w",
+timeseries(data[cond], alldata$days[cond], alldata$Litter[cond], main=expression("N:P"[microbial]), type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5)
  #xaxt="n"
- )
+
 axis(4, labels=F)
 axis(3, labels=F)
 # axis(1, labels=F)
@@ -70,7 +58,8 @@ data <- alldata$CN_inbal
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5,
-xlab="Litter incubation (days)", main="C:N imbalance")
+xlab="Litter incubation (days)", main=expression(paste("C:N"[litter], " : C:N"[microbial])),
+ ylab="w/w : w/w")
 axis(4, labels=F)
 axis(3, labels=F)
 
@@ -78,7 +67,7 @@ data <- alldata$CP_inbal
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5,
-xlab="Litter incubation (days)", main="C:P imbalance")
+xlab="Litter incubation (days)", main=expression(paste("C:P"[litter], " : C:P"[microbial])))
 axis(4, labels=F)
 axis(3, labels=F)
 
@@ -86,7 +75,7 @@ data <- alldata$NP_inbal
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5,
-xlab="litter incubation (days)", main="N:P imbalance")
+xlab="litter incubation (days)", main=expression(paste("N:P"[litter], " : N:P"[microbial])))
 axis(4, labels=F)
 axis(3, labels=F)
 @

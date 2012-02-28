@@ -73,8 +73,7 @@ plot(envfit(ord, fit.enz, choices=choices), cex=.5, p.max=0.05, col="#777777")
 
 require("fields")
 
-metaprot.red<-metaprot[which(is.na(metaprot[6])==F),T]
-metaprot.red[6:ncol(metaprot.red)]<-metaprot.red[6:ncol(metaprot.red)]/rowSums(metaprot.red[6:ncol(metaprot.red)])
+
 pch.met<-c(21, 21, 21, 21, 22, 22, 22, 22, 23, 23, 23, 23, 24, 24, 24, 24)
 col.met<-c("#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999")
 labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti", 
@@ -88,8 +87,8 @@ plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2, lab="CA", spe.mult=2)
 
 labs<-c("14 days", "97 days", "181 days", "475 days")
 
-legend("bottomleft", pch=pch, pt.bg=1, typlev)
-legend("bottomright", pch=21, pt.bg=colscale, labs)
+legend("bottomleft", pch=pch, pt.bg=1, typlev, cex=.5)
+legend("bottomright", pch=21, pt.bg=colscale, labs, cex=.5)
 
 x.positions<-c(-1.12, -1.3, 0.08, 2.55)
 y.positions<-c(1.55, .75, -1.61, .25 )

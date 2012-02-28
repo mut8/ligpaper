@@ -1,25 +1,49 @@
-<<enz, fig=T, echo=F, results=hide, height=14, width=10>>=
-par(mfrow=c(3,2), mar=c(4,5,2,.5))
+<<enz, fig=T, echo=F, results=hide, height=10, width=10>>=
+par(mfrow=c(3,2), mar=c(3,5,2,.5))
 
 var<-alldata$Respiration
 cond<-is.na(var)==F
-timeseries(alldata$Respiration[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, type="o", endsig=T, main="Actual respiration",  ylab="µg CO2-C d-1 g-1 d.w.", cex=1.2)
+timeseries(alldata$Respiration[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, type="o", endsig=T, main="Actual respiration",  ylab="", cex=1.2)
+axis(3, labels=F)
+axis(4, labels=F)
+mtext(expression(paste(mu, "g CO2-C d"^{-1}, "g"^{-1}, "d.w.")), side=2, las=0, padj=-2.5, cex=.8)
 
-timeseries(alldata$DOC/1000, alldata$days, alldata$Litter, pch=pch, bg.pt=colscale, type="o", endsig=T, main="Soluble organic carbon content", ylab="mg DOC-C g-1 d.w.", cex=1.2)
-#           , log="y")
+par(mar=c(3,.5,2,5))
+timeseries(alldata$DOC/1000, alldata$days, alldata$Litter, pch=pch, pt.bg=colscale, type="o", endsig=T, main="Soluble organic carbon content", ylab="", cex=1.2, yaxt="n")
+axis(2, labels=F)
+axis(3, labels=F)
+axis(4)
+mtext(expression(paste("mg DOC-C g"^{-1}, " d.w.")), side=4, las=0, padj=2.7, cex=.8)
 
-
-timeseries(alldata$Peroxydase[alldata$days!=475], alldata$days[alldata$days!=475], alldata$Litter[alldata$days!=475], type="o", pch=pch, add=F, pt.pt=colscale, log="y", endsig=T, lwd=1, main="Peroxidase", ylab="potential activity \n(µmol min-1 g-1 d.w.)", xlab="", xlim=c(0,550), ylim=c(0.05,5), cex=1.2)
+par(mar=c(3,5,2,.5))
+timeseries(alldata$Peroxydase[alldata$days!=475], alldata$days[alldata$days!=475], alldata$Litter[alldata$days!=475], type="o", pch=pch, add=F, pt.bg=colscale, log="y", endsig=T, lwd=1, main="Potential peroxidase activity", ylab="", xlab="", xlim=c(0,550), ylim=c(0.05,5), cex=1.2)
 text(475, 5, "b.d.", cex=1, adj=c(0,1))
+axis(3, labels=F)
+axis(4, labels=F)
+mtext(expression(paste(mu, "mol min"^{-1},"g"^{-1},"d.w.")), side=2, las=0, padj=-2.5, cex=.8)
+
+par(mar=c(3,.5,2,5))
+timeseries(alldata$Phenoloxidase, alldata$days, alldata$Litter, type="o", pch=pch, add=F, pt.bg=colscale, log="y", endsig=T, lwd=1, main="Potential phenoloxidase activity", xlab="",  xlim=c(0,550), ylim=c(0.05,5), cex=1.2, yaxt="n", ylab="")
+axis(2, labels=F)
+axis(3, labels=F)
+axis(4)
+mtext(expression(paste(mu, "mol min"^{-1}, "g"^{-1},"d.w.")), side=4, cex=.8, las=0, padj=2.7)
 
 
-timeseries(alldata$Phenoloxidase, alldata$days, alldata$Litter, type="o", pch=pch, add=F, pt.bg=colscale, log="y", endsig=T, lwd=1, main="Phenoloxidase", xlab="",  xlim=c(0,550), ylim=c(0.05,5), cex=1.2, ylab="potential activity \n(µmol min-1 g-1 d.w.)")
-
-timeseries(alldata$Cellulase, alldata$days, alldata$Litter, type="o", add=F, pch=pch, pt.bg=colscale, log="y", endsig=T, lwd=1, main="Cellulase", ylab="potential activity \n(µmol min-1 g-1 d.w.)", xlab="litter incubation (days)", xlim=c(0,550), ylim=c(0.02,1000), cex=1.2, yaxt="n")
+par(mar=c(3,5,2,.5))
+timeseries(alldata$Cellulase, alldata$days, alldata$Litter, type="o", add=F, pch=pch, pt.bg=colscale, log="y", endsig=T, lwd=1, main="Potential cellulase activity", ylab="", xlab="litter incubation (days)", xlim=c(0,550), ylim=c(0.02,1000), cex=1.2, yaxt="n")
 axis(2, axTicks(2), c("0.1", "1.0", "10", "100", "1000"))
 legend("bottomright", pch=pch, lty=1, lwd=1, pt.bg=colscale, typlev)
+axis(3, labels=F)
+axis(4, labels=F)
+mtext(expression(paste(mu, "mol min"^{-1}, "g"^{-1}, "d.w.")), side=2, las=0, padj=-2.5, cex=.8)
+      
+par(mar=c(3,.5,2,5))      
+timeseries(alldata$Phenoloxidase/alldata$Cellulase, alldata$days,alldata$Litter, type="o", pch=pch, pt.bg=colscale, log="y", endsig=T, main="Phenoloxidase : Cellulase", lwd=1,  xlim=c(0,550), cex=1.2, ylab="", ylim=c(0.0005,50), yaxt="n", xlab="litter incubation (days)")
+axis(2, labels=F)
+axis(3, labels=F)
+axis(4, axTicks(2), c("0.001", "0.01", "0.10", "1.00", "10.0"))
+mtext(expression("Ratio of potential activities"), side=4, cex=.8, las=0, padj=3.5)
 
-timeseries(alldata$Phenoloxidase/alldata$Cellulase, alldata$days,alldata$Litter, type="o", pch=pch, pt.bg=colscale, log="y", endsig=T, main="Phenoloxidase/Cellulase", lwd=1,  xlim=c(0,550), cex=1.2, ylab="Ratio of potential activities", ylim=c(0.0005,50), yaxt="n", xlab="litter incubation (days)")
-axis(2, axTicks(2), c("0.001", "0.01", "0.10", "1.00", "10.0"))
 
 @

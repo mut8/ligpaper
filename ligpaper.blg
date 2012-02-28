@@ -2,62 +2,74 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
-Repeated entry---line 1473 of file library.bib
+Repeated entry---line 281 of file library.bib
+ : @article{Craine2007
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2382 of file library.bib
+ : @article{Zybailov2006
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2813 of file library.bib
  : @book{Sterner2002
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1744 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2372 of file library.bib
+Repeated entry---line 2886 of file library.bib
  : @article{Talbot2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3721 of file library.bib
+Repeated entry---line 3235 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4055 of file library.bib
  : @article{Schellekens2009
  :                         ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 15083 of file library.bib
+ : @article{Bantscheff2007
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--missing publisher in Sterner2002
-You've used 33 entries,
+You've used 41 entries,
             2441 wiz_defined-function locations,
-            808 strings with 13656 characters,
-and the built_in function-call counts, 28928 in all, are:
-= -- 2684
-> -- 484
+            874 strings with 16858 characters,
+and the built_in function-call counts, 38696 in all, are:
+= -- 3602
+> -- 672
 < -- 0
-+ -- 242
-- -- 121
-* -- 2502
-:= -- 3430
-add.period$ -- 67
-call.type$ -- 33
-change.case$ -- 29
++ -- 336
+- -- 168
+* -- 3387
+:= -- 4592
+add.period$ -- 83
+call.type$ -- 41
+change.case$ -- 37
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 2861
-empty$ -- 3028
-format.name$ -- 151
-if$ -- 6444
+cite$ -- 83
+duplicate$ -- 3816
+empty$ -- 4027
+format.name$ -- 206
+if$ -- 8612
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 350
-newline$ -- 181
-num.names$ -- 33
-pop$ -- 441
+int.to.str$ -- 41
+missing$ -- 452
+newline$ -- 221
+num.names$ -- 41
+pop$ -- 544
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 243
+skip$ -- 334
 stack$ -- 0
-substring$ -- 4220
-swap$ -- 672
+substring$ -- 5747
+swap$ -- 876
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 206
-width$ -- 35
-write$ -- 369
-(There were 4 error messages)
+while$ -- 277
+width$ -- 43
+write$ -- 456
+(There were 7 error messages)

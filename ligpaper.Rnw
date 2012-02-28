@@ -109,7 +109,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \begin{figure}[!ht]
 \begin{center}
 %\setkeys{Gin}{width=4in}
-\setkeys{Gin}{width=.7\textwidth}
+\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_enz}
 \end{center}
 \caption{
@@ -124,7 +124,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{fig_mb}
 \end{center}
 \caption{
-{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource/consumer stoichiometric imbalance in these elements}in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:mb}
 \end{figure}
 
@@ -136,7 +136,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{metaprot2}
 \end{center}
 \caption{
-{\bf Protein abundance of fungal and bacterial taxa.}}
+{\bf Protein abundance of fungal and bacterial taxa.} Litter was collected in Achenkirch (AK);, Klausenleopoldsdorf (KL); Ossiach (OS); Schottenwald (SW). Samples were analyzed after sterilization, re-innoculation and incubation for 14, 97, 181, or 475 days.}
 \label{fig:metaprot_barplot}
 \end{figure*}
 
@@ -148,7 +148,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{fig_f2b}
 \end{center}
 \caption{
-{\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} Top: F:B protein abundance (left) and DNA (right) ratio. Bottom: Correlations between F:B preotein abundance ratios and Lignin loss (mid) and lignin loss / carbon loss (bottom) for 0-6 months (left) and 6-15 months (right..Errorbars indicate standard errors (n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} A: F:B protein abundance (left) and DNA (right) ratio. B: Correlations between F:B preotein abundance ratios and lignin loss (top), carbohydrate loss (mid) and lignin loss : carbon loss (bottom) for 0-6 months (left) and 6-15 months (right, errorbars indicate standard errors, n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:f2b}
 \end{figure}
 
@@ -160,7 +160,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{fig_lci}
 \end{center}
 \caption{
-{\bf Develoment of the LCI (lignin/(lignin+carbohydrates))} during time of beech litter decomposition (A) or plotted against cumulative C loss (B). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Develoment of lignin to carbohydrate index (lignin : (lignin+carbohydrates), LCI)} during time of beech litter decomposition (left) or plotted against cumulative C loss (right). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:lci}
 \end{figure}
 
@@ -185,7 +185,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{fig_graphcorr}
 \end{center}
 \caption{
-{\bf Correlation between the LCI change or the ratio of lignin/carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter/microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+{\bf Correlation between the LCI change or the ratio of lignin : carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter : microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
 \label{fig:cor1}
 \end{figure*}
 
@@ -206,7 +206,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \newpage
 
 
-\section*{Supporting Information}
+%\section*{Supporting Information}
 
 \newpage
 \input{tab_init}
