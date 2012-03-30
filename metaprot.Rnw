@@ -83,6 +83,9 @@ labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti
 
 cond<-which(is.na(metaprot[6])==F)
 ord<-cca(metaprot.red[6:ncol(metaprot.red)])
+
+colscale2 <- c("#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")
+
 plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2, lab="CA", spe.mult=2)
 
 labs<-c("14 days", "97 days", "181 days", "475 days")
@@ -96,6 +99,5 @@ y.positions<-c(1.55, .75, -1.61, .25 )
 
 text(x.positions, y.positions, labels=labs, cex=0.7)
 
-colscale2 <- c("#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")
 
 @

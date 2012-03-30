@@ -1,17 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.9)  28 FEB 2012 17:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  30 MAR 2012 13:08
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
 (./ligpaper.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -228,13 +222,9 @@ Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
-)
-(/usr/share/texmf-texlive/tex/latex/preprint/fullpage.sty
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip46
-)
-(/usr/share/texmf-texlive/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+) (./fullpage.sty)
+(/home/lluc/texmf/tex/latex/lineno.sty
+Package: lineno 2002/01/27 line numbers on paragraphs v3.08b
 \linenopenalty=\count101
 \output=\toks20
 \linenoprevgraf=\count102
@@ -242,14 +232,13 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenumberwidth=\dimen121
 \c@linenumber=\count103
 \c@pagewiselinenumber=\count104
-\c@LN@truepage=\count105
+\c@linenumbermodulo=\count105
 \c@internallinenumber=\count106
 \c@internallinenumbers=\count107
 \quotelinenumbersep=\dimen122
 \bframerule=\dimen123
 \bframesep=\dimen124
 \bframebox=\box28
-LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/share/R/share/texmf/tex/latex/Sweave.sty
 Package: Sweave 
@@ -296,25 +285,25 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))) (./ligpaper.aux)
 \openout1 = `ligpaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -340,114 +329,37 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-))
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
+)) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-] (./abstract.tex)
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[2] (./introduction.tex
+] (./abstract.tex) [2] (./introduction.tex
 LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
- (/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
+
+(/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-)
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[3]) (./results.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[4]
+) [3]) (./results.tex [4]
 LaTeX Font Info:    Try loading font information for TS1+aer on input line 9.
- (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
+
+(/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 9.
-
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[5]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[6]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[7]) (./discussion.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[8]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[9]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[10]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[11]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[12]) (./mm.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[13]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[14] (./metaprot.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[15])) (./ligpaper.bbl
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[16]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[17]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[18]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[19]
+ [5] [6] [7]) (./discussion.tex
+[8] [9] [10] [11] [12]) (./mm.tex [13] [14] (./metaprot.tex [15]))
+(./ligpaper.bbl [16] [17] [18] [19]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 268.
 
- (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+
+(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[20] <ligpaper-enz.pdf, id=77, 722.7pt x 722.7pt>
+)) [20]
+<ligpaper-enz.pdf, id=77, 722.7pt x 722.7pt>
 File: ligpaper-enz.pdf Graphic file (type pdf)
  <use ligpaper-enz.pdf>
 <ligpaper-mb.pdf, id=78, 867.24pt x 650.43pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
- <use ligpaper-mb.pdf>
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[21 <./ligpaper-enz.pdf>] <ligpaper-metaprot2.pdf, id=90, 867.24pt x 722.7pt>
+ <use ligpaper-mb.pdf> [21 <./ligpaper-enz.pdf>] <ligpaper-metaprot2.pdf, id=90
+, 867.24pt x 722.7pt>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
@@ -479,106 +391,53 @@ File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
 
-LaTeX Warning: Float too large for page by 31.03864pt on input line 208.
+LaTeX Warning: Float too large for page by 37.17365pt on input line 209.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./tab_init.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[22 <./ligpaper-mb.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[23 <./ligpaper-metaprot2.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[24 <./ligpaper-f2bnew.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[25 <./ligpaper-lci.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[26 <./ligpaper-degrdiff.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[27 <./ligpaper-graphcorr.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[28 <./ligpaper-metaprot_pca.pdf>]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
+(./tab_init.tex [22 <./ligpaper-mb.pdf>] [23 <./ligpaper-metaprot2.pdf>]
+[24 <./ligpaper-f2bnew.pdf>] [25 <./ligpaper-lci.pdf>] [26 <./ligpaper-degrdiff
+.pdf>] [27 <./ligpaper-graphcorr.pdf>] [28 <./ligpaper-metaprot_pca.pdf>]
 [29
 
-]) (./tab_pyrprod.tex
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[30
+]) (./tab_pyrprod.tex [30
 
 ]
-Overfull \hbox (8.02014pt too wide) in paragraph at lines 63--112
+Overfull \hbox (8.02017pt too wide) in paragraph at lines 63--112
  [] 
  []
 
+[31]) [32] [33
 
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[31])
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[32]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[33
-
-]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[34]
-Overfull \vbox (6.43994pt too high) has occurred while \output is active []
-
-
-[35
+] [34] [35
 
 ] (./ligpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 4593 strings out of 493848
- 64249 string characters out of 1152823
- 125676 words of memory out of 3000000
- 7682 multiletter control sequences out of 15000+50000
+ 4527 strings out of 495061
+ 63230 string characters out of 1182621
+ 125018 words of memory out of 3000000
+ 7518 multiletter control sequences out of 15000+50000
  40197 words of font info for 83 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 36i,9n,38p,2897b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on ligpaper.pdf (35 pages, 616017 bytes).
+ 28 hyphenation exceptions out of 8191
+ 36i,9n,38p,2897b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm100
+0.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b>
+Output written on ligpaper.pdf (35 pages, 358014 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
+ 238 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
