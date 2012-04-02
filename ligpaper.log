@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  30 MAR 2012 13:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  2 APR 2012 10:06
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
@@ -344,100 +344,140 @@ File: ts1aer.fd
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 9.
- [5] [6] [7]) (./discussion.tex
-[8] [9] [10] [11] [12]) (./mm.tex [13] [14] (./metaprot.tex [15]))
-(./ligpaper.bbl [16] [17] [18] [19]
+ [5] [6] [7]
+
+LaTeX Warning: Reference `corrtable' on page 8 undefined on input line 32.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 32.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 32.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 32.
+
+
+LaTeX Warning: Reference `corrtable' on page 8 undefined on input line 32.
+
+
+LaTeX Warning: Reference `catab' on page 8 undefined on input line 35.
+
+) (./discussion.tex [8] [9] [10] [11] [12]) (./mm.tex [13] [14] (./metaprot.tex
+[15])) (./ligpaper.bbl [16] [17] [18] [19]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 268.
 
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )) [20]
-<ligpaper-enz.pdf, id=77, 722.7pt x 722.7pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `catab' on page 21 undefined on input line 199.
+
+
+LaTeX Warning: Reference `catab' on page 21 undefined on input line 199.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] <ligpaper-enz.pdf, id=80, 722.7pt x 722.7pt>
 File: ligpaper-enz.pdf Graphic file (type pdf)
  <use ligpaper-enz.pdf>
-<ligpaper-mb.pdf, id=78, 867.24pt x 650.43pt>
+<ligpaper-mb.pdf, id=81, 867.24pt x 650.43pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
- <use ligpaper-mb.pdf> [21 <./ligpaper-enz.pdf>] <ligpaper-metaprot2.pdf, id=90
-, 867.24pt x 722.7pt>
+ <use ligpaper-mb.pdf>
+<ligpaper-metaprot2.pdf, id=82, 867.24pt x 722.7pt>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-f2bnew.pdf, id=91, 578.16pt x 831.105pt>
+<ligpaper-f2bnew.pdf, id=83, 578.16pt x 831.105pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
  <use ligpaper-f2bnew.pdf>
-<ligpaper-lci.pdf, id=92, 722.7pt x 361.35pt>
+<ligpaper-lci.pdf, id=84, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
  <use ligpaper-lci.pdf>
-<ligpaper-degrdiff.pdf, id=93, 867.24pt x 505.89pt>
+<ligpaper-degrdiff.pdf, id=85, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=94, 1734.48pt x 1156.32pt>
+<ligpaper-graphcorr.pdf, id=86, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot_pca.pdf, id=95, 433.62pt x 433.62pt>
+<ligpaper-metaprot_pca.pdf, id=87, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
 
-LaTeX Warning: Float too large for page by 37.17365pt on input line 209.
+LaTeX Warning: Reference `catab' on page 22 undefined on input line 298.
+
+
+LaTeX Warning: Reference `catab' on page 22 undefined on input line 298.
+
+
+LaTeX Warning: Float too large for page by 37.17365pt on input line 300.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./tab_init.tex [22 <./ligpaper-mb.pdf>] [23 <./ligpaper-metaprot2.pdf>]
-[24 <./ligpaper-f2bnew.pdf>] [25 <./ligpaper-lci.pdf>] [26 <./ligpaper-degrdiff
-.pdf>] [27 <./ligpaper-graphcorr.pdf>] [28 <./ligpaper-metaprot_pca.pdf>]
-[29
+(./tab_init.tex [22] [23 <./ligpaper-enz.pdf>] [24 <./ligpaper-mb.pdf>]
+[25 <./ligpaper-metaprot2.pdf>] [26 <./ligpaper-f2bnew.pdf>] [27 <./ligpaper-lc
+i.pdf>] [28 <./ligpaper-degrdiff.pdf>] [29 <./ligpaper-graphcorr.pdf>] [30 <./l
+igpaper-metaprot_pca.pdf>] [31
 
-]) (./tab_pyrprod.tex [30
+]) (./tab_pyrprod.tex [32
 
 ]
 Overfull \hbox (8.02017pt too wide) in paragraph at lines 63--112
  [] 
  []
 
-[31]) [32] [33
+[33]) [34] (./ligpaper.aux)
 
-] [34] [35
+LaTeX Warning: There were undefined references.
 
-] (./ligpaper.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 4527 strings out of 495061
- 63230 string characters out of 1182621
- 125018 words of memory out of 3000000
- 7518 multiletter control sequences out of 15000+50000
- 40197 words of font info for 83 fonts, out of 3000000 for 9000
+ 4520 strings out of 495061
+ 63178 string characters out of 1182621
+ 124096 words of memory out of 3000000
+ 7517 multiletter control sequences out of 15000+50000
+ 37049 words of font info for 77 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 36i,9n,38p,2897b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm100
-0.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b>
-Output written on ligpaper.pdf (35 pages, 358014 bytes).
+ 36i,9n,38p,2897b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ligpaper.pdf (34 pages, 344373 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
+ 231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

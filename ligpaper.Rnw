@@ -75,7 +75,7 @@
 % Title must be 150 characters or less
 \begin{flushleft}
 {\Large
-\textbf{Controls of litter chemistry over early lignin decomposition in beech litter}
+\textbf{Nutrient content controls onset of lignin decomposition in Beech litter}
 }
 \\
 % Insert Author names, affiliations and corresponding author email.
@@ -103,8 +103,98 @@ This study formed part of the national research network MICDIF (Linking microbia
 % The bibtex filename
 \bibliography{library}
 
-%\newpage
+\newpage
 \section*{Figure Legends}
+
+\begin{figure}[!h]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{fig_enz}
+\end{center}
+\caption{
+{\bf Respiration rates, concentration of soluble organic C and potential extracellular enzyme activities} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001, b.d. - below detection limit.}
+\label{fig:enz}
+\end{figure}
+
+\begin{figure}[!h]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{fig_mb}
+\end{center}
+\caption{
+{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:mb}
+\end{figure}
+
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{metaprot2}
+\end{center}
+\caption{
+{\bf Protein abundance of fungal and bacterial taxa.} Litter was collected in Achenkirch (AK);, Klausenleopoldsdorf (KL); Ossiach (OS); Schottenwald (SW). Samples were analyzed after sterilization, re-innoculation and incubation for 14, 97, 181, or 475 days.}
+\label{fig:metaprot_barplot}
+\end{figure*}
+
+
+\begin{figure}[!h]
+\begin{center}
+%\setkeys{Gin}{width=0.7\textwidth}
+%\inputgraphics[width=4in]{figure_name.2.eps}
+%\SweaveInput{fig_f2b}
+\end{center}
+\caption{
+{\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} A: F:B protein abundance (left) and DNA (right) ratio. B: Correlations between F:B preotein abundance ratios and lignin loss (top), carbohydrate loss (mid) and lignin loss : carbon loss (bottom) for 0-6 months (left) and 6-15 months (right, errorbars indicate standard errors, n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:f2b}
+\end{figure}
+
+\begin{figure}[!h]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{fig_lci}
+\end{center}
+\caption{
+{\bf Develoment of lignin to carbohydrate index (lignin : (lignin+carbohydrates), LCI)} during time of beech litter decomposition (left) or plotted against cumulative C loss (right). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:lci}
+\end{figure}
+
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{fig_degr}
+\end{center}
+\caption{
+{\bf Carbon loss corrected amounts of lignin and carbohydrates} degraded in beech litter collected in Achenkirch (AK), Klausenleopoldsdorf (KL), Ossiach (OS) and Schottenwald (SW). Carbon loss was calculated based on accumulated respiration for each mesocosm. Error bars indicate standard errors (n=4-5). The dashed line marks no discrimation during decomposition between lignin, carbohydrates and bulk carbon}
+\label{fig:degr}
+\end{figure*}
+
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{fig_graphcorr}
+\end{center}
+\caption{
+{\bf Correlation between the LCI change or the ratio of lignin : carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter : microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+\label{fig:cor1}
+\end{figure*}
+
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+%\setkeys{Gin}{width=\textwidth}
+%\SweaveInput{metaprot}
+\end{center}
+\caption{
+{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Rectangles indicate samples of identical incubation time. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla): Dothideomycetes (Doth); Eurotiomycetes (Euro); Leotiomycetes (Leot); Saccharomycetes (Sacc); Sordariomycetes (Sord); Agaricomycetes (Agar); Tremellomycetes (Trem); Ustilaginomycetes (Usti); Thermotogae (Ther); Bacteroidetes (Bact); Actinobacteria (Acti); Cyanobacteria (Cyan); Firmicutes (Firm); Fusobacteria (Fuso); Verrucomicrobia (Verr); Dictyoglomi (Dict); Alphaproteobacteria (Alph); Betaproteobacteria (Beta); Gammaproteobacteria (Gamm); Deltaproteobacteria (Delt); Epsilonproteobacteria (Epsi). Taxa factor loadings were printed x2 for better readability. Correlations between CA 1, CA 2, and litter chemistry, microbial stoichiometry, and protein abundance of microbial taxa are stated in supplemental table \ref{catab}. 
+Arrows represent vectorial fittings of these variables calculated independently from the CA, plotted only if p\textless 0.05: Litter C content (C lit); C:X\textsubscript{Microbial}/C:X\textsubscript{Litter} (C:P imb, C:N imb).}
+\label{fig:metaprotpca}
+\end{figure*}
 
 \newpage
 \begin{figure}[!ht]
@@ -115,7 +205,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Respiration rates, concentration of soluble organic C and potential extracellular enzyme activities} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klaus-nleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001, b.d. - below detection limit.}
-\label{fig:enz}
+%\label{fig:enz}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -126,7 +216,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
-\label{fig:mb}
+%\label{fig:mb}
 \end{figure}
 
 \newpage
@@ -138,7 +228,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Protein abundance of fungal and bacterial taxa.} Litter was collected in Achenkirch (AK);, Klausenleopoldsdorf (KL); Ossiach (OS); Schottenwald (SW). Samples were analyzed after sterilization, re-innoculation and incubation for 14, 97, 181, or 475 days.}
-\label{fig:metaprot_barplot}
+%\label{fig:metaprot_barplot}
 \end{figure*}
 
 
@@ -150,7 +240,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Fungi:Bacteria (F:B) ratios and their correlations with LCI change:} A: F:B protein abundance (left) and DNA (right) ratio. B: Correlations between F:B preotein abundance ratios and lignin loss (top), carbohydrate loss (mid) and lignin loss : carbon loss (bottom) for 0-6 months (left) and 6-15 months (right, errorbars indicate standard errors, n=4-5).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
-\label{fig:f2b}
+%\label{fig:f2b}
 \end{figure}
 
 \newpage
@@ -162,7 +252,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Develoment of lignin to carbohydrate index (lignin : (lignin+carbohydrates), LCI)} during time of beech litter decomposition (left) or plotted against cumulative C loss (right). Errorbars indicate standard errors (n=4-5). The dashed line indicates a constant ratio between lignin and carbohydrates (i.e. no preferential decomposition of carbohydrates. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
-\label{fig:lci}
+%\label{fig:lci}
 \end{figure}
 
 
@@ -175,7 +265,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Carbon loss corrected amounts of lignin and carbohydrates} degraded in beech litter collected in Achenkirch (AK), Klausenleopoldsdorf (KL), Ossiach (OS) and Schottenwald (SW). Carbon loss was calculated based on accumulated respiration for each mesocosm. Error bars indicate standard errors (n=4-5). The dashed line marks no discrimation during decomposition between lignin, carbohydrates and bulk carbon}
-\label{fig:degr}
+%\label{fig:degr}
 \end{figure*}
 
 \newpage
@@ -187,7 +277,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \end{center}
 \caption{
 {\bf Correlation between the LCI change or the ratio of lignin : carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter : microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
-\label{fig:cor1}
+%\label{fig:cor1}
 \end{figure*}
 
 
@@ -200,12 +290,22 @@ This study formed part of the national research network MICDIF (Linking microbia
 \SweaveInput{metaprot}
 \end{center}
 \caption{
-{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Rectangles indicate samples of identical incubation time. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla): Dothideomycetes (Doth); Eurotiomycetes (Euro); Leotiomycetes (Leot); Saccharomycetes (Sacc); Sordariomycetes (Sord); Agaricomycetes (Agar); Tremellomycetes (Trem); Ustilaginomycetes (Usti); Thermotogae (Ther); Bacteroidetes (Bact); Actinobacteria (Acti); Cyanobacteria (Cyan); Firmicutes (Firm); Fusobacteria (Fuso); Verrucomicrobia (Verr); Dictyoglomi (Dict); Alphaproteobacteria (Alph); Betaproteobacteria (Beta); Gammaproteobacteria (Gamm); Deltaproteobacteria (Delt); Epsilonproteobacteria (Epsi). Taxa factor loadings were printed x2 for better readability. Correlations between CA 1, CA 2, and litter chemistry, microbial stoichiometry, and protein abundance of microbial taxa are stated in supplemental table \ref{catab}. Arrows represent vectorial fittings of these variables calculated independently from the CA, plotted only if p\textless 0.05: Litter C content (C lit); C:X\textsubscript{Microbial}/C:X\textsubscript{Litter} (C:P imb, C:N imb).}
-\label{fig:metaprotpca}
+{\bf Microbial commuity composition.} The first two components of a correspondance analysis (CA) of protein abundances found. Rectangles indicate samples of identical incubation time. Peptides were aggregated at class level (fungi and proteobacteria) or phylum level (other bacterial phyla): Dothideomycetes (Doth); Eurotiomycetes (Euro); Leotiomycetes (Leot); Saccharomycetes (Sacc); Sordariomycetes (Sord); Agaricomycetes (Agar); Tremellomycetes (Trem); Ustilaginomycetes (Usti); Thermotogae (Ther); Bacteroidetes (Bact); Actinobacteria (Acti); Cyanobacteria (Cyan); Firmicutes (Firm); Fusobacteria (Fuso); Verrucomicrobia (Verr); Dictyoglomi (Dict); Alphaproteobacteria (Alph); Betaproteobacteria (Beta); Gammaproteobacteria (Gamm); Deltaproteobacteria (Delt); Epsilonproteobacteria (Epsi). Taxa factor loadings were printed x2 for better readability. Correlations between CA 1, CA 2, and litter chemistry, microbial stoichiometry, and protein abundance of microbial taxa are stated in supplemental table \ref{catab}. 
+Arrows represent vectorial fittings of these variables calculated independently from the CA, plotted only if p\textless 0.05: Litter C content (C lit); C:X\textsubscript{Microbial}/C:X\textsubscript{Litter} (C:P imb, C:N imb).}
+%\label{fig:metaprotpca}
 \end{figure*}
 
 \newpage
 
+
+%\section*{Supporting Information}
+
+\newpage
+\input{tab_init}
+
+\input{tab_pyrprod}
+
+\end{document}
 
 %\section*{Supporting Information}
 
@@ -249,7 +349,8 @@ colnames(mighty.corr.matrix)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec",
 
 mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable", align=c("l", rep("r",10)) )
+tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable", align=c("l", rep("r"
+,10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
@@ -289,7 +390,8 @@ colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec"
 
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - potetial peroxidase activity / potential cellulase activity, Phen/Cell - potential phenol activity / potential cellulase activity.", label="corrtable2", align=c("l", rep("r",10)) )
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - potetial peroxidase activity / potential cellulase activity, Phen/Cell - potential phenol activity / potential cellulase activity.", label="corrtable2", align=c("l", rep(
+"r",10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
@@ -303,4 +405,3 @@ table<-xtable(tab, caption="Correlations coeffitients between correspondance ana
 print(table, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
 \end{document}
-
