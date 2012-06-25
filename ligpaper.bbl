@@ -69,6 +69,14 @@ Preston CM, Trofymow JA, Sayer BG, Niu J (1997) {13C nuclear magnetic resonance
 \newblock Canadian Journal of Botany 75: 1601--1613.
 \bibAnnoteFile{Preston1997}
 
+\bibitem{Klotzbucher2011a}
+Klotzb\"{u}cher T, Filley TR, Kaiser K, Kalbitz K (2011) {A study of lignin
+  degradation in leaf and needle litter using 13C-labelled tetramethylammonium
+  hydroxide (TMAH) thermochemolysis: Comparison with CuO oxidation and van
+  Soest methods}.
+\newblock Organic Geochemistry 42: 1271--1278.
+\bibAnnoteFile{Klotzbucher2011a}
+
 \bibitem{Amelung2008}
 Amelung W, Brodowski S, Sandhage-Hofmann A, Bol R (2008) {Combining Biomarker
   with Stable Isotope Analyses for Assessing the Transformation and Turnover of
@@ -125,13 +133,6 @@ Knorr M, Frey S, Curtis P (2005) {Nitrogen addition and litter decomposition :
 \newblock Ecology 86: 3252--3257.
 \bibAnnoteFile{Knorr2005}
 
-\bibitem{Fontaine2011}
-Fontaine S, Henault C, Aamor a, Bdioui N, Bloor J, et~al. (2011) {Fungi mediate
-  long term sequestration of carbon and nitrogen in soil through their priming
-  effect}.
-\newblock Soil Biology and Biochemistry 43: 86--96.
-\bibAnnoteFile{Fontaine2011}
-
 \bibitem{Talbot2011}
 Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
   determined by lignin chemistry}.
@@ -147,7 +148,10 @@ Mooshammer M, Wanek W, Schnecker J, Wild B, Leitner S, et~al. (2011)
 
 \bibitem{Sterner2002}
 Sterner RW, Elser JJ (2002) {Ecological Stoichiometry}.
-\bibAnnoteFile{Sterner2002}
+\newblock Princeton: Princeton University Press, 439 pp.
+\bibAnnote{Sterner2002}{From Duplicate 1 ( Ecological stoichiometry: the
+  biology of elements from molecules to the biosphere - Sterner, Robert Warner;
+  Elser, James J. )}
 
 \bibitem{Leitner2011}
 Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
@@ -157,11 +161,17 @@ Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
 \newblock Soil Biology and Biochemistry in review.
 \bibAnnoteFile{Leitner2011}
 
-\bibitem{Janshekar1988}
-Janshekar H, Fiechter A (1988) {Cultivation of Phanerochaete chrysosporium and
-  production of lignin peroxidases in submerged stirred tank reactors}.
-\newblock Journal of Biotechnology 8: 97--112.
-\bibAnnoteFile{Janshekar1988}
+\bibitem{Cornelissen1997}
+Cornelissen J, Thompson K (1997) {Functional leaf attributes predict litter
+  decomposition rate in herbaceous plants}.
+\newblock New Phytologist 135: 109--114.
+\bibAnnoteFile{Cornelissen1997}
+
+\bibitem{Hodge2000}
+Hodge A, Robinson D, Fitter A (2000) {Are microorganisms more effective than
+  plants at competing for nitrogen?}
+\newblock Trends in plant science 5: 304--8.
+\bibAnnoteFile{Hodge2000}
 
 \bibitem{Wanek2010}
 Wanek W, Mooshammer M, Bl\"{o}chl A, Hanreich A, Keiblinger K, et~al. (2010)
@@ -247,7 +257,10 @@ Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
   {Statistical analysis of membrane proteome expression changes in
   Saccharomyces cerevisiae.}
 \newblock Journal of proteome research 5: 2339--47.
-\bibAnnoteFile{Zybailov2006}
+\bibAnnote{Zybailov2006}{From Duplicate 1 ( Statistical analysis of membrane
+  proteome expression changes in Saccharomyces cerevisiae. - Zybailov, Boris;
+  Mosley, Amber L; Sardiu, Mihaela E; Coleman, Michael K; Florens, Laurence;
+  Washburn, Michael P )}
 
 \bibitem{Bantscheff2007}
 Bantscheff M, Schirle M, Sweetman G, Rick J, Kuster B (2007) {Quantitative mass

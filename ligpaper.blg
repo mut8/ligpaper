@@ -2,74 +2,89 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
-Repeated entry---line 281 of file library.bib
- : @article{Craine2007
- :                    ,
+Repeated entry---line 1563 of file library.bib
+ : @book{Sterner2002
+ :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2382 of file library.bib
+Repeated entry---line 2146 of file library.bib
  : @article{Zybailov2006
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2813 of file library.bib
+Repeated entry---line 2478 of file library.bib
+ : @article{Craine2007
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2537 of file library.bib
  : @book{Sterner2002
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2886 of file library.bib
+Repeated entry---line 2834 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4345 of file library.bib
+ : @article{Craine2007
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5009 of file library.bib
+ : @article{Zybailov2006
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5157 of file library.bib
  : @article{Talbot2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3235 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4055 of file library.bib
+Repeated entry---line 5198 of file library.bib
  : @article{Schellekens2009
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 15083 of file library.bib
+Repeated entry---line 12164 of file library.bib
  : @article{Bantscheff2007
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--missing publisher in Sterner2002
-You've used 41 entries,
+Warning--I didn't find a database entry for "Vence2003"
+Warning--I didn't find a database entry for "Sinsabaugh2006"
+Warning--I didn't find a database entry for "Manzoni2010"
+Warning--I didn't find a database entry for "Keiblinger2010"
+You've used 42 entries,
             2441 wiz_defined-function locations,
-            874 strings with 16858 characters,
-and the built_in function-call counts, 38696 in all, are:
-= -- 3602
-> -- 672
+            894 strings with 17639 characters,
+and the built_in function-call counts, 39310 in all, are:
+= -- 3662
+> -- 676
 < -- 0
-+ -- 336
-- -- 168
-* -- 3387
-:= -- 4592
-add.period$ -- 83
-call.type$ -- 41
-change.case$ -- 37
++ -- 338
+- -- 169
+* -- 3442
+:= -- 4664
+add.period$ -- 86
+call.type$ -- 42
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 3816
-empty$ -- 4027
-format.name$ -- 206
-if$ -- 8612
+cite$ -- 84
+duplicate$ -- 3874
+empty$ -- 4094
+format.name$ -- 208
+if$ -- 8752
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 452
-newline$ -- 221
-num.names$ -- 41
-pop$ -- 544
+int.to.str$ -- 42
+missing$ -- 461
+newline$ -- 227
+num.names$ -- 42
+pop$ -- 555
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 334
+skip$ -- 330
 stack$ -- 0
-substring$ -- 5747
-swap$ -- 876
+substring$ -- 5834
+swap$ -- 894
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 277
-width$ -- 43
-write$ -- 456
-(There were 7 error messages)
+warning$ -- 0
+while$ -- 281
+width$ -- 44
+write$ -- 470
+(There were 10 error messages)

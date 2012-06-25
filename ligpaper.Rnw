@@ -89,7 +89,7 @@
 \input{introduction}
 % Results and Discussion can be combined.
 \input{results}
-\input{discussion}
+\input{discussion_new}
 
 % You may title this section "Methods" or "Models". 
 % "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
@@ -296,23 +296,18 @@ Arrows represent vectorial fittings of these variables calculated independently 
 \end{figure*}
 
 \newpage
+\section*{Tables}
+
+\input{tab_init}
+
 
 
 %\section*{Supporting Information}
 
-\newpage
-\input{tab_init}
 
-\input{tab_pyrprod}
 
-\end{document}
+%\input{tab_pyrprod}
 
-%\section*{Supporting Information}
-
-\newpage
-\input{tab_init}
-
-\input{tab_pyrprod}
 
 \begin{landscape}
 

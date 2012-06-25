@@ -93,7 +93,7 @@
 \input{introduction}
 % Results and Discussion can be combined.
 \input{results}
-\input{discussion}
+\input{discussion_new}
 
 % You may title this section "Methods" or "Models". 
 % "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
@@ -300,28 +300,23 @@ Arrows represent vectorial fittings of these variables calculated independently 
 \end{figure*}
 
 \newpage
+\section*{Tables}
+
+\input{tab_init}
+
 
 
 %\section*{Supporting Information}
 
-\newpage
-\input{tab_init}
 
-\input{tab_pyrprod}
 
-\end{document}
+%\input{tab_pyrprod}
 
-%\section*{Supporting Information}
-
-\newpage
-\input{tab_init}
-
-\input{tab_pyrprod}
 
 \begin{landscape}
 
 % latex table generated in R 2.14.1 by xtable 1.7-0 package
-% Mon Apr  2 10:06:03 2012
+% Mon Jun 25 18:32:49 2012
 \begin{table}[h!]
 \begin{center}
 \caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.}
@@ -346,7 +341,7 @@ Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.
   C litter & \textbf{ -0.545 } & \textbf{ 0.506 } & \textbf{ -0.578 } & \textbf{ 0.604 } & -0.368 & \textbf{ 0.643 } & \textbf{ -0.618 } & \textbf{ 0.698 } & \textbf{ 0.525 } & \textbf{ 0.581 } \\ 
   extractable C & \textbf{ 0.609 } & \textbf{ -0.766 } & \textbf{ 0.782 } & -0.37 & \textbf{ 0.814 } & \textbf{ -0.446 } & \textbf{ 0.658 } & \textbf{ -0.54 } & -0.392 & \textbf{ -0.484 } \\ 
   N litter & 0.354 & \textbf{ -0.517 } & \textbf{ 0.503 } & -0.14 & \textbf{ 0.587 } & -0.187 & 0.366 & -0.203 & -0.119 & -0.159 \\ 
-  P litter & \textbf{ 0.682 } & -0.222 & \textbf{ 0.517 } & \textbf{ -0.747 } & 0.175 & \textbf{ -0.68 } & 0.188 & \textbf{ -0.491 } & -0.0728 & -0.16 \\ 
+  P litter & \textbf{ 0.692 } & -0.262 & \textbf{ 0.543 } & \textbf{ -0.756 } & 0.204 & \textbf{ -0.689 } & 0.232 & \textbf{ -0.501 } & -0.0902 & -0.173 \\ 
   C:N litter & -0.405 & \textbf{ 0.586 } & \textbf{ -0.57 } & 0.175 & \textbf{ -0.654 } & 0.234 & -0.44 & 0.273 & 0.195 & 0.242 \\ 
   C:P litter & \textbf{ -0.636 } & 0.174 & \textbf{ -0.453 } & \textbf{ 0.754 } & -0.0823 & \textbf{ 0.649 } & -0.176 & 0.418 & 0.049 & 0.0805 \\ 
   N:P litter & \textbf{ -0.512 } & -0.0287 & -0.264 & \textbf{ 0.714 } & 0.147 & \textbf{ 0.577 } & -0.0202 & 0.316 & -0.0316 & -0.0192 \\ 
@@ -365,7 +360,7 @@ Massloss & 0.291 & -0.15 & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.
 \end{table}
 \newpage
 % latex table generated in R 2.14.1 by xtable 1.7-0 package
-% Mon Apr  2 10:06:03 2012
+% Mon Jun 25 18:32:49 2012
 \begin{table}[h!]
 \begin{center}
 \caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Data taken from \cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - potetial peroxidase activity / potential cellulase activity, Phen/Cell - potential phenol activity / potential cellulase activity.}
@@ -390,7 +385,7 @@ Massloss & 0.246 & 0.156 & 0.068 & \textbf{ 0.582 } & \textbf{ 0.708 } & 0.00521
   C litter & 0.123 & -0.0651 & 0.177 & -0.325 & -0.264 & -0.204 & -0.289 & 0.0236 & \textbf{ 0.501 } & -0.348 \\ 
   extractable C & 0.231 & 0.435 & -0.0861 & \textbf{ 0.828 } & \textbf{ 0.89 } & 0.074 & 0.218 & -0.109 & \textbf{ -0.538 } & 0.409 \\ 
   N litter & 0.21 & 0.356 & -0.0654 & \textbf{ 0.816 } & \textbf{ 0.896 } & -0.00431 & 0.172 & -0.12 & -0.431 & 0.349 \\ 
-  P litter & -0.117 & -0.037 & -0.182 & \textbf{ 0.764 } & \textbf{ 0.762 } & 0.161 & 0.318 & -0.0746 & \textbf{ -0.464 } & 0.325 \\ 
+  P litter & -0.209 & -0.0272 & -0.266 & \textbf{ 0.775 } & \textbf{ 0.721 } & 0.228 & 0.243 & 0.0168 & -0.359 & 0.234 \\ 
   C:N litter & -0.272 & -0.365 & 0.0158 & \textbf{ -0.794 } & \textbf{ -0.901 } & 0.027 & -0.207 & 0.155 & \textbf{ 0.49 } & -0.404 \\ 
   C:P litter & 0.329 & 0.122 & 0.315 & \textbf{ -0.645 } & \textbf{ -0.541 } & -0.276 & -0.218 & -0.0672 & 0.283 & -0.162 \\ 
   N:P litter & \textbf{ 0.471 } & 0.289 & 0.328 & -0.336 & -0.179 & -0.293 & -0.113 & -0.148 & 0.048 & 0.0338 \\ 
@@ -409,7 +404,7 @@ Massloss & 0.246 & 0.156 & 0.068 & \textbf{ 0.582 } & \textbf{ 0.708 } & 0.00521
 \end{table}\end{landscape}
 
 % latex table generated in R 2.14.1 by xtable 1.7-0 package
-% Mon Apr  2 10:06:03 2012
+% Mon Jun 25 18:32:49 2012
 \begin{table}[h!]
 \begin{center}
 \caption{Correlations coeffitients between correspondance analysis factors CA 1 and 2, litter and microbial stoichiometry and protein abundance of microbial taxa. Significant (p\textless 0.05) correlations are presented in bold.}
@@ -426,7 +421,7 @@ Incubatation time & \textbf{ 0.872 } & -0.281 \\
   PO4 conc & 0.161 & 0.0506 \\ 
   C litter & \textbf{ -0.787 } & -0.172 \\ 
   N litter & -0.174 & 0.268 \\ 
-  P litter & -0.149 & 0.308 \\ 
+  P litter & -0.162 & 0.367 \\ 
   C:N litter & -0.0597 & -0.272 \\ 
   C:P litter & 0.0771 & -0.334 \\ 
   N:P litter & 0.112 & -0.223 \\ 
