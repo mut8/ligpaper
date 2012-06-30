@@ -134,9 +134,9 @@ Knorr M, Frey S, Curtis P (2005) {Nitrogen addition and litter decomposition :
 \bibAnnoteFile{Knorr2005}
 
 \bibitem{Talbot2011}
-Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
-  determined by lignin chemistry}.
-\newblock Biogeochemistry : 1--17--17.
+Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
+  nitrogem drive litter chemistry - decay relationships}.
+\newblock Ecology in press.
 \bibAnnoteFile{Talbot2011}
 
 \bibitem{Mooshammer2011}
@@ -148,10 +148,8 @@ Mooshammer M, Wanek W, Schnecker J, Wild B, Leitner S, et~al. (2011)
 
 \bibitem{Sterner2002}
 Sterner RW, Elser JJ (2002) {Ecological Stoichiometry}.
-\newblock Princeton: Princeton University Press, 439 pp.
-\bibAnnote{Sterner2002}{From Duplicate 1 ( Ecological stoichiometry: the
-  biology of elements from molecules to the biosphere - Sterner, Robert Warner;
-  Elser, James J. )}
+\newblock Princeton: Princeton University Press.
+\bibAnnoteFile{Sterner2002}
 
 \bibitem{Leitner2011}
 Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
@@ -160,6 +158,12 @@ Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
   (Fagus silvatica L. ) litter}.
 \newblock Soil Biology and Biochemistry in review.
 \bibAnnoteFile{Leitner2011}
+
+\bibitem{Vance2003}
+Vance CP, Uhde‐Stone C, Allen DL (2003) {Phosphorus acquisition and use:
+  critical adaptations by plants for securing a nonrenewable resource}.
+\newblock New Phytologist 157.
+\bibAnnoteFile{Vance2003}
 
 \bibitem{Cornelissen1997}
 Cornelissen J, Thompson K (1997) {Functional leaf attributes predict litter
@@ -172,6 +176,12 @@ Hodge A, Robinson D, Fitter A (2000) {Are microorganisms more effective than
   plants at competing for nitrogen?}
 \newblock Trends in plant science 5: 304--8.
 \bibAnnoteFile{Hodge2000}
+
+\bibitem{Treseder2011}
+Treseder KK, Kivlin SN, Hawkes CV (2011) {Evolutionary trade-offs among
+  decomposers determine responses to nitrogen enrichment.}
+\newblock Ecology letters .
+\bibAnnoteFile{Treseder2011}
 
 \bibitem{Wanek2010}
 Wanek W, Mooshammer M, Bl\"{o}chl A, Hanreich A, Keiblinger K, et~al. (2010)
@@ -257,10 +267,7 @@ Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
   {Statistical analysis of membrane proteome expression changes in
   Saccharomyces cerevisiae.}
 \newblock Journal of proteome research 5: 2339--47.
-\bibAnnote{Zybailov2006}{From Duplicate 1 ( Statistical analysis of membrane
-  proteome expression changes in Saccharomyces cerevisiae. - Zybailov, Boris;
-  Mosley, Amber L; Sardiu, Mihaela E; Coleman, Michael K; Florens, Laurence;
-  Washburn, Michael P )}
+\bibAnnoteFile{Zybailov2006}
 
 \bibitem{Bantscheff2007}
 Bantscheff M, Schirle M, Sweetman G, Rick J, Kuster B (2007) {Quantitative mass

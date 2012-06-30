@@ -326,9 +326,12 @@ tmp.cor<-corr.ab(tmp,hmw.means, tex=T)
 corr1<-alldata[alldata$days==181,c(10,37, 71,11,14,13,12,15:16,20,22,24, 38, 56, 39:43, 53:55,  75:77, 73)]
 corr2<-hmw.proc
 mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
-#rownames cor corraltion table
-rownames(mighty.corr.matrix) <- 
-  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Chitinase activity", "Phosphatase activity", "Phenooxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
+#rownames/colnames cor correltion table
+
+cor.colnames<-c("$\\Delta _{L}$", "$\\Delta _{Ch}$", "$\\Delta _{LCI}$", "$L_{\\%loss}$", "$Ch_{\\%loss}$", "$L_{resp}$", "$Ch_{resp}$", "$L:Ch_{\\%loss}$", "Per:Cell", "Phen:Cell")
+
+cor.rownames<-
+  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Phosphatase activity","Chitinase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
 "N mineralization", #"NH4 immobilization", 
 "Nitrification", #"NO3 immobilization",
 "P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
@@ -336,7 +339,11 @@ rownames(mighty.corr.matrix) <-
 #"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
 "C:N mic", "C:P mic", "N:P mic", "C:N imbalance", "C:P imbalance", "N:P imbalance", "Fungi/bacteria(qPCR)")
 
-colnames(mighty.corr.matrix)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec", "L resp", "C resp", "L/C dec", "Per/Cell", "Phen/Cell")
+
+colnames(mighty.corr.matrix)<-cor.colnames
+
+rownames(mighty.corr.matrix) <- cor.rownames
+
 
 #write table for export if needed
 #write.csv(mighty.corr.matrix, "corrmatrix.csv")
@@ -344,7 +351,7 @@ colnames(mighty.corr.matrix)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec",
 
 mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - Potetial peroxidase activity / potential cellulase activity, Phen/Cell - Potetial phenolo activity / potential cellulase activity.", label="corrtable", align=c("l", rep("r"
+tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\\Delta _{L}$ - lignin accumulation, $\\Delta _{Ch}$ - Carbydrate accumulation, $\\Delta _{LCI}$ - LCI difference, $L_{\\%loss}$ - lignin decomposition, $Ch_{\\%loss}$ - carbohydrate decomposition, $L_{resp}$ - lignin loss : carbon loss, $Ch_{resp}$ - carbohydrate loss : carbon loss, $L:Ch_{\\%loss}$ - lignin loss : carbohydrate loss, Per:Cell - Potetial peroxidase activity : potential cellulase activity, Phen:Cell - Potetial phenolo activity : potential cellulase activity.", label="corrtable", align=c("l", rep("r"
 ,10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
@@ -367,17 +374,12 @@ corr1<-alldata[alldata$days==475,c(10,37, 71,11,14,13,12, 15:16,20,22,24, 38, 56
 corr2<-hmw.proc2
 mighty.corr.matrix2<-corr.ab(corr1, corr2, tex=T)
 #rownames cor corraltion table
-rownames(mighty.corr.matrix2) <- 
-  c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Phosphatase activity","Chitinase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
-"N mineralization", #"NH4 immobilization", 
-"Nitrification", #"NO3 immobilization",
-"P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
-"C litter", "extractable C", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter",
-#"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
-"C:N mic", "C:P mic", "N:P mic", "C:N imbalance", "C:P imbalance", "N:P imbalance", "Fungi/bacteria(qPCR)")
 
 
-colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec", "L resp", "C resp", "L/C dec", "Per/Cell", "Phen/Cell")
+
+rownames(mighty.corr.matrix2) <- cor.rownames
+
+colnames(mighty.corr.matrix2)<-cor.colnames
 
 #write table for export if needed
 #write.csv(mighty.corr.matrix, "corrmatrix.csv")
@@ -385,7 +387,7 @@ colnames(mighty.corr.matrix2)<-c("L acc", "Ch acc", "LCI diff", "L dec", "C dec"
 
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.L acc - lignin accumulation, Ch acc - Carbydrate accumulation, LCI - LCI difference, L dec - lignin decomposition rate, C dec - carbohydrate decomposition,  rate, L resp - lignin loss / carbon loss, C resp - carbohydrate loss / carbon loss, L/C dec - lignin loss / carbohydrate loss, Per/Cell - potetial peroxidase activity / potential cellulase activity, Phen/Cell - potential phenol activity / potential cellulase activity.", label="corrtable2", align=c("l", rep(
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Data taken from \\cite{Mooshammer2011, Leitner2011}. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days.$\\Delta _{L}$ - lignin accumulation, $\\Delta _{Ch}$ - Carbydrate accumulation, $\\Delta _{LCI}$ - LCI difference, $L_{\\%loss}$ - lignin decomposition, $Ch_{\\%loss}$ - carbohydrate decomposition, $L_{resp}$ - lignin loss : carbon loss, $Ch_{resp}$ - carbohydrate loss : carbon loss, $L:Ch_{\\%loss}$ - lignin loss : carbohydrate loss, Per:Cell - Potetial peroxidase activity : potential cellulase activity, Phen:Cell - Potetial phenolo activity : potential cellulase activity.", label="corrtable2", align=c("l", rep(
 "r",10)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
