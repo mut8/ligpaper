@@ -134,9 +134,9 @@ Knorr M, Frey S, Curtis P (2005) {Nitrogen addition and litter decomposition :
 \bibAnnoteFile{Knorr2005}
 
 \bibitem{Talbot2011}
-Talbot JM, Treseder KK (2011) {Interactions between lignin, cellulose, and
-  nitrogem drive litter chemistry - decay relationships}.
-\newblock Ecology in press.
+Talbot JM, Yelle DJ, Nowick J, Treseder KK (2011) {Litter decay rates are
+  determined by lignin chemistry}.
+\newblock Biogeochemistry : 1--17--17.
 \bibAnnoteFile{Talbot2011}
 
 \bibitem{Mooshammer2011}
@@ -148,8 +148,10 @@ Mooshammer M, Wanek W, Schnecker J, Wild B, Leitner S, et~al. (2011)
 
 \bibitem{Sterner2002}
 Sterner RW, Elser JJ (2002) {Ecological Stoichiometry}.
-\newblock Princeton: Princeton University Press.
-\bibAnnoteFile{Sterner2002}
+\newblock Princeton: Princeton University Press, 439 pp.
+\bibAnnote{Sterner2002}{From Duplicate 1 ( Ecological stoichiometry: the
+  biology of elements from molecules to the biosphere - Sterner, Robert Warner;
+  Elser, James J. )}
 
 \bibitem{Leitner2011}
 Leitner S, Wanek W, Wild B, Haemmerle I, Kohl L, et~al. (2011) {Linking
@@ -164,6 +166,12 @@ Vance CP, Uhde‐Stone C, Allen DL (2003) {Phosphorus acquisition and use:
   critical adaptations by plants for securing a nonrenewable resource}.
 \newblock New Phytologist 157.
 \bibAnnoteFile{Vance2003}
+
+\bibitem{Wright2005}
+Wright IJ, Reich PB, Cornelissen JHC, Falster DS, Garnier E, et~al. (2005)
+  {Assessing the generality of global leaf trait relationships.}
+\newblock The New phytologist 166: 485--96.
+\bibAnnoteFile{Wright2005}
 
 \bibitem{Cornelissen1997}
 Cornelissen J, Thompson K (1997) {Functional leaf attributes predict litter
@@ -217,7 +225,7 @@ Kaiser C, Koranda M, Kitzler B, Fuchslueger L, Schnecker J, et~al. (2010)
 
 \bibitem{Schellekens2009}
 Schellekens J, Buurman P, Pontevedra-Pombal X (2009) {Selecting parameters for
-  the environmental interpretation of peat molecular chemistry - A
+  the environmental interpretation of peat molecular chemistry – A
   pyrolysis-GC/MS study}.
 \newblock Organic Geochemistry 40: 678--691.
 \bibAnnoteFile{Schellekens2009}
@@ -267,7 +275,10 @@ Zybailov B, Mosley AL, Sardiu ME, Coleman MK, Florens L, et~al. (2006)
   {Statistical analysis of membrane proteome expression changes in
   Saccharomyces cerevisiae.}
 \newblock Journal of proteome research 5: 2339--47.
-\bibAnnoteFile{Zybailov2006}
+\bibAnnote{Zybailov2006}{From Duplicate 1 ( Statistical analysis of membrane
+  proteome expression changes in Saccharomyces cerevisiae. - Zybailov, Boris;
+  Mosley, Amber L; Sardiu, Mihaela E; Coleman, Michael K; Florens, Laurence;
+  Washburn, Michael P )}
 
 \bibitem{Bantscheff2007}
 Bantscheff M, Schirle M, Sweetman G, Rick J, Kuster B (2007) {Quantitative mass

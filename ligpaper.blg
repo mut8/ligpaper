@@ -2,86 +2,90 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
-Repeated entry---line 2041 of file library.bib
- : @article{Zybailov2006
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2068 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2083 of file library.bib
- : @book{Sterner2002
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2841 of file library.bib
+Repeated entry---line 4577 of file library.bib
  : @article{Craine2007
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3111 of file library.bib
+Repeated entry---line 7117 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8229 of file library.bib
+ : @book{Sterner2002
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8466 of file library.bib
+ : @article{Zybailov2006
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9894 of file library.bib
+ : @article{Zybailov2006
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10395 of file library.bib
+ : @article{Craine2007
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10595 of file library.bib
  : @article{Talbot2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4044 of file library.bib
- : @article{Craine2007
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4481 of file library.bib
- : @article{Zybailov2006
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 4542 of file library.bib
+Repeated entry---line 14014 of file library.bib
  : @book{Sterner2002
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5288 of file library.bib
+Repeated entry---line 14752 of file library.bib
  : @article{Schellekens2009
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11145 of file library.bib
+Repeated entry---line 17182 of file library.bib
+ : @article{Schellekens2009
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 23129 of file library.bib
  : @article{Bantscheff2007
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Sinsabaugh2006"
-You've used 44 entries,
+Warning--I didn't find a database entry for "Osono2004"
+You've used 45 entries,
             2441 wiz_defined-function locations,
-            894 strings with 17564 characters,
-and the built_in function-call counts, 40267 in all, are:
-= -- 3749
-> -- 692
+            910 strings with 18522 characters,
+and the built_in function-call counts, 41846 in all, are:
+= -- 3897
+> -- 724
 < -- 0
-+ -- 346
-- -- 173
-* -- 3509
-:= -- 4790
-add.period$ -- 90
-call.type$ -- 44
-change.case$ -- 40
++ -- 362
+- -- 181
+* -- 3662
+:= -- 4973
+add.period$ -- 92
+call.type$ -- 45
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 88
-duplicate$ -- 3987
-empty$ -- 4192
-format.name$ -- 214
-if$ -- 8958
+cite$ -- 90
+duplicate$ -- 4134
+empty$ -- 4353
+format.name$ -- 223
+if$ -- 9311
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 476
-newline$ -- 237
-num.names$ -- 44
-pop$ -- 575
+int.to.str$ -- 45
+missing$ -- 491
+newline$ -- 242
+num.names$ -- 45
+pop$ -- 590
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 339
+skip$ -- 352
 stack$ -- 0
-substring$ -- 5937
-swap$ -- 917
+substring$ -- 6193
+swap$ -- 950
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 288
-width$ -- 46
-write$ -- 491
-(There were 10 error messages)
+while$ -- 300
+width$ -- 47
+write$ -- 502
+(There were 11 error messages)

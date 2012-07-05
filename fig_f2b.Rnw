@@ -1,32 +1,32 @@
 <<f2bnew, results=hide, echo=F, fig=T, height=11.5, width=8>>=
 
 par(#mfrow=c(4,2), 
-  mar=c(4.1,4.1,2.1,.1), cex.axis=.8, cex.lab=1, cex=1.1, cex.main=1.1)  
+  mar=c(4.1,5.1,2.1,.1), cex.axis=.8, cex.lab=1.1, cex=1.2, cex.main=1.2)  
 
 layout(matrix(c(1,2,3,4,5,6,7,8), 4, 2, byrow = TRUE), 
      widths=c(4,4), heights=c(3,3,2.5,3)) 
 
  #row 1 (F2B vs. time)
  prot.means<-tapply(f2b$f2b_prot, list(alldata$days, alldata$Litter), mean)
- plot(as.numeric(levels(as.factor(alldata$days))), prot.means[,1], xlim=c(0, 500), ylim=c(0, max(prot.means)), type="o", pch=pch[1], bg=colscale[1], xlab="Litter incubation (days)", ylab="F:B protein abundance ratio")
+ plot(as.numeric(levels(as.factor(alldata$days))), prot.means[,1], xlim=c(0, 500), ylim=c(0, max(prot.means)), type="o", pch=pch[1], bg=colscale[1], xlab="Litter incubation (days)", ylab="F:B protein abundance ratio", cex=2)
  
  for (i in 2:length(levels(type)))
    {
   lines(as.numeric(levels(as.factor(alldata$days))), prot.means[,i])
-  points(as.numeric(levels(as.factor(alldata$days))), prot.means[,i], pch=pch[i], bg=colscale[i])
+  points(as.numeric(levels(as.factor(alldata$days))), prot.means[,i], pch=pch[i], bg=colscale[i], cex=2)
   #, pch=pch[i]], bg=colscale[i])
    }
- legend("topright", levels(type), pch=pch, pt.bg=colscale, lty=1, cex=0.8)
+ legend("topright", levels(type), pch=pch, pt.bg=colscale, lty=1, cex=1.5)
  axis(4, labels=F)
 axis(3, labels=F)
 par(xpd=T)
 text(-80, 11.5, labels="A", cex=3)
 par(xpd=F)
 
-par(mar=c(4.1,.1,2.1,4.1))
+par(mar=c(4.1,.1,2.1,5.1))
 
 cond<-is.na(alldata$f2b_qpcr)!=T
-timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", yaxt="n", xlim=c(0,500))
+timeseries(alldata$f2b_qpcr[cond], alldata$days[cond], alldata$Litter[cond], pch=pch, pt.bg=colscale, xlab="Litter incubation (days)", yaxt="n", xlim=c(0,500), cex=2)
 axis(4)
 axis(3, labels=F)
 
@@ -35,7 +35,7 @@ mtext("F:B DNA ratio (qPCR)", side=4, padj=3.5, las=0, cex=.7)
 
 #row2 (lignin degradation rate)
 
-par(mar=c(.1,4.1,4.1,.1))  
+par(mar=c(.1,5.1,4.1,.1))  
 
 x<-f2b$f2b_prot[alldata$days==181]
 xmean<-tapply(x, alldata$Litter[alldata$days==181], mean)
@@ -48,8 +48,8 @@ yse<-tapply(y, type[days==181], stderr)
 ymin<-0
 ymax<-25
 
-plot(x,y, ylab="Lignin loss (% of initial content)", main="0-181 days", xlab="", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n")
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plot(x,y, ylab=expression(paste("L"[degr], "(% of initial)")), main="0-181 days", xlab="", cex=1, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n")
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
@@ -65,7 +65,7 @@ cor<-cor.test(xmean,ymean)
 #text(cor$estimate^2)
 text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
 
-par(mar=c(.1,.1,4.1,4.1))  
+par(mar=c(.1,.1,4.1,5.1))  
 
 x<-f2b$f2b_prot[alldata$days==475]
 xmean<-tapply(x, alldata$Litter[alldata$days==475], mean)
@@ -75,7 +75,7 @@ ymean<-tapply(y, type[days==475], mean)
 yse<-tapply(y, type[days==475], stderr)
 
 plot(x[1:19],y, main="181-475 days", xlab="", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n", yaxt="n")
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 axis(4)
 axis(2, labels=F)
 axis(1, labels=F)
@@ -89,7 +89,7 @@ abline(lm(ymean~xmean))
 text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
 
 #row3 (carbohydrate degradation rate)
-par(mar=c(.1,4.1,.1,.1))  
+par(mar=c(.1,5.1,.1,.1))  
 
 x<-f2b$f2b_prot[alldata$days==181]
 xmean<-tapply(x, alldata$Litter[alldata$days==181], mean)
@@ -101,8 +101,8 @@ yse<-tapply(y, type[days==181], stderr)
 ymin<-0
 ymax<-25
 
-plot(x,y, ylab="Carbohydrate loss (% of initial content)", main="", xaxt="n", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n")
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plot(x,y, ylab=expression("Ch"[degr], "(% of initial)"), main="", xaxt="n", cex=1, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n")
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
@@ -114,7 +114,7 @@ cor<-cor.test(xmean,ymean)
 #text(cor$estimate^2)
 text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
 
-par(mar=c(.1,.1,.1,4.1))  
+par(mar=c(.1,.1,.1,5.1))  
 
 x<-f2b$f2b_prot[alldata$days==475]
 xmean<-tapply(x, alldata$Litter[alldata$days==475], mean)
@@ -124,7 +124,7 @@ ymean<-tapply(y, type[days==475], mean)
 yse<-tapply(y, type[days==475], stderr)
 
 plot(x[1:19],y, main="", xaxt="n", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), xaxt="n", yaxt="n")
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 axis(4)
 axis(2, labels=F)
 axis(1, labels=F)
@@ -138,20 +138,20 @@ abline(lm(ymean~xmean))
 text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
 
 #row4(L:CH)
-par(mar=c(4.1,4.1,.1,.1))
+par(mar=c(4.1,5.1,.1,.1))
 
 x<-f2b$f2b_prot[alldata$days==181]
 xmean<-tapply(x, alldata$Litter[alldata$days==181], mean)
 #xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
-y<-hmw.proc$Lresp
+y<-hmw.proc$LCI
 ymean<-tapply(y, type[days==181], mean)
 yse<-tapply(y, type[days==181], stderr)
 
-ymin<-0
-ymax<-1.5
+ymin<--0.02
+ymax<-0.05
 
-plot(x,y, ylab="%Lignin loss : %carbon loss", xlab="F:B protein abundance ratio", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5))
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plot(x,y, ylab=expression(Delta[LCI]), xlab="F:B protein abundance ratio", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5))
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 
 axis(3, labels=F)
 axis(4, labels=F)
@@ -163,17 +163,17 @@ abline(lm(ymean~xmean))
 #text(cor$estimate^2)
 text(5, ymax, paste("r =", round((cor$estimate), digits=3), siglev(cor$p.value)), adj=c(1,1))
 
-par(mar=c(4.1,.1,.1,4.1))
+par(mar=c(4.1,.1,.1,5.1))
 
 x<-f2b$f2b_prot[alldata$days==475]
 xmean<-tapply(x, alldata$Litter[alldata$days==475], mean)
 #xse<-tapply(f2b$f2b_prot[alldata$days==181], alldata$Litter[alldata$days==181], stderr)
-y<-hmw.proc2$Lresp
+y<-hmw.proc2$LCI
 ymean<-tapply(y, type[days==475], mean)
 yse<-tapply(y, type[days==475], stderr)
 
 plot(x[1:19],y, ylab="", xlab="F:B protein abundance ratio", cex=.5, type="n", ylim=c(ymin,ymax), xlim=c(1,5), yaxt="n")
-plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=1.2)
+plotCI(xmean, ymean, barcol=errcol, uiw=yse, liw=yse, add=T, gap=0, pch=pch, pt.bg=colscale, cex=2)
 axis(2, labels=F)
 axis(3, labels=F)
 axis(4)

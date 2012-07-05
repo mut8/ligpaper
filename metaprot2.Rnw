@@ -1,6 +1,4 @@
 <<metaprot2, echo=F, results=hide, fig=T, height=10, width=12>>=
-metaprot.red<-metaprot[which(is.na(metaprot[6])==F),T]
-metaprot.red[6:ncol(metaprot.red)]<-metaprot.red[6:ncol(metaprot.red)]/rowSums(metaprot.red[6:ncol(metaprot.red)])
 
 metaprot2<-rbind(metaprot.red[1:4,T], rep(NA, 26), metaprot.red[5:8,T],rep(NA, 26), metaprot.red[9:12,T],rep(NA, 26), metaprot.red[13:16,T])
 

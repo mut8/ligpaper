@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  30 JUN 2012 20:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  5 JUL 2012 18:49
 entering extended mode
  %&-line parsing enabled.
 **ligpaper.tex
@@ -337,32 +337,31 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
 (/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 ) [3]) (./results.tex [4]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 8.
 
 (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 9.
- [5] [6]
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 8.
+ [5]
 
-LaTeX Warning: Reference `tab:phprod' on page 7 undefined on input line 26.
+LaTeX Warning: Reference `phos' on page 6 undefined on input line 18.
 
+[6] [7] [8]) (./discussion_new.tex [9] [10] [11]
 
-LaTeX Warning: Reference `tab:nprod' on page 7 undefined on input line 26.
-
-[7] [8]) (./discussion_new.tex [9] [10]
-
-LaTeX Warning: Citation `Sinsabaugh2006' on page 11 undefined on input line 27.
+LaTeX Warning: Reference `fig_phos' on page 12 undefined on input line 16.
 
 
-[11]) (./mm.tex [12] [13] [14] (./metaprot.tex [15])) (./ligpaper.bbl [16]
-[17] [18] [19]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 288.
+LaTeX Warning: Citation `Osono2004' on page 12 undefined on input line 16.
+
+) [12] (./mm.tex [13] [14] (./metaprot.tex [15])) [16] (./ligpaper.bbl [17]
+[18] [19] [20]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 299.
 
  (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)) [20]
+)) [21]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -375,63 +374,71 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] <ligpaper-enz.pdf, id=82, 722.7pt x 722.7pt>
+[22] <ligpaper-enz.pdf, id=87, 722.7pt x 722.7pt>
 File: ligpaper-enz.pdf Graphic file (type pdf)
  <use ligpaper-enz.pdf>
-<ligpaper-mb.pdf, id=83, 867.24pt x 650.43pt>
+<ligpaper-mb.pdf, id=88, 867.24pt x 650.43pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
-<ligpaper-metaprot2.pdf, id=84, 867.24pt x 722.7pt>
+<ligpaper-figphos.pdf, id=89, 722.7pt x 361.35pt>
+File: ligpaper-figphos.pdf Graphic file (type pdf)
+ <use ligpaper-figphos.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-metaprot2.pdf, id=90, 867.24pt x 722.7pt>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-f2bnew.pdf, id=85, 578.16pt x 831.105pt>
+<ligpaper-f2bnew.pdf, id=91, 578.16pt x 831.105pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
  <use ligpaper-f2bnew.pdf>
-<ligpaper-lci.pdf, id=86, 722.7pt x 361.35pt>
+<ligpaper-lci.pdf, id=92, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
  <use ligpaper-lci.pdf>
-<ligpaper-degrdiff.pdf, id=87, 867.24pt x 505.89pt>
+<ligpaper-degrdiff.pdf, id=93, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=88, 1734.48pt x 1156.32pt>
+<ligpaper-graphcorr.pdf, id=94, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot_pca.pdf, id=89, 433.62pt x 433.62pt>
+<ligpaper-metaprot_pca.pdf, id=95, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
 
-LaTeX Warning: Float too large for page by 37.17365pt on input line 300.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./tab_init.tex [22] [23 <./ligpaper-enz.pdf>] [24 <./ligpaper-mb.pdf>]
-[25 <./ligpaper-metaprot2.pdf>] [26 <./ligpaper-f2bnew.pdf>] [27 <./ligpaper-lc
-i.pdf>] [28 <./ligpaper-degrdiff.pdf>] [29 <./ligpaper-graphcorr.pdf>] [30 <./l
-igpaper-metaprot_pca.pdf>] [31
+(./tab_init.tex [23] [24 <./ligpaper-enz.pdf>] [25 <./ligpaper-mb.pdf> <./ligpa
+per-figphos.pdf>] [26 <./ligpaper-metaprot2.pdf>] [27 <./ligpaper-f2bnew.pdf>]
+[28 <./ligpaper-lci.pdf> <./ligpaper-degrdiff.pdf>] [29 <./ligpaper-graphcorr.p
+df>] [30 <./ligpaper-metaprot_pca.pdf>] [31
 
 ])
-Overfull \hbox (9.41623pt too wide) in paragraph at lines 325--359
+Overfull \hbox (13.84834pt too wide) in paragraph at lines 350--384
  [] 
  []
 
 [32
 
 
-] [33] [34
+]
+Overfull \hbox (12.38995pt too wide) in paragraph at lines 394--428
+ [] 
+ []
+
+[33] [34
 
 ] (./ligpaper.aux)
 
@@ -439,32 +446,34 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4547 strings out of 495061
- 63432 string characters out of 1182621
- 127963 words of memory out of 3000000
- 7530 multiletter control sequences out of 15000+50000
- 46043 words of font info for 95 fonts, out of 3000000 for 9000
+ 4556 strings out of 495061
+ 63576 string characters out of 1182621
+ 125025 words of memory out of 3000000
+ 7537 multiletter control sequences out of 15000+50000
+ 48004 words of font info for 97 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  36i,10n,38p,2192b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmtt10.pfb>
-Output written on ligpaper.pdf (34 pages, 390398 bytes).
+/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.
+pfb>
+Output written on ligpaper.pdf (34 pages, 408836 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,9 +6,9 @@ Beech litter was collected at four different sites in Austria (Achenkirch (AK), 
 To calculate litter mass loss, litter dry mass content was measurement in 5 g litter (fresh weight) after 48 h at 80  \textdegree C. Dried litter was ball-milled for further chemical analysis. Litter C and N content was determined using an elemental analyzer (Leco CN2000, Leco Corp., St. Joseph, MI, USA). Litter phosphorus content was measured with ICP-AES (Vista-Pro, Varian, Darmstadt, Germany) after acid digestion \cite{Kolmer}).
 To determine dissolved organic C, dissolved N and P, 1.8 g litter (fresh weight) were extracted with 50 ml 0.5 M K\textsubscript{2}SO\textsubscript{4}. Samples were shaken on a reciprocal shaker with the extractant for 30 minutes, filtered through ash-free cellulose filters and frozen at -20 \textdegree C until analysis. To quantify microbial biomass C, N and P, further samples were additionally extracted under the same conditions after chloroform fumigation for 24 h  \cite{Brooks1985}. Microbial biomass was determined as the difference between fumigated and non-fumigated extractions . C and N concentration in extracts were determined with a TOC/TN analyzer (TOC-VCPH and TNM, Schimadzu), P was determined photometrically as inorganig P after persulfate digestion \cite{Schinner1996}.
 
-Substrate to consumer stoichiometric imbalances \emph{C:X$_{imbal}$} were calculated as
+Substrate to consumer stoichiometric imbalances \emph{C:X$_{resource : consumer}$} were calculated as
 \begin{equation}
- C:X_{imbal}=\frac{C:X_{litter}}{C:X_{microbial}} \label{eq:imbal}
+ C:X_{r:c}=\frac{C:X_{litter}}{C:X_{microbial}} \label{eq:imbal}
 \end{equation}
 where \emph{X} stand for the element N or P.
 
@@ -32,17 +32,22 @@ A pyrolysis-based lignin to carbohydrate index ($LCI$) was calculated to derive 
  LCI=\frac{Lignin}{Lignin + Carbohydrates}
 \end{equation}
 
-Accounting for carbon loss, we estimate the \% lignin and cellulose degraded during decomposition ($L_{\% loss}$ and $Ch_{\% loss}$)  according to equation \ref{eq:closscorr}, where \emph{$X_{init}$} and \emph{$X_{act}$} stand for initial and actual \%TIC area of lignin or cellulose pyrolysis products, \emph{$C_{init}$} for the initial amount of C and \emph{$R_{acc}$} for the accumulated CO$_2$-C respired by a mesocosm.
+
+Accounting for carbon loss, we estimate the \% lignin and cellulose degraded during decomposition ($L_{degr}$ and $Ch_{degr}$)  according to equation \ref{eq:closscorr}, where \emph{$X_{init}$} and \emph{$X_{act}$} stand for initial and actual \%TIC area of lignin or cellulose pyrolysis products, \emph{$C_{init}$} for the initial amount of C and \emph{$R_{acc}$} for the accumulated CO$_2$-C respired by a mesocosm.
+
 \begin{equation}
- X_{\% loss} = 100\cdot\frac{X_{init}-X_{act}}{X_{init}}\cdot\frac{\left ( 1-R_{acc}\right ) }{C_{init}}
+ X_{\% loss} = \frac{100}{X_{init}} \cdot \left ( X_{init}-X_{act}\cdot\frac{\left ( 1-R_{acc}\right ) }{C_{init}}\right )
  \label{eq:closscorr}
 \end{equation}
 
-Furthermore, we calculated the \% lignin or carbohydrates lost per \% carbon respired (L$_{resp}$ and Ch$_{resp}$ )
+
+Furthermore, we calculated the \% of initial lignin or carbohydrates degraded per \% of initial carbon respired (L:C$_{degr}$ and Ch:C$_{degr}$ ):
+
 \begin{equation}
- X_{resp} = \frac{X_{\% loss}}{100 \cdot R_{acc}}
+ X_{resp} = \frac{X_{\% loss}}{100} \cdot \frac{C_{init}}{R_{acc}}
  \label{eq:respcorr}
 \end{equation}
+
 
 \input{metaprot}
 

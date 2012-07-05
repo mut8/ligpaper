@@ -244,3 +244,6 @@ notlig.proc2<-data.frame(
   (-closs.corr.class_cTIC$phytol[h4]+initials.class_cTIC$phytol[h4])/(initials.class_cTIC$phytol[h4]*samples$h3init.respacc.litC[h4])
 )
 colnames(notlig.proc2) <-   c("alkanacc","alkenacc", "faacc", "phytolacc", "alkandeg", "alkendeg", "fadeg", "phytoldeg", "alkanresp", "alkenresp", "faresp", "phytolresp")
+
+metaprot.red<-metaprot[which(is.na(metaprot[6])==F),T]
+metaprot.red[6:ncol(metaprot.red)]<-metaprot.red[6:ncol(metaprot.red)]/rowSums(metaprot.red[6:ncol(metaprot.red)])
