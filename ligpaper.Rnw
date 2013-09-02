@@ -71,6 +71,7 @@
 %% END MACROS SECTION
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 % Title must be 150 characters or less
 \begin{flushleft}
@@ -348,8 +349,7 @@ hmw.means[,i]<-tapply(hmw.proc[,i], type[days==181], mean)
 colnames(hmw.means)<-colnames(hmw.proc)
 
 tmp.cor<-corr.ab(tmp,hmw.means, tex=T)
-
-corr1<-alldata[alldata$days==181,c(10,37, 71,11,14,13,12,15:16,20,22,24, 38, 56, 39:43, 53:55,  75:77, 73)]
+corr1<-alldata[alldata$days==181,c(10,37, 73,11,14,13,12, 15:16,20,22,24, 39, 57, 40:44, 54:56,  78:80, 76)]
 corr2<-hmw.proc
 mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
 #rownames/colnames cor correltion table
@@ -396,7 +396,7 @@ colnames(hmw.means2)<-colnames(hmw.proc2)
 
 tmp.cor<-corr.ab(tmp,hmw.means2, tex=T)
 
-corr1<-alldata[alldata$days==475,c(10,37, 71,11,14,13,12, 15:16,20,22,24, 38, 56, 39:43, 53:55,  75:77, 73)]
+corr1<-alldata[alldata$days==475,c(10,37, 73,11,14,13,12, 15:16,20,22,24, 39, 57, 40:44, 54:56,  78:80, 76)]
 corr2<-hmw.proc2
 mighty.corr.matrix2<-corr.ab(corr1, corr2, tex=T)
 #rownames cor corraltion table
@@ -421,7 +421,7 @@ print(tab, size="small", sanitize.text.function = function(x){x}, table.placemen
 \end{landscape}
 
 <<ca_tab, echo=F, results=tex>>=
-cor.merge<-cbind(alldata[cond, c(74,37, 34:36, 38:43,50:55,75:77)], metaprot.red[,c(4,6:ncol(metaprot.red))])
+cor.merge<-cbind(alldata[cond, c(77,38, 34:36, 39:44,51:56,78:80)], metaprot.red[,c(4,6:ncol(metaprot.red))])
 colnames(cor.merge)<-c("Incubatation time","Respiration","NH4 conc.", "NO3 conc.", "PO4 conc", "C litter", "N litter", "P litter", "C:N litter", "C:P litter", "N:P litter", "C micr.", "N micr.", "P micr.", "C:N micr.", "C:P micr.", "N:P micr.", "C:N imbalance", "C:P imbalance", "N:P imbalance",  "F:B prot.", "Dothideomycetes", "Eurotiomycetes", "Leotiomycetes", "Saccharomycetes", "Sordariomycetes", "Agaricomycetes", "Tremellomycetes", "Ustilaginomycetes", "Thermotogae", "Bacteroidetes", "Actinobacteria", "Cyanobacteria", "Firmicutes", "Fusobacteria"     , "Verrucomicrobia", "Dictyoglomi", "Alphaproteobacteria", "Betaproteobacteria", "Gammaproteobacteria", "Deltaproteobacteria", "Epsilonproteobacteria")
 tab<-corr.ab(cor.merge,scores(ord, display="sites", choices=1:2), tex=T)
 table<-xtable(tab, caption="Correlations coeffitients between correspondance analysis factors CA 1 and 2, litter and microbial stoichiometry and protein abundance of microbial taxa. Significant (p\\textless 0.05) correlations are presented in bold.", label="catab", align=c("l","r","r"))

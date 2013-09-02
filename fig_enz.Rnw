@@ -9,7 +9,7 @@ axis(4, labels=F)
 mtext(expression(paste(mu, "g CO2-C d"^{-1}, "g"^{-1}, "d.w.")), side=2, las=0, padj=-2.5, cex=.8)
 
 par(mar=c(3,.5,2,5))
-timeseries(alldata$DOC/1000, alldata$days, alldata$Litter, pch=pch, pt.bg=colscale, type="o", endsig=T, main="Soluble organic carbon content", ylab="", cex=1.2, yaxt="n")
+timeseries(alldata$DOC_k2SO4, alldata$days, alldata$Litter, pch=pch, pt.bg=colscale, type="o", endsig=T, main="Soluble organic carbon content", ylab="", cex=1.2, yaxt="n")
 axis(2, labels=F)
 axis(3, labels=F)
 axis(4)

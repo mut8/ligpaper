@@ -18,10 +18,54 @@ var3lab<-"N:P resource / N:P microbial"
 var4lab<-"LCI change"
 var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
 
+library('ppcor')
+
+pcor(data.frame(var4, var1, var2, var3))
+pcor(data.frame(var4, var1, var2))
+pcor(data.frame(var4, var1, var2, var3))
+pcor(data.frame(var5, var1, var2))
+pcor(data.frame(var5, var1, var2, var3))
+
+pcor.test(var4, var1, var2)
+pcor.test(var4, var1, var3)
+pcor.test(var4, var2, var1)
+pcor.test(var4, var2, var3)
+pcor.test(var4, var3, var1)
+pcor.test(var4, var3, var2)
+
+pcor.test(var5, var1, var2)
+pcor.test(var5, var2, var1)
+pcor.test(var5, var1, data.frame(var2, var3))
+pcor.test(var5, var2, data.frame(var1, var3))
+pcor.test(var5, var3, data.frame(var1, var2))
+
+lm1<-lm(var5 ~ var1)
+l1<-
+  cor.test(lm1$residuals, var2)
+
+lm2<-lm(var5 ~ var2)
+l2<-
+  cor.test(lm2$residuals, var3)
+
+lm3<-lm(var5 ~ var3)
+l3<-
+  cor.test(lm3$residuals, var2)
+
+  lm4<-lm(var4 ~ var3)
+l4<-cor.test(lm4$residuals, var2)
+
+cor.test(var5, var3)
+l2
+lm1
+lm2
+summary(lm1)
+
+
 par(mar=c(3,4,2,0.8))
 corplot(var1, var4, xlab="", xaxt="n", ylab=var4lab, bg=h3.col, pch=h3.pch)
 axis(4, label=F)
 axis(1)
+
 
 par(mar=c(3,2.4,2,2.4))
 corplot(var2, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch)

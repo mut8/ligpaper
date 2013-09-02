@@ -17,7 +17,7 @@ axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
 
-data <- alldata$P_mic/1000
+data <- alldata$P_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, main=expression("P"[microbial]),cex=1.5, endsig=T)

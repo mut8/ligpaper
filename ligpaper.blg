@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ligpaper.aux
 The style file: plos2009.bst
 Database file #1: library.bib
@@ -47,6 +48,7 @@ Repeated entry---line 23129 of file library.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Osono2004"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 45 entries,
             2441 wiz_defined-function locations,
             910 strings with 18522 characters,

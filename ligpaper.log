@@ -1,14 +1,15 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.24)  5 JUL 2012 18:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  2 SEP 2013 17:28
 entering extended mode
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **ligpaper.tex
 (./ligpaper.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,24 +24,24 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -81,66 +82,72 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 \Gread@gobject=\count99
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 285.
-LaTeX Info: Redefining \nocite on input line 356.
-Package: cite 2009/08/29  v 5.2
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
-Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-Package: `setspace' 6.7 <2000/12/01>
-) (/usr/share/texmf-texlive/tex/latex/caption/caption.sty
-Package: caption 2009/10/09 v3.1k Customizing captions (AR)
-
-(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
-Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen114
 \captionmargin@=\dimen115
 \captionwidth=\dimen116
@@ -150,7 +157,7 @@ Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
 )
 \c@ContinuedFloat=\count100
 )
-(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -165,7 +172,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 266.
@@ -200,31 +207,45 @@ Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
 Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
 Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
 Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(/usr/share/texmf-texlive/tex/latex/base/fixltx2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
 ) (./fullpage.sty)
-(/home/lluc/texmf/tex/latex/lineno.sty
-Package: lineno 2002/01/27 line numbers on paragraphs v3.08b
+(./lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count101
 \output=\toks20
 \linenoprevgraf=\count102
@@ -232,21 +253,21 @@ Package: lineno 2002/01/27 line numbers on paragraphs v3.08b
 \linenumberwidth=\dimen121
 \c@linenumber=\count103
 \c@pagewiselinenumber=\count104
-\c@linenumbermodulo=\count105
+\c@LN@truepage=\count105
 \c@internallinenumber=\count106
 \c@internallinenumbers=\count107
 \quotelinenumbersep=\dimen122
 \bframerule=\dimen123
 \bframesep=\dimen124
 \bframebox=\box28
-)
-(/usr/share/R/share/texmf/tex/latex/Sweave.sty
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/R/share/texmf/tex/latex/Sweave.sty
 Package: Sweave 
 
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
@@ -261,28 +282,29 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
 atim and verb
 )
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texmf-texlive/tex/latex/ae/ae.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-(/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./ligpaper.aux)
+))))
+No file ligpaper.aux.
 \openout1 = `ligpaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -299,13 +321,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
-
-(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 77.
 
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen125
@@ -316,50 +337,383 @@ LaTeX Font Info:    ... okay on input line 77.
 \MPscratchCnt=\count114
 \MPscratchDim=\dimen126
 \MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks22
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./authors_paper.tex
+
+(./ligpaper-concordance.tex) (./authors_paper.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./abstract.tex) [2] (./introduction.tex
 LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
 
-(/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-) [3]) (./results.tex [4]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 8.
+)
 
+LaTeX Warning: Citation `Berg2008' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Don2005' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Sinsabaugh2010' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Berg1980' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Couteaux1995' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Moorhead2006' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Adair2008' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Hatfield2005' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Preston1997' on page 3 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Klotzbucher2011a' on page 3 undefined on input line 6.
+
+
+
+LaTeX Warning: Citation `Amelung2008' on page 3 undefined on input line 8.
+
+
+LaTeX Warning: Citation `Thevenot2010a' on page 3 undefined on input line 8.
+
+
+LaTeX Warning: Citation `Bol2009' on page 3 undefined on input line 8.
+
+
+LaTeX Warning: Citation `Bugg2011' on page 3 undefined on input line 8.
+
+
+LaTeX Warning: Citation `Klotzbucher2011' on page 3 undefined on input line 10.
+
+
+
+LaTeX Warning: Citation `Achyuthan2010' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Dyckmans2002' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Craine2007' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Knorr2005' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Sinsabaugh2010' on page 3 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Craine2007' on page 3 undefined on input line 14.
+
+[3]
+
+LaTeX Warning: Citation `Talbot2011' on page 4 undefined on input line 16.
+
+) (./results.tex [4]
+
+LaTeX Warning: Reference `initstoech' on page 5 undefined on input line 3.
+
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 8.
 (/usr/share/R/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 8.
- [5]
+
+
+LaTeX Warning: Reference `fig:enz' on page 5 undefined on input line 8.
+
+
+LaTeX Warning: Citation `Mooshammer2011' on page 5 undefined on input line 10.
+
+
+LaTeX Warning: Reference `fig:enz' on page 5 undefined on input line 12.
+
+
+LaTeX Warning: Reference `fig:phos' on page 5 undefined on input line 12.
+
+[5]
+
+LaTeX Warning: Reference `fig:enz' on page 6 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:enz' on page 6 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:enz' on page 6 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:mb' on page 6 undefined on input line 18.
+
+
+LaTeX Warning: Reference `fig:mb' on page 6 undefined on input line 18.
+
 
 LaTeX Warning: Reference `phos' on page 6 undefined on input line 18.
 
-[6] [7] [8]) (./discussion_new.tex [9] [10] [11]
+
+LaTeX Warning: Citation `Mooshammer2011' on page 6 undefined on input line 20.
+
+
+LaTeX Warning: Citation `Sterner2002' on page 6 undefined on input line 20.
+
+
+LaTeX Warning: Reference `fig:mb' on page 6 undefined on input line 20.
+
+[6]
+
+LaTeX Warning: Reference `fig:f2b' on page 7 undefined on input line 22.
+
+
+LaTeX Warning: Reference `fig:metaprot_barplot' on page 7 undefined on input li
+ne 24.
+
+
+LaTeX Warning: Reference `fig:metaprot_barplot' on page 7 undefined on input li
+ne 24.
+
+
+LaTeX Warning: Reference `fig:lci' on page 7 undefined on input line 28.
+
+[7]
+
+LaTeX Warning: Reference `fig:degr' on page 8 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:degr' on page 8 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:degr' on page 8 undefined on input line 30.
+
+
+LaTeX Warning: Reference `corrtable' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Citation `Mooshammer2011' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Citation `Leitner2011' on page 8 undefined on input line 34.
+
+
+LaTeX Warning: Reference `fig:cor1' on page 8 undefined on input line 35.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 37.
+
+
+LaTeX Warning: Reference `corrtable2' on page 8 undefined on input line 37.
+
+
+LaTeX Warning: Reference `corrtable' on page 8 undefined on input line 37.
+
+
+LaTeX Warning: Reference `fig:f2b' on page 8 undefined on input line 37.
+
+[8]
+
+LaTeX Warning: Reference `fig:metaprotpca' on page 9 undefined on input line 39
+.
+
+
+LaTeX Warning: Reference `catab' on page 9 undefined on input line 41.
+
+) (./discussion_new.tex [9]
+
+LaTeX Warning: Citation `Klotzbucher2011' on page 10 undefined on input line 3.
+
+
+
+LaTeX Warning: Citation `Vance2003' on page 10 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Wright2005' on page 10 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Cornelissen1997' on page 10 undefined on input line 6.
+
+
+
+LaTeX Warning: Citation `Hodge2000' on page 10 undefined on input line 8.
+
+[10]
+
+LaTeX Warning: Citation `Berg2008' on page 11 undefined on input line 11.
+
+
+LaTeX Warning: Citation `Berg2008' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Bugg2011' on page 11 undefined on input line 13.
+
+[11]
 
 LaTeX Warning: Reference `fig_phos' on page 12 undefined on input line 16.
 
 
+LaTeX Warning: Citation `Craine2007' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Achyuthan2010' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Dyckmans2002' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Moorhead2006' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Craine2007' on page 12 undefined on input line 16.
+
+
+LaTeX Warning: Citation `Craine2007' on page 12 undefined on input line 16.
+
+
 LaTeX Warning: Citation `Osono2004' on page 12 undefined on input line 16.
 
-) [12] (./mm.tex [13] [14] (./metaprot.tex [15])) [16] (./ligpaper.bbl [17]
-[18] [19] [20]
+
+LaTeX Warning: Citation `Sinsabaugh2010' on page 12 undefined on input line 18.
+
+
+
+LaTeX Warning: Citation `Treseder2011' on page 12 undefined on input line 18.
+
+) [12] (./mm.tex
+
+LaTeX Warning: Citation `Wanek2010' on page 13 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Kolmer' on page 13 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Brooks1985' on page 13 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Schinner1996' on page 13 undefined on input line 7.
+
+[13]
+
+LaTeX Warning: Citation `Kaiser2010b' on page 14 undefined on input line 21.
+
+[14]
+
+LaTeX Warning: Citation `Schellekens2009' on page 15 undefined on input line 27
+.
+
+
+LaTeX Warning: Citation `Kuder1998' on page 15 undefined on input line 27.
+
+
+LaTeX Warning: Reference `eq:closscorr' on page 15 undefined on input line 36.
+
+(./metaprot.tex [15]
+
+LaTeX Warning: Citation `Schneider2010' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Tringe2005' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Keiblinger2011' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Schneider2011' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Florens2006' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Zybailov2006' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Bantscheff2007' on page 16 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Inselsbacher2010' on page 16 undefined on input line 5
+.
+
+)
+
+LaTeX Warning: Citation `R' on page 16 undefined on input line 55.
+
+
+LaTeX Warning: Citation `vegan' on page 16 undefined on input line 55.
+
+) [16] (./ligpaper.bbl [17] [18] [19] [20]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 299.
 
- (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )) [21]
 
@@ -372,51 +726,84 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `catab' on page 22 undefined on input line 212.
+
+
+LaTeX Warning: Reference `catab' on page 22 undefined on input line 212.
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22] <ligpaper-enz.pdf, id=87, 722.7pt x 722.7pt>
+[22] <ligpaper-enz.pdf, id=109, 722.7pt x 722.7pt>
 File: ligpaper-enz.pdf Graphic file (type pdf)
  <use ligpaper-enz.pdf>
-<ligpaper-mb.pdf, id=88, 867.24pt x 650.43pt>
+Package pdftex.def Info: ligpaper-enz.pdf used on input line 221.
+(pdftex.def)             Requested size: 469.75499pt x 469.76045pt.
+
+<ligpaper-mb.pdf, id=110, 867.24pt x 650.43pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
-<ligpaper-figphos.pdf, id=89, 722.7pt x 361.35pt>
+Package pdftex.def Info: ligpaper-mb.pdf used on input line 232.
+(pdftex.def)             Requested size: 469.75499pt x 352.31868pt.
+
+<ligpaper-figphos.pdf, id=111, 722.7pt x 361.35pt>
 File: ligpaper-figphos.pdf Graphic file (type pdf)
  <use ligpaper-figphos.pdf>
+Package pdftex.def Info: ligpaper-figphos.pdf used on input line 243.
+(pdftex.def)             Requested size: 375.80542pt x 187.90308pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot2.pdf, id=90, 867.24pt x 722.7pt>
+<ligpaper-metaprot2.pdf, id=112, 867.24pt x 722.7pt>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
+Package pdftex.def Info: ligpaper-metaprot2.pdf used on input line 256.
+(pdftex.def)             Requested size: 469.75499pt x 391.46521pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-f2bnew.pdf, id=91, 578.16pt x 831.105pt>
+<ligpaper-f2bnew.pdf, id=113, 578.16pt x 831.105pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
  <use ligpaper-f2bnew.pdf>
-<ligpaper-lci.pdf, id=92, 722.7pt x 361.35pt>
+Package pdftex.def Info: ligpaper-f2bnew.pdf used on input line 268.
+(pdftex.def)             Requested size: 328.82706pt x 472.68219pt.
+
+<ligpaper-lci.pdf, id=114, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
  <use ligpaper-lci.pdf>
-<ligpaper-degrdiff.pdf, id=93, 867.24pt x 505.89pt>
+Package pdftex.def Info: ligpaper-lci.pdf used on input line 280.
+(pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
+
+<ligpaper-degrdiff.pdf, id=115, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
+Package pdftex.def Info: ligpaper-degrdiff.pdf used on input line 293.
+(pdftex.def)             Requested size: 469.75499pt x 274.02563pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=94, 1734.48pt x 1156.32pt>
+<ligpaper-graphcorr.pdf, id=116, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
+Package pdftex.def Info: ligpaper-graphcorr.pdf used on input line 305.
+(pdftex.def)             Requested size: 469.75499pt x 313.16335pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot_pca.pdf, id=95, 433.62pt x 433.62pt>
+<ligpaper-metaprot_pca.pdf, id=117, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
+Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 320.
+(pdftex.def)             Requested size: 469.75499pt x 469.7781pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -426,16 +813,46 @@ per-figphos.pdf>] [26 <./ligpaper-metaprot2.pdf>] [27 <./ligpaper-f2bnew.pdf>]
 df>] [30 <./ligpaper-metaprot_pca.pdf>] [31
 
 ])
-Overfull \hbox (13.84834pt too wide) in paragraph at lines 350--384
- [] 
+
+LaTeX Warning: Citation `Mooshammer2011' on page 32 undefined on input line 348
+.
+
+
+LaTeX Warning: Citation `Leitner2011' on page 32 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Mooshammer2011' on page 32 undefined on input line 348
+.
+
+
+LaTeX Warning: Citation `Leitner2011' on page 32 undefined on input line 348.
+
+
+Overfull \hbox (13.84834pt too wide) in paragraph at lines 351--385
+ [][] 
  []
 
 [32
 
 
 ]
-Overfull \hbox (12.38995pt too wide) in paragraph at lines 394--428
- [] 
+
+LaTeX Warning: Citation `Mooshammer2011' on page 33 undefined on input line 391
+.
+
+
+LaTeX Warning: Citation `Leitner2011' on page 33 undefined on input line 391.
+
+
+LaTeX Warning: Citation `Mooshammer2011' on page 33 undefined on input line 391
+.
+
+
+LaTeX Warning: Citation `Leitner2011' on page 33 undefined on input line 391.
+
+
+Overfull \hbox (7.79103pt too wide) in paragraph at lines 394--428
+ [][] 
  []
 
 [33] [34
@@ -444,36 +861,41 @@ Overfull \hbox (12.38995pt too wide) in paragraph at lines 394--428
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4556 strings out of 495061
- 63576 string characters out of 1182621
- 125025 words of memory out of 3000000
- 7537 multiletter control sequences out of 15000+50000
+ 5269 strings out of 495059
+ 76091 string characters out of 3182030
+ 137795 words of memory out of 3000000
+ 8217 multiletter control sequences out of 15000+200000
  48004 words of font info for 97 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 36i,10n,38p,2192b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 14 hyphenation exceptions out of 8191
+ 38i,10n,38p,2192b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.
-pfb>
-Output written on ligpaper.pdf (34 pages, 408836 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb>
+Output written on ligpaper.pdf (34 pages, 391568 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

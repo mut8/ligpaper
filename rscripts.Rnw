@@ -1,6 +1,6 @@
 <<startup, echo=F, fig=F, results=hide>>=
 setwd("~/ligpaper")
-source("~/R/functions.R")
+source("~/R_functions/functions.R")
 source("startup.R")
 options(SweaveHooks=list(fig=function() par(tck=0.01, las=1)))
 
@@ -13,32 +13,45 @@ options(SweaveHooks=list(fig=function() par(tck=0.01, las=1)))
 @
 
 <<homeostastis, echo=F, results=h>>=
-lm<-lm(log(alldata$C.N_mic[alldata$days==14])~log(alldata$C.N_lit[alldata$days==14]),)
-H.cn.h1<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.N_mic[alldata$days==97])~log(alldata$C.N_lit[alldata$days==97]),)
-H.cn.h2<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.N_mic[alldata$days==181])~log(alldata$C.N_lit[alldata$days==181]),)
-H.cn.h3<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.N_mic[alldata$days==475])~log(alldata$C.N_lit[alldata$days==475]),)
-H.cn.h4<-1/lm$coefficients[2]
+ lm<-lm(log(alldata$C.N_mic[alldata$days==14])~log(alldata$C.N_lit[alldata$days==14]),)
 
-lm<-lm(log(alldata$C.Pmic[alldata$days==14])~log(alldata$C.P_lit[alldata$days==14]),)
-H.cp.h1<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.Pmic[alldata$days==97])~log(alldata$C.P_lit[alldata$days==97]),)
-H.cp.h2<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.Pmic[alldata$days==181])~log(alldata$C.P_lit[alldata$days==181]),)
-H.cp.h3<-1/lm$coefficients[2]
-lm<-lm(log(alldata$C.Pmic[alldata$days==475])~log(alldata$C.P_lit[alldata$days==475]),)
-H.cp.h4<-1/lm$coefficients[2]
+cor.test(alldata$C.N_mic[alldata$days==14],alldata$C.N_lit[alldata$days==14])
+cor.test(alldata$C.N_mic[alldata$days==97],alldata$C.N_lit[alldata$days==97])
+cor.test(alldata$C.N_mic[alldata$days==181],alldata$C.N_lit[alldata$days==181])
+cor.test(alldata$C.N_mic[alldata$days==475],alldata$C.N_lit[alldata$days==475])
 
-lm<-lm(log(alldata$N.Pmic[alldata$days==14])~log(alldata$N.P_lit[alldata$days==14]),)
-H.np.h1<-1/lm$coefficients[2]
-lm<-lm(log(alldata$N.Pmic[alldata$days==97])~log(alldata$N.P_lit[alldata$days==97]),)
-H.np.h2<-1/lm$coefficients[2]
-lm<-lm(log(alldata$N.Pmic[alldata$days==181])~log(alldata$N.P_lit[alldata$days==181]),)
-H.np.h3<-1/lm$coefficients[2]
-lm<-lm(log(alldata$N.Pmic[alldata$days==475])~log(alldata$N.P_lit[alldata$days==475]),)
-H.np.h4<-1/lm$coefficients[2]
+cor.test(alldata$C.Pmic[alldata$days==14],alldata$C.P_lit[alldata$days==14])
+cor.test(alldata$C.Pmic[alldata$days==97],alldata$C.P_lit[alldata$days==97])
+cor.test(alldata$C.Pmic[alldata$days==181],alldata$C.P_lit[alldata$days==181])
+cor.test(alldata$C.Pmic[alldata$days==475],alldata$C.P_lit[alldata$days==475])
+
+plot(alldata$C.N_mic,log(alldata$f2b_qpcr))
+
+  H.cn.h1<-1/lm$coefficients[2]
+ lm<-lm(log(alldata$C.N_mic[alldata$days==97])~log(alldata$C.N_lit[alldata$days==97]),)
+ H.cn.h2<-1/lm$coefficients[2]
+ lm<-lm(log(alldata$C.N_mic[alldata$days==181])~log(alldata$C.N_lit[alldata$days==181]),)
+ H.cn.h3<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$C.N_mic[alldata$days==475])~log(alldata$C.N_lit[alldata$days==475]),)
+# H.cn.h4<-1/lm$coefficients[2]
+# 
+ lm<-lm(log(alldata$C.Pmic[alldata$days==14])~log(alldata$C.P_lit[alldata$days==14]),)
+ H.cp.h1<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$C.Pmic[alldata$days==97])~log(alldata$C.P_lit[alldata$days==97]),)
+# H.cp.h2<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$C.Pmic[alldata$days==181])~log(alldata$C.P_lit[alldata$days==181]),)
+# H.cp.h3<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$C.Pmic[alldata$days==475])~log(alldata$C.P_lit[alldata$days==475]),)
+# H.cp.h4<-1/lm$coefficients[2]
+# 
+# lm<-lm(log(alldata$N.Pmic[alldata$days==14])~log(alldata$N.P_lit[alldata$days==14]),)
+# H.np.h1<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$N.Pmic[alldata$days==97])~log(alldata$N.P_lit[alldata$days==97]),)
+# H.np.h2<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$N.Pmic[alldata$days==181])~log(alldata$N.P_lit[alldata$days==181]),)
+# H.np.h3<-1/lm$coefficients[2]
+# lm<-lm(log(alldata$N.Pmic[alldata$days==475])~log(alldata$N.P_lit[alldata$days==475]),)
+# H.np.h4<-1/lm$coefficients[2]
 @
 
 <<init.stoech, echo=F, fig=F, results=hide>>=
