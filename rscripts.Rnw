@@ -1,8 +1,12 @@
 <<startup, echo=F, fig=F, results=hide>>=
-setwd("~/ligpaper")
+setwd("~/ligpaper_corrected_DOC")
 source("~/R_functions/functions.R")
 source("startup.R")
-options(SweaveHooks=list(fig=function() par(tck=0.01, las=1)))
+options(SweaveHooks=list(fig=function() par(tck=0.01, las=1,family="")))
+
+
+
+
 
 #colnames(alldata)
 

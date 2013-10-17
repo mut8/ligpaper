@@ -1,10 +1,14 @@
-<<mb, fig=T, echo=F, results=hide, width=12, height=9>>=
-par(mfrow=c(3,3), mar=c(3.1,4.1,3,0.1), tck=0.01)
+<<mb, fig=T, echo=F, results=hide, width=8, height=6>>=
+
+
+par(mfrow=c(3,3), mar=c(3.1,4.1,2,0.1), tck=0.01)
 data <- alldata$C_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, main=expression("C"[microbial]),
-ylab=expression(paste("mg C g"^{-1}, " d.w.")), endsig=T, cex=1.5)
+ylab=expression(paste("mg g"^{-1}, " d.w.")), endsig=T, cex=1.5, #xaxt="n"
+           )
+#axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -12,7 +16,10 @@ axis(3, labels=F)
 data <- alldata$N_.mic
 ond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("N"[microbial]),cex=1.5,)
+type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("N"[microbial]),cex=1.5, #xaxt="n"
+           )
+
+#axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -20,18 +27,21 @@ axis(3, labels=F)
 data <- alldata$P_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, main=expression("P"[microbial]),cex=1.5, endsig=T)
+type="o", pch=pch, pt.bg=colscale, main=expression("P"[microbial]),cex=1.5, endsig=T, #xaxt="n"
+           )
+#axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
 
-
+par(mar=c(4.1,4.1,2,0.1))
 data <- alldata$C.N_mic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
 type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("C:N"[microbial]),cex=1.5,
-ylab="w/w")
- #xaxt="n"
-
+ylab="w/w", #xaxt="n"
+           )
+ 
+#axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
@@ -39,20 +49,23 @@ axis(3, labels=F)
 data <- alldata$C.Pmic
 cond <- is.na(data)!=T
 timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
-type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("C:P"[microbial]),cex=1.5)
-                
+type="o", pch=pch, pt.bg=colscale, endsig=T, main=expression("C:P"[microbial]),cex=1.5, #xaxt="n"
+           )
+#axis(1, labels=F)                
 axis(4, labels=F)
 axis(3, labels=F)
 #axis(1, labels=F)
 
 data <- alldata$N.Pmic
 cond <- is.na(data)!=T
-timeseries(data[cond], alldata$days[cond], alldata$Litter[cond], main=expression("N:P"[microbial]), type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5)
- #xaxt="n"
-
+timeseries(data[cond], alldata$days[cond], alldata$Litter[cond], main=expression("N:P"[microbial]), type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1.5, #xaxt="n"
+           )
+#axis(1, labels=F)
 axis(4, labels=F)
 axis(3, labels=F)
 # axis(1, labels=F)
+
+par(mar=c(4.1,4.1,2,0.1))
 
 data <- alldata$CN_inbal
 cond <- is.na(data)!=T

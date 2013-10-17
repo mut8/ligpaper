@@ -1,25 +1,27 @@
 <<degrdiff, fig=T, results=hide, echo=false, width=12, height=7>>=
-par(mfrow=c(2,5))
+par(mfrow=c(2,5), oma=c(3.5,1,.5,0))
 #par(mfrow=c(2,3))
 
-par(mar=c(2, 5, 1.2,0))
-barp(-1*closs.corr.orig_cTIC$L*100/initials.orig_cTIC$L, days==181, days==0, ylim=c(0,20), ylab="% of initial pool degraded \n days 0 - 181",  names.arg=typlev, main="Lignin", col=colscale)
+par(mar=c(2, 4, 1.2,0), cex.lab=1.5)
+barp(-1*closs.corr.orig_cTIC$L*100/initials.orig_cTIC$L, days==181, days==0, ylim=c(0,20), ylab="",  names.arg=typlev, main="Lignin", col=colscale)
 axis(4, labels=F)
+mtext("0 - 181 days", side=2, las=0, padj=-3)
 
-par(mar=c(2, 0, 1.2,5))
+par(mar=c(2, 0, 1.2,4))
 barp(-1*closs.corr.orig_cTIC$C*100/initials.orig_cTIC$C, days==181, days==0, ylim=c(0,20), yaxt="n", names.arg=typlev, main="Carbohydrates", col=colscale)
 axis(4)
 axis(2, labels=F)
 
-par(mar=c(2, 5, 1.2,0))
-barpr2(-1*closs.corr.orig_cTIC$L/initials.orig_cTIC$L, samples$cons_acc_resp_litC, days==181, days==0, ylim=c(0,2), ylab="% loss / % carbon loss \n days 0 - 181", names.arg=typlev, main="Lignin", 
+par(mar=c(2, 4, 1.2,0))
+barpr2(-1*closs.corr.orig_cTIC$L/initials.orig_cTIC$L, samples$cons_acc_resp_litC, days==181, days==0, ylim=c(0,2), ylab=#"% loss / % carbon loss \n days 0 - 181"
+         "", names.arg=typlev, main="Lignin", 
        col=colscale
        )
 #barp(orig_cTIC$Ph, days==181, days==97)
 axis(4, labels=F)
 abline(h=1, col="black", lty=2)
 
-par(mar=c(2, 0, 1.2,5))
+par(mar=c(2, 0, 1.2,4))
 barpr2(-1*closs.corr.orig_cTIC$C/initials.orig_cTIC$C, samples$cons_acc_resp_litC, days==181, days==0, ylim=c(0,2), yaxt="n", main="Carbohydrates", names.arg=typlev, col=colscale)
 axis(4)
 axis(2, labels=F)
@@ -28,44 +30,56 @@ axis(2, labels=F)
 #barpr(closs.corr.orig_cTIC$L, closs.corr.orig_cTIC$C, days==181, days==0, ylim=c(-1,3))
 abline(h=1, col="black", lty=2)
 
-par(mar=c(2, 0, 1.2,5))
+par(mar=c(2, 0, 1.2,4))
 barpr(closs.corr.orig_cTIC$L/initials.orig_cTIC$L, closs.corr.orig_cTIC$C/initials.orig_cTIC$C, days==181, days==0, ylim=c(0.01,20), yaxt="n",names.arg=typlev, main="Lignin/Carbohydrates"
 , log="y", col=colscale
       )
 axis(4)
 axis(2, labels=F)
-mtext("Ratio (% of initial pools degraded)\n0-181 days", side=4, padj=2.5, las=0, cex=.7)
+#mtext("Ratio (% of initial pools degraded)\n0-181 days", side=4, padj=2.5, las=0, cex=.7)
 abline(h=1, col="black", lty=2)
 
-par(mar=c(2, 5, 1.2,0))
-barp(-1*closs.corr.orig_cTIC$L*100/initials.orig_cTIC$L, days==475, days==181,  ylim=c(0,20), ylab="% of initial pool degraded \n days 181 - 475", names.arg=typlev, col=colscale)
+par(mar=c(2, 4, 1.2,0))
+barp(-1*closs.corr.orig_cTIC$L*100/initials.orig_cTIC$L, days==475, days==181,  ylim=c(0,20), ylab=#"% of initial pool degraded \n days 181 - 475"
+       "", names.arg=typlev, col=colscale)
 axis(4, labels=F)
+mtext("181 - 474 days", side=2, las=0, padj=-3)
 
-par(mar=c(2, 0, 1.2,5))
+
+par(mar=c(2, 0, 1.2,4))
 barp(-1*closs.corr.orig_cTIC$C*100/initials.orig_cTIC$C, days==475, days==181, ylim=c(0,20), yaxt="n", names.arg=typlev, col=colscale)
 axis(4)
 axis(2, labels=F)
 
-par(mar=c(2, 5, 1.2,0))
-barpr2(-1*closs.corr.orig_cTIC$L/initials.orig_cTIC$L, samples$cons_acc_resp_litC, days==475, days==181, ylim=c(0,2), ylab="% loss / % carbon loss \n days 181 - 475", names.arg=typlev, main="", col=colscale)
+mtext("% of  initial pool decomposed", line=3, side=1, outer=F, adj=2.5)
+
+
+par(mar=c(2, 4, 1.2,0))
+barpr2(-1*closs.corr.orig_cTIC$L/initials.orig_cTIC$L, samples$cons_acc_resp_litC, days==475, days==181, ylim=c(0,2), ylab="", names.arg=typlev, main="", col=colscale)
 #barp(orig_cTIC$Ph, days==181, days==97)
 axis(4, labels=F)
 abline(h=1, col="black", lty=2)
 
-par(mar=c(2, 0, 1.2,5))
+par(mar=c(2, 0, 1.2,4))
 barpr2(-1*closs.corr.orig_cTIC$C/initials.orig_cTIC$C, samples$cons_acc_resp_litC, days==475, days==181, ylim=c(0,2), yaxt="n",names.arg=typlev,  main="", col=colscale)
 axis(4)
 axis(2, labels=F)
 #mtext("Carbohydrates degraded (% of initial pool)\n days 0 - 181", side=4, padj=2)
 #barpr(closs.corr.orig_cTIC$L, closs.corr.orig_cTIC$C, days==181, days==0, ylim=c(-1,3))
 abline(h=1, col="black", lty=2)
+mtext("% loss / % C loss", line=3, side=1, outer=F, adj=-1.5,  cex=1)
 
-par(mar=c(2, 0, 1.2,5))
+
+par(mar=c(2, 0, 1.2,4))
 barpr(closs.corr.orig_cTIC$L/initials.orig_cTIC$L, closs.corr.orig_cTIC$C/initials.orig_cTIC$C, days==475, days==181, ylim=c(0.01,20), yaxt="n",names.arg=typlev, main=""
 , log="y", col=colscale
       )
 axis(4)
+
 axis(2, labels=F)
-mtext("Ratio (% of initial pools degraded)\n days 181-475", side=4, padj=2.5, las=0, cex=.7)
+#mtext("Ratio (% of initial pools degraded)\n days 181-475", side=4, padj=2.5, las=0, cex=.7)
 abline(h=1, col="black", lty=2)
+
+mtext("lignin loss / carbohydrate loss", line=3, side=1, outer=F, adj=0.5,  cex=1)
+
 @

@@ -33,7 +33,7 @@ height<-as.matrix(data.frame(phosplot.data$P_lit_mean[phosplot.data$type=="AK"],
                    phosplot.data$P_lit_mean[phosplot.data$type=="SW"]
                    ))
 main<-""
-ylab<-expression(paste(mu, "g P g -1 d.w."))
+ylab<-expression(paste(mu, "g P g"^{-1}," d.w."))
 xlab<-""
 error<-as.matrix(data.frame(phosplot.data$P_lit_se[phosplot.data$type=="AK"],
                    phosplot.data$P_lit_se[phosplot.data$type=="KL"],
@@ -50,7 +50,8 @@ density <- c(0, 20)
 
 barplot2(height, ylim=c(ylim[1], ylim[2]), plot.ci=TRUE, ci.u=height+error,ci.l=height, main="", ylab=ylab, col=col, tck=0.01, xlab=xlab, beside=T, names.arg=xarg, space=space, width=width, angle=angle, density=density)
 
-axis(4)
+axis(4, labels=F)
+
 
 height<-as.matrix(data.frame(phosplot.data$P_mic_TDP_mean[phosplot.data$type=="AK"],
                    phosplot.data$P_mic_TDP_mean[phosplot.data$type=="KL"],
@@ -88,9 +89,15 @@ error<-as.matrix(data.frame(phosplot.data$P_mic_se[phosplot.data$type=="AK"],
 
 barplot2(height, ylim=c(ylim[1], ylim[2]), plot.ci=TRUE, ci.u=height+error,ci.l=height, beside=T, ylab="", col="black", tck=0.01, xlab="", add=T, width=width2, space=space2, offset=0, names.arg=rep("",4))
 
+legend("topleft", fill=c("white", "darkgrey", "black"), c("total litter P", "soluble P", "microbial P"), cex=1, bty="n")
 
-corplot(phos$P_mic_TDP[phos$days==181]-phos$P_mic_TDP[phos$days==14],hmw.proc$LCI, bg=h3.col, pch=h3.pch, ylab=expression(paste(Delta, "LCI (0-181 days)")), xlab=expression (paste ("P mobilization (0-181 days, ", mu, "g P g-1 d.w.)", sep="")))
+legend("topright", col=1, fill="darkgrey", pt.bg=c("white"), density=c(0,20), angle=45, c("14 days", "181 days"), cex=1, bty="n")
 
-legend("bottomleft", typlev, pch=pch, col=colscale)
-axis(4)
+box()
+
+corplot(phos$P_mic_TDP[phos$days==181]-phos$P_mic_TDP[phos$days==14],hmw.proc$LCI, bg=h3.col, pch=h3.pch, ylab=expression(paste(Delta, "LCI"[pyr], " (0-181 days)")), xlab=expression (paste ("P mobilization (14-181 days, ", mu, "g P g"^{-1}," d.w.)", sep="")))
+
+legend("bottomleft", typlev, pch=pch, col=1, pt.bg=colscale, bty="n")
+axis(4, labels=F)
+
 @

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  2 SEP 2013 17:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  17 OCT 2013 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -244,24 +244,7 @@ LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
 ) (./fullpage.sty)
-(./lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count101
-\output=\toks20
-\linenoprevgraf=\count102
-\linenumbersep=\dimen120
-\linenumberwidth=\dimen121
-\c@linenumber=\count103
-\c@pagewiselinenumber=\count104
-\c@LN@truepage=\count105
-\c@internallinenumber=\count106
-\c@internallinenumbers=\count107
-\quotelinenumbersep=\dimen122
-\bframerule=\dimen123
-\bframesep=\dimen124
-\bframebox=\box28
-LaTeX Info: Redefining \\ on input line 3056.
-) (/usr/share/R/share/texmf/tex/latex/Sweave.sty
+(/usr/share/R/share/texmf/tex/latex/Sweave.sty
 Package: Sweave 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -272,11 +255,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count108
+\FV@CodeLineNo=\count101
 \FV@InFile=\read1
-\FV@TabBox=\box29
-\c@FancyVerbLine=\count109
-\FV@StepNumber=\count110
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count102
+\FV@StepNumber=\count103
 \FV@OutFile=\write3
 ) (/usr/share/R/share/texmf/tex/latex/upquote.sty
 Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
@@ -328,17 +311,17 @@ LaTeX Font Info:    ... okay on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen125
-\scratchbox=\box30
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen126
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count104
+\scratchdimen=\dimen120
+\scratchbox=\box29
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen121
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -403,11 +386,6 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./abstract.tex) [2] (./introduction.tex
-LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
-File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-)
 
 LaTeX Warning: Citation `Berg2008' on page 3 undefined on input line 3.
 
@@ -676,28 +654,29 @@ LaTeX Warning: Citation `Kuder1998' on page 15 undefined on input line 27.
 
 LaTeX Warning: Reference `eq:closscorr' on page 15 undefined on input line 36.
 
-(./metaprot.tex [15]
+(./metaprot.tex
 
-LaTeX Warning: Citation `Schneider2010' on page 16 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Tringe2005' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Schneider2010' on page 15 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Keiblinger2011' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Tringe2005' on page 15 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Schneider2011' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Keiblinger2011' on page 15 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Florens2006' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Schneider2011' on page 15 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Zybailov2006' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Florens2006' on page 15 undefined on input line 3.
 
 
-LaTeX Warning: Citation `Bantscheff2007' on page 16 undefined on input line 3.
+LaTeX Warning: Citation `Zybailov2006' on page 15 undefined on input line 3.
 
+
+LaTeX Warning: Citation `Bantscheff2007' on page 15 undefined on input line 3.
+
+[15]
 
 LaTeX Warning: Citation `Inselsbacher2010' on page 16 undefined on input line 5
 .
@@ -716,148 +695,91 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 299.
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )) [21]
+<ligpaper-metaprot2.pdf, id=103, 1084.05pt x 1300.86pt>
+File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use ligpaper-metaprot2.pdf>
+Package pdftex.def Info: ligpaper-metaprot2.pdf used on input line 247.
+(pdftex.def)             Requested size: 469.75499pt x 563.70595pt.
+ <ligpaper-f2bnew.pdf, id=104, 722.7pt x 361.35pt>
+File: ligpaper-f2bnew.pdf Graphic file (type pdf)
+
+<use ligpaper-f2bnew.pdf>
+Package pdftex.def Info: ligpaper-f2bnew.pdf used on input line 259.
+(pdftex.def)             Requested size: 328.82706pt x 164.4145pt.
+ [22 <./ligpaper-metaprot2.pdf>]
+<ligpaper-lci.pdf, id=115, 722.7pt x 361.35pt>
+File: ligpaper-lci.pdf Graphic file (type pdf)
+ <use ligpaper-lci.pdf>
+Package pdftex.def Info: ligpaper-lci.pdf used on input line 271.
+(pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
+ [23 <./ligpaper-f2bnew.pdf> <./ligpaper-lci.pdf>]
+<ligpaper-degrdiff.pdf, id=132, 867.24pt x 505.89pt>
+File: ligpaper-degrdiff.pdf Graphic file (type pdf)
+
+<use ligpaper-degrdiff.pdf>
+Package pdftex.def Info: ligpaper-degrdiff.pdf used on input line 284.
+(pdftex.def)             Requested size: 469.75499pt x 274.02563pt.
+ [24 <./ligpaper-degrdiff.pdf>]
+<ligpaper-graphcorr.pdf, id=142, 1734.48pt x 1156.32pt>
+File: ligpaper-graphcorr.pdf Graphic file (type pdf)
+
+<use ligpaper-graphcorr.pdf>
+Package pdftex.def Info: ligpaper-graphcorr.pdf used on input line 296.
+(pdftex.def)             Requested size: 469.75499pt x 313.16335pt.
+ [25 <./ligpaper-graphcorr.pdf>]
+<ligpaper-metaprot_pca.pdf, id=153, 433.62pt x 433.62pt>
+File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
+
+<use ligpaper-metaprot_pca.pdf>
+Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 312.
+(pdftex.def)             Requested size: 469.75499pt x 469.7781pt.
+ [26 <./ligpaper-metaprot_pca.pdf>]
+(./tab_pyrprod.tex [27]
+Overfull \hbox (8.02017pt too wide) in paragraph at lines 63--112
+ [] 
+ []
+
+[28]) [29]
+Overfull \hbox (26.37129pt too wide) in paragraph at lines 343--379
+ [][] 
+ []
+
+[30
+
+]
+Overfull \hbox (20.31398pt too wide) in paragraph at lines 388--424
+ [][] 
+ []
+
+[31] (./tab_partcorr.tex [32
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `catab' on page 22 undefined on input line 212.
-
-
-LaTeX Warning: Reference `catab' on page 22 undefined on input line 212.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22] <ligpaper-enz.pdf, id=109, 722.7pt x 722.7pt>
-File: ligpaper-enz.pdf Graphic file (type pdf)
- <use ligpaper-enz.pdf>
-Package pdftex.def Info: ligpaper-enz.pdf used on input line 221.
-(pdftex.def)             Requested size: 469.75499pt x 469.76045pt.
-
-<ligpaper-mb.pdf, id=110, 867.24pt x 650.43pt>
-File: ligpaper-mb.pdf Graphic file (type pdf)
- <use ligpaper-mb.pdf>
-Package pdftex.def Info: ligpaper-mb.pdf used on input line 232.
-(pdftex.def)             Requested size: 469.75499pt x 352.31868pt.
-
-<ligpaper-figphos.pdf, id=111, 722.7pt x 361.35pt>
+])
+<ligpaper-figphos.pdf, id=190, 722.7pt x 361.35pt>
 File: ligpaper-figphos.pdf Graphic file (type pdf)
  <use ligpaper-figphos.pdf>
-Package pdftex.def Info: ligpaper-figphos.pdf used on input line 243.
+Package pdftex.def Info: ligpaper-figphos.pdf used on input line 489.
 (pdftex.def)             Requested size: 375.80542pt x 187.90308pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-metaprot2.pdf, id=112, 867.24pt x 722.7pt>
-File: ligpaper-metaprot2.pdf Graphic file (type pdf)
+<ligpaper-prypca.pdf, id=191, 361.35pt x 578.16pt>
+File: ligpaper-prypca.pdf Graphic file (type pdf)
+ <use ligpaper-prypca.pdf>
+Package pdftex.def Info: ligpaper-prypca.pdf used on input line 500.
+(pdftex.def)             Requested size: 375.80542pt x 601.28986pt.
 
-<use ligpaper-metaprot2.pdf>
-Package pdftex.def Info: ligpaper-metaprot2.pdf used on input line 256.
-(pdftex.def)             Requested size: 469.75499pt x 391.46521pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<ligpaper-f2bnew.pdf, id=113, 578.16pt x 831.105pt>
-File: ligpaper-f2bnew.pdf Graphic file (type pdf)
- <use ligpaper-f2bnew.pdf>
-Package pdftex.def Info: ligpaper-f2bnew.pdf used on input line 268.
-(pdftex.def)             Requested size: 328.82706pt x 472.68219pt.
-
-<ligpaper-lci.pdf, id=114, 722.7pt x 361.35pt>
-File: ligpaper-lci.pdf Graphic file (type pdf)
- <use ligpaper-lci.pdf>
-Package pdftex.def Info: ligpaper-lci.pdf used on input line 280.
-(pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
-
-<ligpaper-degrdiff.pdf, id=115, 867.24pt x 505.89pt>
-File: ligpaper-degrdiff.pdf Graphic file (type pdf)
-
-<use ligpaper-degrdiff.pdf>
-Package pdftex.def Info: ligpaper-degrdiff.pdf used on input line 293.
-(pdftex.def)             Requested size: 469.75499pt x 274.02563pt.
+LaTeX Warning: Float too large for page by 18.99486pt on input line 505.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-graphcorr.pdf, id=116, 1734.48pt x 1156.32pt>
-File: ligpaper-graphcorr.pdf Graphic file (type pdf)
+[33
 
-<use ligpaper-graphcorr.pdf>
-Package pdftex.def Info: ligpaper-graphcorr.pdf used on input line 305.
-(pdftex.def)             Requested size: 469.75499pt x 313.16335pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<ligpaper-metaprot_pca.pdf, id=117, 433.62pt x 433.62pt>
-File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
-
-<use ligpaper-metaprot_pca.pdf>
-Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 320.
-(pdftex.def)             Requested size: 469.75499pt x 469.7781pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./tab_init.tex [23] [24 <./ligpaper-enz.pdf>] [25 <./ligpaper-mb.pdf> <./ligpa
-per-figphos.pdf>] [26 <./ligpaper-metaprot2.pdf>] [27 <./ligpaper-f2bnew.pdf>]
-[28 <./ligpaper-lci.pdf> <./ligpaper-degrdiff.pdf>] [29 <./ligpaper-graphcorr.p
-df>] [30 <./ligpaper-metaprot_pca.pdf>] [31
-
-])
-
-LaTeX Warning: Citation `Mooshammer2011' on page 32 undefined on input line 348
-.
-
-
-LaTeX Warning: Citation `Leitner2011' on page 32 undefined on input line 348.
-
-
-LaTeX Warning: Citation `Mooshammer2011' on page 32 undefined on input line 348
-.
-
-
-LaTeX Warning: Citation `Leitner2011' on page 32 undefined on input line 348.
-
-
-Overfull \hbox (13.84834pt too wide) in paragraph at lines 351--385
- [][] 
- []
-
-[32
-
-
-]
-
-LaTeX Warning: Citation `Mooshammer2011' on page 33 undefined on input line 391
-.
-
-
-LaTeX Warning: Citation `Leitner2011' on page 33 undefined on input line 391.
-
-
-LaTeX Warning: Citation `Mooshammer2011' on page 33 undefined on input line 391
-.
-
-
-LaTeX Warning: Citation `Leitner2011' on page 33 undefined on input line 391.
-
-
-Overfull \hbox (7.79103pt too wide) in paragraph at lines 394--428
- [][] 
- []
-
-[33] [34
-
-] (./ligpaper.aux)
+] [34 <./ligpaper-figphos.pdf>] [35 <./ligpaper-prypca.pdf>] (./ligpaper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -866,36 +788,39 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5269 strings out of 495059
- 76091 string characters out of 3182030
- 137795 words of memory out of 3000000
- 8217 multiletter control sequences out of 15000+200000
- 48004 words of font info for 97 fonts, out of 3000000 for 9000
+ 5058 strings out of 495059
+ 72879 string characters out of 3182030
+ 134509 words of memory out of 3000000
+ 8006 multiletter control sequences out of 15000+200000
+ 46337 words of font info for 99 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,10n,38p,2192b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,38p,2192b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb>
-Output written on ligpaper.pdf (34 pages, 391568 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb>
+Output written on ligpaper.pdf (35 pages, 391898 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

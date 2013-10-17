@@ -1,4 +1,5 @@
 <<metaprot_pca, echo=F, results=hide, fig=T>>=
+require("fields")
 pch.met<-c(21, 21, 21, 21, 22, 22, 22, 22, 23, 23, 23, 23, 24, 24, 24, 24)
 col.met<-c("#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999", "#000000", "#333333", "#666666", "#999999")
 labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti", 
@@ -7,7 +8,74 @@ labels.metaprot<-c("Doth", "Euro", "Leot", "Sacc", "Sord", "Agar", "Trem", "Usti
 
 colscale2 <- c("#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF")
 
-plot.meta(ord, arrows=F, envfit=T, enz=F, choices=1:2, lab="CA", spe.mult=2)
+cond<-which(is.na(metaprot[6])==F)
+ord<-cca(metaprot.red[6:ncol(metaprot.red)])
+arrows<-F
+envfit<-T
+enz<-F
+choices<-1:2
+lab<-"CA"
+spe.mult<-2
+
+site.mult<-1
+
+  
+xvar<-eigenvals(ord)/sum(eigenvals(ord))
+plot(ord, choices=choices, type="n", tck=.01,
+ xlab=paste(lab, choices[1], formatC(xvar[choices[1]]*100, digits=3), "% variance"),
+ ylab=paste(lab, choices[2], formatC(xvar[choices[2]]*100, digits=3), "% variance"))  
+
+lims<-par("usr")
+xspa<-(lims[2]-lims[1])/50
+yspa<-(lims[4]-lims[3])/50
+
+xmin<-tapply(scores(ord, display="sites", choices=choices[1]), metaprot.red$Harvest, min)
+xmax<-tapply(scores(ord, display="sites", choices=choices[1]), metaprot.red$Harvest, max)
+ymin<-tapply(scores(ord, display="sites", choices=choices[2]), metaprot.red$Harvest, min)
+ymax<-tapply(scores(ord, display="sites", choices=choices[2]), metaprot.red$Harvest, max)
+
+for(i in 1:4)
+  rect(xmin[i]*site.mult-xspa, ymin[i]*site.mult-yspa, xmax[i]*site.mult+xspa,ymax[i]*site.mult+yspa, col=colscale2[i])
+
+for(i in 1:4)
+  rect(xmin[i]*site.mult-xspa, ymin[i]*site.mult-yspa, xmax[i]*site.mult+xspa,ymax[i]*site.mult+yspa)
+
+points(scores(ord, display="sites", choices=choices)*site.mult, pch=pch.met, bg=col.met, cex=1)
+text(scores(ord, display="species", choices=choices)*spe.mult, labels=labels.metaprot, cex=0.5)
+
+
+fit.var<-data.frame(alldata$days[cond])
+colnames(fit.var)<-"Incubation time"
+plot(envfit(ord, fit.var, choices=choices), cex=.5, p.max=0.05, col="#777777")
+
+fit.var2<-
+  alldata[cond,39:44]
+colnames(fit.var2)<-c("C lit", "N lit", "P lit", "C:N lit", "C:P lit", "N:P lit")
+labels<-list(vectors=c(expression("C"[litter]),expression("N"[litter]),expression("P"[litter]),expression("C:N"[litter]), expression("C:P"[litter]), expression("N:P"[litter])), factors="")
+plot(envfit(ord, fit.var2, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+
+?envfit
+
+fit.var3<-alldata[cond, 51:56]
+colnames(fit.var3)<-c("C mic", "N mic", "P mic", "C:N mic", "C:P mic", "N:P mic")
+labels<-list(vectors=c(expression("C"[micr]),expression("N"[micr]),expression("P"[micr]),expression("C:N"[micr]), expression("C:P"[micr]), expression("N:P"[micr])), factors="")
+plot(envfit(ord, fit.var3, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+plot(envfit(ord, fit.var3, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+plot(envfit(ord, fit.var3, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+
+colnames(alldata)
+fit.var4<-  alldata[cond, 78:80]
+colnames(fit.var4)<-c("C:N imb", "C:P imb", "N:P imb")
+labels<-list(vectors=c(expression("C:N"[litter:micr]), expression("C:P"[litter:micr]), expression("N:P"[litter:micr])), factors="")
+plot(envfit(ord, fit.var4, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+plot(envfit(ord, fit.var4, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+plot(envfit(ord, fit.var4, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
+
+
+fit.var5<-data.frame(metaprot.red[,4])
+colnames(fit.var5)<-"F:B"
+plot(envfit(ord, fit.var5, choices=choices), cex=.5, p.max=0.05, col="#777777")
+
 
 labs<-c("14 days", "97 days", "181 days", "475 days")
 
