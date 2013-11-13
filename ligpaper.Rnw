@@ -345,9 +345,13 @@ tab1<-corr.ab(orig_rsim,sco, tex=T)
 tab2<-corr.ab(class_rsim,sco, tex=T)
 
 tab <-   rbind(tab1, tab2)
-rownames(tab) <- c(rownames(tab1), paste(rownames(tab2), " "))
 
-tab<-xtable(tab, caption="caption", label="cor_pyrpca", align=c("l", rep(
+tab<-tab[c("L","g","sy","Ph","bf","ar","C","cp","f","N","N-me-pyr", "pyridol","p","ind", "al0", "al1","phytol", "fa" ),T]
+names<-c("All lignin","\\ \\ \\ Guaiacol lignin","\\ \\ \\ Syringol lignin","Phenole derivatives","Benzofurane","Other aromatic compounds","All carbohydrates","\\ \\ \\ Cyclopentenone derivatives","\\ \\ \\ Furan derivatives","N containing pyrolysis products","\\ \\ \\ N-methyl-pyridine", "\\ \\ \\ 3-Hydroxy-pyridine","\\ \\ \\ Other pyridine and pyrrol derivatives","\\ \\ \\ Indole derivatives", "Alkanes (C25-C29)", "Alkenes (C25-C29)","Phytol", "Fatty acids (C14-C18)" )
+
+rownames(tab) <- names
+
+tab<-xtable(tab, caption="Correlation coefficients (R) between classes of pyrolysis products and the first 3 components in a PCA of all pyrolysis products (Figure S2). Significant (p \\textless 0.05) correlations are printed in bold.", label="cor_pyrpca", align=c("l", rep(
 "r",3)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
@@ -456,25 +460,24 @@ table<-xtable(tab, caption="Correlations coeffitients between correspondance ana
 print(table, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
 
-\begin{figure}[!h]
-\begin{center}
+\begin{figure}[p]
+
 %\setkeys{Gin}{width=4in}
 %\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_Psequestr.Rnw}
-\end{center}
 \caption{
-{\bf Mobilization of litter P} Left: In lignin degrading litter (AK and KL) a net mobilization of Insoluble litter P into the fast turn-over P pools (soluble P and microbial biomass P) occured over the first 6 months incubation. In non lignin-degrading litter (OS and SW) increases biomass P corresponded with decreases in soluble P, i.e., no additional insoluble P mobilized. Right: correlation between P mobilization and lignin accumulation, 0-6 months incubation. Beech litter was collected in: Schottenwald (SW), triangles; Ossiach (OS), diamonds; Klausenleopoldsdorf (KL), squares; Achenkirch (AK), circles. Error bars indicate standard errors (n=5).}
+{\bf Mobilization of litter P} Left: In lignin degrading litter (AK and KL) a net mobilization of Insoluble litter P into the fast turn-over P pools (soluble P and microbial biomass P) occured over the first 6 months incubation. In non lignin-degrading litter (OS and SW) increases biomass P corresponded with decreases in soluble P, i.e., no additional insoluble P mobilized. Right: correlation between P mobilization and lignin accumulation, 0-6 months incubation. Beech litter was collected in: Schottenwald (SW), triangles; Ossiach (OS), diamonds; Klausenleopoldsdorf (KL), squares; Achenkirch (AK), circles. Error bars indicate standard errors (n=4-5).}
 %\label{fig:phos}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[p]
 \begin{center}
 %\setkeys{Gin}{width=4in}
 %\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_pyrpca.Rnw}
 \end{center}
 \caption{
-{\bf caption} caption.}
+{\bf Principal component analysis of 129 pyrolysis products.} Litter collected at different sites clusters in the first 2 components regardless of incubation time. PCA3 expresses decomposition trends, litter with high C mineralization rates (SW, KL) decreases along PCA3 while litter with slow mineralization (AK, OS) shows little shifts along this component. Beech litter was collected in: Schottenwald (SW), triangles; Ossiach (OS), diamonds; Klausenleopoldsdorf (KL), squares; Achenkirch (AK), circles. Error bars indicate standard errors (n=4-5). Letters indicate pyrolysis products: L, lignin (methoxyphenoles); Ph, other phenoles; C, carbohydrates; N, N continaing compounds; al, aliphatic compounds; non, non-specific compounds; unk, unidentified pyrolysis products.}
 %\label{fig:pyrpca}
 \end{figure}
 
