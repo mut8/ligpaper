@@ -45,7 +45,7 @@ xlim=c(min(var1, na.rm=T)-(max(var1, na.rm=T)- min(var1, na.rm=T))*0.2,max(var1,
 ylim=c(min(var4, na.rm=T)-(max(var4, na.rm=T)- min(var4, na.rm=T))*0.1,max(var4, na.rm=T)+(max(var4, na.rm=T)- min(var4, na.rm=T))*0.2)
 corplot(var1, var4, xlab="", xaxt="n", ylab="", bg=h3.col, pch=h3.pch, textpos="left", xlim=xlim, ylim=ylim)
 
-legend("topleft", levels(type), pch=21:24, pt.bg=colscale,  cex=.8, bty="n")
+legend("bottomleft", levels(type), pch=21:24, pt.bg=colscale,  cex=.8, bty="n")
 axis(4, label=F)
 axis(1, label=F)
 mtext(var4lab, side=2, las=0, cex=1.2, padj=-2)
