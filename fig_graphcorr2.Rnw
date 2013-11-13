@@ -1,27 +1,27 @@
-<<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
+    <<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
     
-    pdf("corplot2.pdf", width=9, height=6)
-    h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
-    h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
+pdf("corplot2.pdf", width=9, height=6)
+h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
+h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
+
+
+var1<-alldata$CN_inbal[alldata$days==181]
+var2<-alldata$CP_inbal[alldata$days==181]
+var3<-alldata$NP_inbal[alldata$days==181]
+var4<-hmw.proc$LCI
+var5<-hmw.proc$LCdec
+
+var1lab<- expression("C:N"[litter:microbial])
+var2lab<- expression("C:P"[litter:microbial])
+var3lab<- expression("N:P"[litter:microbial])
+var4lab<- expression(paste(Delta, "LCI"[pyr]))
+var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
+
+
     
     
-    var1<-alldata$CN_inbal[alldata$days==181]
-    var2<-alldata$CP_inbal[alldata$days==181]
-    var3<-alldata$NP_inbal[alldata$days==181]
-    var4<-hmw.proc$LCI
-    var5<-hmw.proc$LCdec
-    
-    var1lab<- expression("C:N"[litter:microbial])
-    var2lab<- expression("C:P"[litter:microbial])
-    var3lab<- expression("N:P"[litter:microbial])
-    var4lab<- expression(paste(Delta, "LCI"[pyr]))
-    var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
-    
-    
-    
-    
-    
-    par(cex=1, cex.axis=1, cex.lab=1, mar=c(0,0,0,0), tck=.01, las=1)
+
+par(cex=1, cex.axis=1, cex.lab=1, mar=c(0,0,0,0), tck=.01, las=1, mgp=c(3,0.3,0))
     #layout(matrix(c(1,2,3,4,5,6), 2,3, byrow=T))
     
     m <- rbind(
@@ -48,7 +48,7 @@ corplot(var1, var4, xlab="", xaxt="n", ylab="", bg=h3.col, pch=h3.pch, textpos="
 ?axis
 axis(4, label=F)
 axis(1, label=F)
-mtext(var4lab, side=2, las=0, cex=1.2, padj=-3)
+mtext(var4lab, side=2, las=0, cex=1.2, padj=-2)
 
 
 screen(2)
@@ -85,8 +85,8 @@ axis(1)
 axis(2)
 axis(3, label=F)
 
-mtext(var5lab, side=2, cex=1, las=0,padj=-1.5)
-mtext(var1lab, side=1, cex=1, padj=3)
+mtext(var5lab, side=2, cex=1, las=0,padj=-1)
+mtext(var1lab, side=1, cex=1, padj=2)
 
 #?mtext
 
@@ -102,7 +102,7 @@ axis(1)
 axis(2, label=F)
 axis(3, label=F)
 axis(4, label=F)
-mtext(var2lab, side=1, cex=1, padj=3)
+mtext(var2lab, side=1, cex=1, padj=2)
 
 screen(6)
 #par(mar=c(5,0.8,0,4))
@@ -117,7 +117,7 @@ axis(3, label=F)
 axis(4)
 legend("topleft", levels(type), pch=21:24, pt.bg=colscale,  cex=.8, bty="n")
 
-mtext(var3lab, side=1, cex=1, padj=3)
+mtext(var3lab, side=1, cex=1, padj=2)
 
 
 screen(7)
@@ -128,9 +128,9 @@ cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
 if (cor1$p.value <0.05) {
   abline(lm2)
 }
-mtext("residual", side=2, las=0, padj=0, cex=.8)
-mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.8)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.15,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.1, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
+mtext("residual", side=2, las=0, padj=0, cex=.9)
+mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.9)
+text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.15,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.05, cex=.6, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
 
 screen(8)
 lm1 <- lm(var4~var2)
@@ -138,12 +138,12 @@ plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, ce
 lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
 cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
 if (cor1$p.value <0.05) {
-  abline(lm2)
+abline(lm2)
 }
 
-mtext("residual", side=2, las=0, padj=0, cex=.8)
-mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.8)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.8,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*1.05, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
+mtext("residual", side=2, las=0, padj=0, cex=.9)
+mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.9)
+text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.75,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*1.05, cex=.6, paste("(R=", formatC(cor1$estimate, digits=3, format="f"), ")" ))
 
 
 screen(9)
@@ -157,9 +157,9 @@ if (cor1$p.value <0.05) {
   abline(lm2)
 }
 
-mtext("residual", side=2, las=0, padj=0, cex=.8)
-mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.8)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.72,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*.05, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
+mtext("residual", side=2, las=0, padj=0, cex=.9)
+mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.9)
+text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.67,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*.1, cex=.6, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
 
 
 screen(10)
@@ -169,13 +169,13 @@ lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
 cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
 if (cor1$p.value <0.05) {abline(lm2)}
     
-mtext("residual", side=2, las=0, padj=0, cex=.8)
-mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.8)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.85,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.1, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
+mtext("residual", side=2, las=0, padj=0, cex=.9)
+mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.9)
+text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.83,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.05, cex=.6, paste("(R=", formatC(cor1$estimate, digits=3, format="f"), ")" ))
     
 close.screen(all.screens = TRUE)
 
 dev.off()
 
-
-@
+    
+    @
