@@ -33,8 +33,13 @@
       c(0.66, 0.925, 0.135, 0.555),
       c(0.28, 0.38, 0.84, 0.975),
       c(0.55, 0.65, 0.84, 0.975),
+<<<<<<< HEAD
       c(0.145, 0.245, 0.42, 0.55),
       c(0.415, 0.515, 0.42, 0.55)
+=======
+      c(0.145, 0.245, 0.43, 0.55),
+      c(0.415, 0.515, 0.43, 0.55)
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
       )
     split.screen(m)
     screen(1)
@@ -116,12 +121,17 @@
     
     screen(7)
     lm1 <- lm(var4~var1)
+<<<<<<< HEAD
     plot(var2, lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
+=======
+    plot(var2, lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
     lm2 <- lm(lm1$residual~ var2)
     cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
     if (cor1$p.value <0.05) {
       abline(lm2)
     }
+<<<<<<< HEAD
     mtext("residual", side=2, las=0, padj=0, cex=.8, adj=0.8)
     mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.8)
     text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.2,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.05, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
@@ -129,20 +139,38 @@
     screen(8)
     lm1 <- lm(var4~var2)
     plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
+=======
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+    text(min(var2)+1, min(lm1$residuals)+1, "asdf", cex=0.5)
+
+    screen(8)
+    lm1 <- lm(var4~var2)
+    plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
     lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
     cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
     if (cor1$p.value <0.05) {
       abline(lm2)
     }
     
+<<<<<<< HEAD
     mtext("residual", side=2, las=0, padj=0, cex=.8)
     mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.8, adj=1)
     text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.8,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*1.05, cex=.5, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
+=======
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var1lab, side=1,  padj=0, cex=.6)
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
     
     
     screen(9)
     lm1 <- lm(var5~var1)
+<<<<<<< HEAD
     plot(var2[is.na(var1)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
+=======
+    plot(var2[is.na(var1)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
     
     lm2 <- lm(lm1$residual~ var2[is.na(var1)==F])
     cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
@@ -151,6 +179,7 @@
     }
     
     mtext("residual", side=2, las=0, padj=0, cex=.6)
+<<<<<<< HEAD
     mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.6)
     
     screen(10)
@@ -162,6 +191,21 @@
         
     mtext("residual", side=2, las=0, padj=0, cex=.8)
     mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.8)
+=======
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+    
+    screen(10)
+    lm1 <- lm(var5~var2)
+    plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+    lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
+    cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
+    if (cor1$p.value <0.05) {
+      abline(lm2)
+    }
+        
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+>>>>>>> ed51a97a14bc412b7968fef3cc6c75e985c0e7d0
     
         
     close.screen(all.screens = TRUE)
