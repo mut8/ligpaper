@@ -1,0 +1,173 @@
+<<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
+    
+    pdf("corplot2.pdf", width=9, height=6)
+    h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
+    h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
+    
+    
+    var1<-alldata$CN_inbal[alldata$days==181]
+    var2<-alldata$CP_inbal[alldata$days==181]
+    var3<-alldata$NP_inbal[alldata$days==181]
+    var4<-hmw.proc$LCI
+    var5<-hmw.proc$LCdec
+    
+    var1lab<- expression("C:N"[litter:micr])
+    var2lab<- expression("C:P"[litter:micr])
+    var3lab<- expression("N:P"[litter:micr])
+    var4lab<- expression(paste(Delta, "LCI"[pyr]))
+    var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
+    
+    
+    
+    
+    
+    par(cex=1, cex.axis=1, cex.lab=1, mar=c(0,0,0,0), tck=.01, las=1)
+    #layout(matrix(c(1,2,3,4,5,6), 2,3, byrow=T))
+    
+    m <- rbind(
+      c(0.12, 0.385, 0.56, 0.98),
+      c(0.39, 0.655, 0.56, 0.98),
+      c(0.66, 0.925, 0.56, 0.98),
+      c(0.12, 0.385, 0.135, 0.555),
+      c(0.39, 0.655, 0.135, 0.555),
+      c(0.66, 0.925, 0.135, 0.555),
+      c(0.28, 0.38, 0.84, 0.975),
+      c(0.55, 0.65, 0.84, 0.975),
+      c(0.145, 0.245, 0.43, 0.55),
+      c(0.415, 0.515, 0.43, 0.55)
+      )
+    split.screen(m)
+    screen(1)
+    
+    
+    #par(mar=c(3,4,2,0.8), new=F, oma=c(0,0,0,0))
+    corplot(var1, var4, xlab="", xaxt="n", ylab="", bg=h3.col, pch=h3.pch, textpos="left")
+    axis(4, label=F)
+    axis(1, label=F)
+    mtext(var4lab, side=2, las=0, cex=1.2, padj=-3)
+    
+    # corplot(var1, var4, xlab="", xaxt="n", ylab="", bg=h3.col, pch=h3.pch, ylim=c(min(var4), max(var4)#+(max(var4)-min(var4))*1)
+    # ))
+    # axis(4, label=F)
+    # axis(1)
+    # mtext(var4lab, side=2, cex=.6, las=0,padj=-2.5)
+    # 
+    # par( new=F)
+    # 
+    # var2_mod<-(var2-min(var2, na.rm=T))/(max(var2, na.rm=T)-min(var2, na.rm=T))*1/3*(max(var1, na.rm=T)-min(var1, na.rm=T))+min(var1, na.rm=T)
+    # res_mod <- (lm$residuals-min(lm$residuals, na.rm=T))/(max(lm$residuals, na.rm=T)-min(lm$residuals, na.rm=T))*(max(var4, na.rm=T)-min(var4, na.rm=T))+min(var4, na.rm=T)+max(var4, na.rm=T)*4/3
+    # 
+    # 
+    # lm <-lm(var4~var1)
+    # points(var2_mod, res_mod, pch=20)
+    # abline(lm( res_mod ~ var2_mod))
+    # ?abline
+    screen(2)
+    
+    #par(mar=c(3,2.4,2,2.4))
+    corplot(var2, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch, textpos="left")
+    axis(1, label=F)
+    axis(2, label=F)
+    axis(4, label=F)
+    
+    screen(3)
+    
+    #par(mar=c(3,0.8,2,4))
+    corplot(var3, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch)
+    axis(1, label=F)
+    axis(2, label=F)
+    axis(4)
+    
+    screen(4)
+    
+    #par(mar=c(5,4,0,.8))
+    corplot(var1, var5, xlab=var1lab, ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n")
+    axis(4, label=F)
+    axis(1)
+    axis(2)
+    axis(3, label=F)
+    
+    mtext(var5lab, side=2, cex=1, las=0,padj=-1.5)
+    mtext(var1lab, side=1, cex=1, padj=3)
+    
+    #?mtext
+    
+    screen(5)
+    
+    #par(mar=c(5,2.4,0,2.4))
+    corplot(var2, var5, xlab="", ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n")
+    axis(1)
+    axis(2, label=F)
+    axis(3, label=F)
+    axis(4, label=F)
+    mtext(var2lab, side=1, cex=1, padj=3)
+    
+    screen(6)
+    #par(mar=c(5,0.8,0,4))
+    corplot(var3, var5, xlab=var3lab, ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n")
+    axis(1)
+    axis(2, label=F)
+    axis(3, label=F)
+    axis(4)
+    legend("topleft", levels(type), pch=pch, pt.bg=colscale,  cex=.8, bty="n")
+    
+    mtext(var3lab, side=1, cex=1, padj=3)
+    
+    
+    screen(7)
+    lm1 <- lm(var4~var1)
+    plot(var2, lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+    lm2 <- lm(lm1$residual~ var2)
+    cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
+    if (cor1$p.value <0.05) {
+      abline(lm2)
+    }
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+    text(min(var2)+1, min(lm1$residuals)+1, "asdf", cex=0.5)
+
+    screen(8)
+    lm1 <- lm(var4~var2)
+    plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+    lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
+    cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
+    if (cor1$p.value <0.05) {
+      abline(lm2)
+    }
+    
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var1lab, side=1,  padj=0, cex=.6)
+    
+    
+    screen(9)
+    lm1 <- lm(var5~var1)
+    plot(var2[is.na(var1)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+    
+    lm2 <- lm(lm1$residual~ var2[is.na(var1)==F])
+    cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
+    if (cor1$p.value <0.05) {
+      abline(lm2)
+    }
+    
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+    
+    screen(10)
+    lm1 <- lm(var5~var2)
+    plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=20, cex=0.7, xaxt="n",yaxt="n")
+    lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
+    cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
+    if (cor1$p.value <0.05) {
+      abline(lm2)
+    }
+        
+    mtext("residual", side=2, las=0, padj=0, cex=.6)
+    mtext(var2lab, side=1,  padj=0, cex=.6)
+    
+        
+    close.screen(all.screens = TRUE)
+
+    dev.off()
+    
+    
+    @

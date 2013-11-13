@@ -38,11 +38,24 @@ var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
 # pcor.test(var5, var2, data.frame(var1, var3))
 # pcor.test(var5, var3, data.frame(var1, var2))
 # 
+# cor.test(var5, var1)
 # lm1<-lm(var5 ~ var1)
-# l1<-
 #   cor.test(lm1$residuals, var2)
+#   cor.test(lm1$residuals, var3)
 # 
-# lm2<-lm(var5 ~ var2)
+# cond<- is.na(var2)==F
+# cor.test(var5, var2)
+# lm1<-lm(var5 ~ var2)
+#   cor.test(lm1$residuals, var1[cond])
+#   cor.test(lm1$residuals, var3[cond])
+# 
+# cond<- is.na(var3)==F
+# cor.test(var5, var3)
+# lm1<-lm(var5 ~ var3)
+#   cor.test(lm1$residuals, var1[cond])
+#   cor.test(lm1$residuals, var2[cond])
+
+#lm2<-lm(var5 ~ var2)
 # l2<-
 #   cor.test(lm2$residuals, var3)
 # 
