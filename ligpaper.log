@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  12 NOV 2013 19:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  13 NOV 2013 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,64 +695,258 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 299.
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )) [21]
-<ligpaper-mb.pdf, id=105, 578.16pt x 433.62pt>
+<ligpaper-mb.pdf, id=107, 578.16pt x 433.62pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
 Package pdftex.def Info: ligpaper-mb.pdf used on input line 233.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
- [22 <./ligpaper-mb.pdf>] <ligpaper-metaprot2.pdf, id=115, 1084.05pt x 1300.86p
+ [22 <./ligpaper-mb.pdf>] <ligpaper-metaprot2.pdf, id=117, 1084.05pt x 1300.86p
 t>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
 Package pdftex.def Info: ligpaper-metaprot2.pdf used on input line 247.
 (pdftex.def)             Requested size: 469.75499pt x 563.70595pt.
- <ligpaper-f2bnew.pdf, id=116, 722.7pt x 361.35pt>
+ <ligpaper-f2bnew.pdf, id=118, 722.7pt x 361.35pt>
 File: ligpaper-f2bnew.pdf Graphic file (type pdf)
 
 <use ligpaper-f2bnew.pdf>
 Package pdftex.def Info: ligpaper-f2bnew.pdf used on input line 259.
 (pdftex.def)             Requested size: 328.82706pt x 164.4145pt.
  [23 <./ligpaper-metaprot2.pdf>]
-<ligpaper-lci.pdf, id=127, 722.7pt x 361.35pt>
+<ligpaper-lci.pdf, id=129, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
  <use ligpaper-lci.pdf>
 Package pdftex.def Info: ligpaper-lci.pdf used on input line 271.
 (pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
  [24 <./ligpaper-f2bnew.pdf> <./ligpaper-lci.pdf>]
-<ligpaper-degrdiff.pdf, id=144, 867.24pt x 505.89pt>
+<ligpaper-degrdiff.pdf, id=146, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 Package pdftex.def Info: ligpaper-degrdiff.pdf used on input line 284.
 (pdftex.def)             Requested size: 469.75499pt x 274.02563pt.
  [25 <./ligpaper-degrdiff.pdf>]
-<ligpaper-graphcorr.pdf, id=155, 1734.48pt x 1156.32pt>
+<ligpaper-graphcorr.pdf, id=157, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
 Package pdftex.def Info: ligpaper-graphcorr.pdf used on input line 296.
 (pdftex.def)             Requested size: 469.75499pt x 313.16335pt.
  [26 <./ligpaper-graphcorr.pdf>]
-<ligpaper-metaprot_pca.pdf, id=165, 433.62pt x 433.62pt>
+! Undefined control sequence.
+l.325 var5lab<-"Lignin decomposition /\n
+                                         Carbohydrate decomposition"
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.332     #
+           layout(matrix(c(1,2,3,4,5,6), 2,3, byrow=T))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in internal vertical mode.
+l.350     #
+           par(mar=c(3,4,2,0.8), new=F, oma=c(0,0,0,0))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in internal vertical mode.
+l.363     #
+           par(mar=c(3,2.4,2,2.4))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in internal vertical mode.
+l.373 #
+       par(mar=c(3,0.8,2,4))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in internal vertical mode.
+l.398 #
+       ?mtext
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in internal vertical mode.
+l.406 #
+       par(mar=c(5,2.4,0,2.4))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.415 #
+       par(mar=c(5,0.8,0,4))
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.454 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.454 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.454 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.460 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.460 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.460 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.466 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.466 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.466 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.482 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.482 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.482 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Float too large for page by 452.33548pt on input line 493.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-metaprot_pca.pdf, id=167, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
-Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 312.
+Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 504.
 (pdftex.def)             Requested size: 469.75499pt x 469.7781pt.
- [27 <./ligpaper-metaprot_pca.pdf>]
-(./tab_pyrprod.tex [28]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./tab_pyrprod.tex [27]
 Overfull \hbox (8.02017pt too wide) in paragraph at lines 63--112
  [] 
  []
 
-[29])
+[28])
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30] [31] [32
+[29] [30] [31] [32 <./ligpaper-metaprot_pca.pdf>] [33
 
-] [33] (./tab_partcorr.tex
+] [34] (./tab_partcorr.tex
 ! Missing { inserted.
 <inserted text> 
                 {
@@ -762,34 +956,34 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[34
+[35
 
 
-]) <ligpaper-figphos.pdf, id=206, 722.7pt x 361.35pt>
+]) <ligpaper-figphos.pdf, id=211, 722.7pt x 361.35pt>
 File: ligpaper-figphos.pdf Graphic file (type pdf)
 
 <use ligpaper-figphos.pdf>
-Package pdftex.def Info: ligpaper-figphos.pdf used on input line 537.
+Package pdftex.def Info: ligpaper-figphos.pdf used on input line 729.
 (pdftex.def)             Requested size: 375.80542pt x 187.90308pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ligpaper-prypca.pdf, id=207, 361.35pt x 578.16pt>
+<ligpaper-prypca.pdf, id=212, 361.35pt x 578.16pt>
 File: ligpaper-prypca.pdf Graphic file (type pdf)
  <use ligpaper-prypca.pdf>
-Package pdftex.def Info: ligpaper-prypca.pdf used on input line 548.
+Package pdftex.def Info: ligpaper-prypca.pdf used on input line 740.
 (pdftex.def)             Requested size: 375.80542pt x 601.28986pt.
 
 
-LaTeX Warning: Float too large for page by 18.99486pt on input line 553.
+LaTeX Warning: Float too large for page by 18.99486pt on input line 745.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35
+[36
 
-] [36 <./ligpaper-figphos.pdf>] [37 <./ligpaper-prypca.pdf>] (./ligpaper.aux)
+] [37 <./ligpaper-figphos.pdf>] [38 <./ligpaper-prypca.pdf>] (./ligpaper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -800,7 +994,7 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  5064 strings out of 495059
  72985 string characters out of 3182030
- 135509 words of memory out of 3000000
+ 144509 words of memory out of 3000000
  8011 multiletter control sequences out of 15000+200000
  46337 words of font info for 99 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -827,10 +1021,10 @@ nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt10.pfb>
-Output written on ligpaper.pdf (37 pages, 408383 bytes).
+Output written on ligpaper.pdf (38 pages, 416677 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
+ 311 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -296,6 +296,18 @@ This study formed part of the national research network MICDIF (Linking microbia
 %\label{fig:cor1}
 \end{figure*}
 
+\newpage
+\begin{figure*}[h!]
+\vspace*{2mm}
+\begin{center}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_graphcorr2}
+\end{center}
+%\caption{
+%{\bf Correlation between the LCI change or the ratio of lignin : carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter : microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+%\label{fig:cor1}
+\end{figure*}
+
 
 %\SweaveInput{metaprot_calc}
 
