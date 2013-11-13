@@ -17,11 +17,11 @@ phosplot.data$days <-   rep(c(14, 181),4)
 
 for (i in 1:nrow(phosplot.data)) {
 #  if(is.element(i, c(3,6,9))) {phosplot.data[i,3:8]<-0} else {
-  phosplot.data$P_lit_mean[i] <- mean(phos$P_lit[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
+  phosplot.data$P_lit_mean[i] <- mean(phos$P_lit[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]], na.rm=T)
   phosplot.data$P_lit_se[i] <- stderr(phos$P_lit[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
-  phosplot.data$P_mic_mean[i] <- mean(phos$P_mic[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
+  phosplot.data$P_mic_mean[i] <- mean(phos$P_mic[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]], na.rm=T)
   phosplot.data$P_mic_se[i] <- stderr(phos$P_mic[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
-  phosplot.data$P_mic_TDP_mean[i] <- mean(phos$P_mic_TDP[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
+  phosplot.data$P_mic_TDP_mean[i] <- mean(phos$P_mic_TDP[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]], na.rm=T)
   phosplot.data$P_mic_TDP_se[i] <- stderr(phos$P_mic_TDP[phos$type==phosplot.data$type[i] & phos$days==phosplot.data$days[i]])
 #  }
 }

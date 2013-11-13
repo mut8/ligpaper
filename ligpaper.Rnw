@@ -222,16 +222,16 @@ This study formed part of the national research network MICDIF (Linking microbia
 % %\label{fig:enz}
 % \end{figure}
 % 
-% \begin{figure}[!ht]
-% \begin{center}
-% %\setkeys{Gin}{width=4in}
-% \setkeys{Gin}{width=\textwidth}
-% \SweaveInput{fig_mb}
-% \end{center}
-% %\caption{
-% %{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
-% %\label{fig:mb}
-% \end{figure}
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_mb}
+\end{center}
+%\caption{
+%{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
+%\label{fig:mb}
+\end{figure}
 
 
 
@@ -326,26 +326,44 @@ This study formed part of the national research network MICDIF (Linking microbia
 %\input{tab_init}
 \input{tab_pyrprod}
 
+<<cor_pyrpca, results=tex, echo=F, fig=F>>=
+ord <- rda(rsim, scale=T)
+sco<-scores(ord, choices=1:3, display="sites")
+tab1<-corr.ab(orig_rsim,sco, tex=T)
+tab2<-corr.ab(class_rsim,sco, tex=T)
+
+tab <-   rbind(tab1, tab2)
+rownames(tab) <- c(rownames(tab1), paste(rownames(tab2), " "))
+
+tab<-xtable(tab, caption="caption", label="cor_pyrpca", align=c("l", rep(
+"r",3)) )
+
+print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
+@
+
+
 
 \begin{landscape}
 
 <<corrtable, results=tex, echo=F, fig=F>>=
+hmw.proc.tmp<-  hmw.proc[,3:9]
+
 tmp<-data.frame(tapply(f2b[alldata$days==181, "f2b_prot"], alldata$Litter[alldata$days==181], mean))
 colnames(tmp)<-"Fungi/bacteria (metaproteome)"
 
-hmw.means<-data.frame(matrix(ncol=ncol(hmw.proc), nrow=4))
-for (i in 1: ncol(hmw.proc))
+hmw.means<-data.frame(matrix(ncol=ncol(hmw.proc.tmp), nrow=4))
+for (i in 1: ncol(hmw.proc.tmp))
 hmw.means[,i]<-tapply(hmw.proc[,i], type[days==181], mean)
 
-colnames(hmw.means)<-colnames(hmw.proc)
+colnames(hmw.means)<-colnames(hmw.proc.tmp)
 
 tmp.cor<-corr.ab(tmp,hmw.means, tex=T)
 corr1<-alldata[alldata$days==181,c(10,37, 73,11,14,13,12, 15:16,20,22,24, 39, 60, 40, 61, 41, 37, 42:44, 54:56,  78:80, 76)]
-corr2<-hmw.proc
+corr2<-hmw.proc.tmp
 mighty.corr.matrix<-corr.ab(corr1, corr2, tex=T)
 #rownames/colnames cor correltion table
 
-cor.colnames<-c("$\\Delta _{L}$", "$\\Delta _{Ch}$", "$\\Delta _{LCI}$", "$L_{\\%loss}$", "$Ch_{\\%loss}$", "$L:C_{\\%loss}$", "$Ch:C_{\\%loss}$", "$L:Ch_{\\%loss}$", "Per:Cell", "Phen:Cell")
+cor.colnames<-c("$\\Delta LCI_{pyr}$", "$L_{\\%loss}$", "$Ch_{\\%loss}$", "$L:C_{\\%loss}$", "$Ch:C_{\\%loss}$", "$L:Ch_{\\%loss}$", "PHENOX:CELL")
 
 cor.rownames<-
   c("Massloss", "Actual respiration", "Accumulated Respiration", "Cellulase activity", "Protease activity","Phosphatase activity","Chitinase activity", "Phenoloxidase activity", "Peroxidase activity", #"Phenoloxidase/Cellulase", "Peroxidase/Cellulase", "Protein depolymerization", "Amino acid immobilization", 
@@ -368,27 +386,31 @@ rownames(mighty.corr.matrix) <- cor.rownames
 
 mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\\Delta _{L}$, $\\Delta _{Ch}$ - differences in lignin/carbydrate contents (pyr-GC/MS), $\\Delta _{LCI}$ - LCI (lignin : (lignin + carbohydrates)) difference (pyr-GC/MS), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin/carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin/carbohydrates loss : \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, Per:Cell - Potetial peroxidase activity : potential cellulase activity, Phen:Cell - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable", align=c("l", rep("r"
-,10)) )
+tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable", align=c("l", rep("r"
+,7)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @
 
+
+
 \newpage
 <<corrtable2, results=tex, echo=F, fig=F>>=
+
+hmw.proc2.tmp<-hmw.proc2[,3:9]
 tmp<-data.frame(tapply(f2b[alldata$days==475, "f2b_prot"], alldata$Litter[alldata$days==475], mean))
 colnames(tmp)<-"Fungi : bacteria (metaproteome)"
 
-hmw.means2<-data.frame(matrix(ncol=ncol(hmw.proc), nrow=4))
-for (i in 1: ncol(hmw.proc2))
-hmw.means2[,i]<-tapply(hmw.proc2[,i], type[days==475], mean)
+hmw.means2<-data.frame(matrix(ncol=ncol(hmw.proc.tmp), nrow=4))
+for (i in 1: ncol(hmw.proc2.tmp))
+hmw.means2[,i]<-tapply(hmw.proc2.tmp[,i], type[days==475], mean)
 
-colnames(hmw.means2)<-colnames(hmw.proc2)
+colnames(hmw.means2)<-colnames(hmw.proc2.tmp)
 
 tmp.cor<-corr.ab(tmp,hmw.means2, tex=T)
 
 corr1<-alldata[alldata$days==475,c(10,37, 73,11,14,13,12, 15:16,20,22,24, 39, 60, 40, 61, 41, 37, 42:44, 54:56,  78:80, 76)]
-corr2<-hmw.proc2
+corr2<-hmw.proc2.tmp
 mighty.corr.matrix2<-corr.ab(corr1, corr2, tex=T)
 #rownames cor corraltion table
 
@@ -403,8 +425,8 @@ colnames(mighty.corr.matrix2)<-cor.colnames
 
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days. $\\Delta _{L}$, $\\Delta _{Ch}$ - differences in lignin/carbydrate contents (pyr-GC/MS), $\\Delta _{LCI}$ - LCI (lignin : (lignin + carbohydrates)) difference (pyr-GC/MS), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin/carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin/carbohydrates loss : \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, Per:Cell - Potetial peroxidase activity : potential cellulase activity, Phen:Cell - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable2", align=c("l", rep(
-"r",10)) )
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable2", align=c("l", rep(
+"r",7)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
 @

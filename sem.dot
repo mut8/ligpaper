@@ -1,0 +1,14 @@
+digraph "sem.1" {
+  rankdir=TB;
+  size="8,8";
+  node [fontname="Helvetica" fontsize=14 shape=box];
+  edge [fontname="Helvetica" fontsize=10];
+  center=1;
+  "var1" -> "var4" [label="0"];
+  "var2" -> "var4" [label="0"];
+  "var3" -> "var4" [label="0"];
+  "var1" -> "var1" [label="2.53" dir=both];
+  "var2" -> "var2" [label="1152.81" dir=both];
+  "var3" -> "var3" [label="19.82" dir=both];
+  "var4" -> "var4" [label="0" dir=both];
+}
