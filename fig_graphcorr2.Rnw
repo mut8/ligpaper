@@ -1,6 +1,6 @@
-    <<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
+<<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
     
-pdf("corplot2.pdf", width=9, height=6)
+#pdf("corplot2.pdf", width=9, height=6)
 h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
 h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
 
@@ -93,10 +93,7 @@ mtext(var1lab, side=1, cex=1, padj=2)
 screen(5)
 
 xlim=c(min(var2, na.rm=T)-(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2,max(var2, na.rm=T)+(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2)
-ylim=c(min(var5, na.rm=T)-(max(var5, na.rm=T)- min(var5, na.rm=T))*0.1,max(var5, na.rm=T)+(max(var5, na.rm=T)- min(var5, na.rm=T))*0.2)
-
-
-#par(mar=c(5,2.4,0,2.4))
+ylim=c(min(var5, na.rm=T)-(max(var5, na.rm=T)- min(var5, na.rm=T))*0.1,max(var5, na.rm=T)+(max(var5, na.rm=T)- min(var5, na.rm=T))*0.2)#par(mar=c(5,2.4,0,2.4))
 corplot(var2, var5, xlab="", ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n", xlim=xlim, ylim=ylim)
 axis(1)
 axis(2, label=F)
@@ -175,7 +172,5 @@ text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.83,par("yaxp")[2]-(par("yax
     
 close.screen(all.screens = TRUE)
 
-dev.off()
-
-    
-    @
+#dev.off()
+@

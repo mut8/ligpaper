@@ -305,187 +305,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \vspace*{2mm}
 \begin{center}
 \setkeys{Gin}{width=\textwidth}
-    <<graphcorr2, fig=T, echo=F, results=hide, width=24, height=16>>=
-    
-pdf("corplot2.pdf", width=9, height=6)
-h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
-h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
-
-
-var1<-alldata$CN_inbal[alldata$days==181]
-var2<-alldata$CP_inbal[alldata$days==181]
-var3<-alldata$NP_inbal[alldata$days==181]
-var4<-hmw.proc$LCI
-var5<-hmw.proc$LCdec
-
-var1lab<- expression("C:N"[litter:microbial])
-var2lab<- expression("C:P"[litter:microbial])
-var3lab<- expression("N:P"[litter:microbial])
-var4lab<- expression(paste(Delta, "LCI"[pyr]))
-var5lab<-"Lignin decomposition /\n Carbohydrate decomposition"
-
-
-    
-    
-
-par(cex=1, cex.axis=1, cex.lab=1, mar=c(0,0,0,0), tck=.01, las=1, mgp=c(3,0.3,0))
-    #layout(matrix(c(1,2,3,4,5,6), 2,3, byrow=T))
-    
-    m <- rbind(
-      c(0.12, 0.385, 0.56, 0.98),
-      c(0.39, 0.655, 0.56, 0.98),
-      c(0.66, 0.925, 0.56, 0.98),
-      c(0.12, 0.385, 0.135, 0.555),
-      c(0.39, 0.655, 0.135, 0.555),
-      c(0.66, 0.925, 0.135, 0.555),
-      c(0.28, 0.38, 0.84, 0.975),
-      c(0.55, 0.65, 0.84, 0.975),
-      c(0.145, 0.245, 0.41, 0.545),
-      c(0.415, 0.515, 0.41, 0.545)
-      )
-    split.screen(m)
-    screen(1)
-    
-    
-    #par(mar=c(3,4,2,0.8), new=F, oma=c(0,0,0,0))
-xlim=c(min(var1, na.rm=T)-(max(var1, na.rm=T)- min(var1, na.rm=T))*0.2,max(var1, na.rm=T)+(max(var1, na.rm=T)- min(var1, na.rm=T))*0.2)
-ylim=c(min(var4, na.rm=T)-(max(var4, na.rm=T)- min(var4, na.rm=T))*0.1,max(var4, na.rm=T)+(max(var4, na.rm=T)- min(var4, na.rm=T))*0.2)
-corplot(var1, var4, xlab="", xaxt="n", ylab="", bg=h3.col, pch=h3.pch, textpos="left", xlim=xlim, ylim=ylim)
-
-?axis
-axis(4, label=F)
-axis(1, label=F)
-mtext(var4lab, side=2, las=0, cex=1.2, padj=-2)
-
-
-screen(2)
-    
-    #par(mar=c(3,2.4,2,2.4))
-xlim=c(min(var2, na.rm=T)-(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2,max(var2, na.rm=T)+(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2)
-ylim=c(min(var4, na.rm=T)-(max(var4, na.rm=T)- min(var4, na.rm=T))*0.1,max(var4, na.rm=T)+(max(var4, na.rm=T)- min(var4, na.rm=T))*0.2)
-corplot(var2, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch, textpos="left", xlim=xlim, ylim=ylim)
-axis(1, label=F)
-axis(2, label=F)
-axis(4, label=F)
-
-screen(3)
-
-#par(mar=c(3,0.8,2,4))
-
-xlim=c(min(var3, na.rm=T)-(max(var3, na.rm=T)- min(var3, na.rm=T))*0.2,max(var3, na.rm=T)+(max(var3, na.rm=T)- min(var3, na.rm=T))*0.2)
-ylim=c(min(var4, na.rm=T)-(max(var4, na.rm=T)- min(var4, na.rm=T))*0.1,max(var4, na.rm=T)+(max(var4, na.rm=T)- min(var4, na.rm=T))*0.2)
-
-
-corplot(var3, var4, xlab="", ylab="", xaxt="n", yaxt="n", bg=h3.col, pch=h3.pch, xlim=xlim, ylim=ylim)
-axis(1, label=F)
-axis(2, label=F)
-axis(4)
-
-screen(4)
-
-xlim=c(min(var1, na.rm=T)-(max(var1, na.rm=T)- min(var1, na.rm=T))*0.2,max(var1, na.rm=T)+(max(var1, na.rm=T)- min(var1, na.rm=T))*0.2)
-ylim=c(min(var5, na.rm=T)-(max(var5, na.rm=T)- min(var5, na.rm=T))*0.1,max(var5, na.rm=T)+(max(var5, na.rm=T)- min(var5, na.rm=T))*0.2)
-
-corplot(var1, var5, xlab=var1lab, ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n", xlim=xlim, ylim=ylim)
-axis(4, label=F)
-axis(1)
-axis(2)
-axis(3, label=F)
-
-mtext(var5lab, side=2, cex=1, las=0,padj=-1)
-mtext(var1lab, side=1, cex=1, padj=2)
-
-#?mtext
-
-screen(5)
-
-xlim=c(min(var2, na.rm=T)-(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2,max(var2, na.rm=T)+(max(var2, na.rm=T)- min(var2, na.rm=T))*0.2)
-ylim=c(min(var5, na.rm=T)-(max(var5, na.rm=T)- min(var5, na.rm=T))*0.1,max(var5, na.rm=T)+(max(var5, na.rm=T)- min(var5, na.rm=T))*0.2)
-
-
-#par(mar=c(5,2.4,0,2.4))
-corplot(var2, var5, xlab="", ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n", xlim=xlim, ylim=ylim)
-axis(1)
-axis(2, label=F)
-axis(3, label=F)
-axis(4, label=F)
-mtext(var2lab, side=1, cex=1, padj=2)
-
-screen(6)
-#par(mar=c(5,0.8,0,4))
-
-xlim=c(min(var3, na.rm=T)-(max(var3, na.rm=T)- min(var3, na.rm=T))*0.2,max(var3, na.rm=T)+(max(var3, na.rm=T)- min(var3, na.rm=T))*0.2)
-ylim=c(min(var5, na.rm=T)-(max(var5, na.rm=T)- min(var5, na.rm=T))*0.1,max(var5, na.rm=T)+(max(var5, na.rm=T)- min(var5, na.rm=T))*0.2)
-
-corplot(var3, var5, xlab=var3lab, ylab="", bg=h3.col, pch=h3.pch, xaxt="n",yaxt="n", xlim=xlim, ylim=ylim)
-axis(1)
-axis(2, label=F)
-axis(3, label=F)
-axis(4)
-legend("topleft", levels(type), pch=21:24, pt.bg=colscale,  cex=.8, bty="n")
-
-mtext(var3lab, side=1, cex=1, padj=2)
-
-
-screen(7)
-lm1 <- lm(var4~var1)
-plot(var2, lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
-lm2 <- lm(lm1$residual~ var2)
-cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
-if (cor1$p.value <0.05) {
-  abline(lm2)
-}
-mtext("residual", side=2, las=0, padj=0, cex=.9)
-mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.9)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.15,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.05, cex=.6, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
-
-screen(8)
-lm1 <- lm(var4~var2)
-plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
-lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
-cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
-if (cor1$p.value <0.05) {
-abline(lm2)
-}
-
-mtext("residual", side=2, las=0, padj=0, cex=.9)
-mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.9)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.75,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*1.05, cex=.6, paste("(R=", formatC(cor1$estimate, digits=3, format="f"), ")" ))
-
-
-screen(9)
-lm1 <- lm(var5~var1)
-ylim=c(min(lm1$residuals), max(lm1$residuals))
-plot(var2[is.na(var1)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n", ylim=c(-.6, ylim[2]))
-
-lm2 <- lm(lm1$residual~ var2[is.na(var1)==F])
-cor1 <- cor.test(lm1$residual, var2[is.na(var1)==F])
-if (cor1$p.value <0.05) {
-  abline(lm2)
-}
-
-mtext("residual", side=2, las=0, padj=0, cex=.9)
-mtext(expression("C:P"[lit:mic]), side=1,  padj=0, cex=.9)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.67,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*.1, cex=.6, paste("R=", formatC(cor1$estimate, digits=3, format="f"), siglev(cor1$p.value) ))
-
-
-screen(10)
-lm1 <- lm(var5~var2)
-plot(var1[is.na(var2)==F], lm1$residual, xlab="", ylab="", bg=h3.col, pch=16, cex=0.8, xaxt="n",yaxt="n")
-lm2 <- lm(lm1$residual~ var1[is.na(var2)==F])
-cor1 <- cor.test(lm1$residual, var1[is.na(var2)==F])
-if (cor1$p.value <0.05) {abline(lm2)}
-    
-mtext("residual", side=2, las=0, padj=0, cex=.9)
-mtext(expression("C:N"[lit:mic]), side=1,  padj=0, cex=.9)
-text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.83,par("yaxp")[2]-(par("yaxp")[2]-par("yaxp")[1])*-.05, cex=.6, paste("(R=", formatC(cor1$estimate, digits=3, format="f"), ")" ))
-    
-close.screen(all.screens = TRUE)
-
-dev.off()
-
-    
-    @
+\includegraphics{ligpaper-graphcorr2}
 \end{center}
 %\caption{
 %{\bf Correlation between the LCI change or the ratio of lignin : carbohydrate decomposition ratio during the first 6 months of litter decomposition correlate to litter : microbe stoichiometric imbalances.} and change and Correlations between lignin accumulation during the first 6 month of litter incubation and stoichiometric resource:consumer imbalances. LCI is calculates as of lignin/(lignin+Carbohydrates).  Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
@@ -523,7 +343,7 @@ dev.off()
 \input{tab_pyrprod}
 
 % latex table generated in R 2.15.2 by xtable 1.7-1 package
-% Wed Nov 13 18:34:13 2013
+% Wed Nov 13 18:36:18 2013
 \begin{table}[h!]
 \centering
 \caption{caption} 
@@ -572,7 +392,7 @@ al & \textbf{ 0.867 } & 0.029 & 0.018 \\
 \begin{landscape}
 
 % latex table generated in R 2.15.2 by xtable 1.7-1 package
-% Wed Nov 13 18:34:13 2013
+% Wed Nov 13 18:36:18 2013
 \begin{table}[h!]
 \centering
 \caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \% lignin or carbohydrates loss per \% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.} 
@@ -619,7 +439,7 @@ Massloss & 0.245 & -0.328 & 0.106 & -0.201 & 0.125 & -0.081 & 0.048 \\
 
 \newpage
 % latex table generated in R 2.15.2 by xtable 1.7-1 package
-% Wed Nov 13 18:34:14 2013
+% Wed Nov 13 18:36:18 2013
 \begin{table}[h!]
 \centering
 \caption{Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days. $\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \% lignin or carbohydrates loss per \% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.} 
@@ -666,7 +486,7 @@ Massloss & 0.068 & \textbf{ 0.582 } & \textbf{ 0.708 } & 0.005 & 0.279 & -0.137 
 \input{tab_partcorr}
 
 % latex table generated in R 2.15.2 by xtable 1.7-1 package
-% Wed Nov 13 18:34:14 2013
+% Wed Nov 13 18:36:18 2013
 \begin{table}[h!]
 \centering
 \caption{Correlations coeffitients between correspondance analysis factors CA 1 and 2, litter and microbial stoichiometry and protein abundance of microbial taxa. Significant (p\textless 0.05) correlations are presented in bold.} 
