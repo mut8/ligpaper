@@ -1,0 +1,146 @@
+    <<mb2, fig=T, echo=F, results=hide, width=8, height=6>>=
+    pdf("mb2.pdf", width=6.83, height=6.83*.75)
+    
+    x <- c(.05, .33, .38, .66, .71, .99)
+    y <- c(.07, .32, .38, .63, .7, .95)
+    
+    
+    m <-rbind(c(x[1], x[2], y[5], y[6]),
+              c(x[3], x[4], y[5], y[6]),
+              c(x[5], x[6], y[5], y[6]),
+              c(x[1], x[2], y[3], y[4]),
+              c(x[3], x[4], y[3], y[4]),
+              c(x[5], x[6], y[3], y[4]),
+              c(x[1], x[2], y[1], y[2]),
+              c(x[3], x[4], y[1], y[2]),
+              c(x[5], x[6], y[1], y[2])
+    )
+    
+    xlim=c(-10,550)
+    par(mar=c(0,0,0,0), tck=0.01, las=1,mgp=c(2,0.2,0), cex.axis=.8, cex.lab=.8, cex=0.7)
+    
+    split.screen(m)
+    
+    #par(mfrow=c(3,3), mar=c(3.1,4.1,2,0.1), tck=0.01)
+    screen(1)
+    data <- alldata$C_mic
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, main="",
+    ylab="", endsig=T, xaxt="n", ylim=c(0.1,9), xlim=xlim
+               )
+    #axis(1, labels=F)
+    axis(4, labels=F)
+    axis(3, labels=F)
+    axis(1, labels=F)
+    #axis(1, labels=F)
+    mtext(expression(paste("mg g"^{-1}, " d.w.")), side=2, las=0, line=1.2, cex=.7)
+    mtext(expression("C"[microbial]), side=3, las=0, line=0)
+    
+    screen(2)
+    data <- alldata$N_.mic
+    ond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T, main="",cex=1, xaxt="n", ylim=c(0.01, 0.9), xlim=xlim
+               )
+    
+    #axis(1, labels=F)
+    axis(4, labels=F)
+    axis(3, labels=F)
+  
+    axis(1, labels=F)
+    mtext(expression("N"[microbial]), side=3, las=0, line=0)
+    
+    screen(3)
+    data <- alldata$P_mic
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, main="",endsig=T, xaxt="n", xlim=xlim, ylim=c(0.005, 0.45)
+               )
+    axis(1, labels=F)
+    axis(4, labels=F)
+    axis(3, labels=F)
+    mtext(expression("P"[microbial]), side=3, las=0, line=0)
+    
+    
+    screen(4)
+    #par(mar=c(4.1,4.1,2,0.1))
+    data <- alldata$C.N_mic
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T, main="",
+    ylab="", xaxt="n", xlim=xlim, ylim=c(0.2, 20)
+               )
+     
+    axis(4, labels=F)
+    axis(3, labels=F)
+    axis(1, labels=F)
+    axis(2, labels=F)
+    mtext("weight/weight (SE)", side=2, las=0, line=1.2, cex=.7)
+    mtext(expression("C:N"[microbial]), side=3, las=0, line=0)
+    
+    screen(5)
+    data <- alldata$C.Pmic
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T, main="", xaxt="n", xlim=xlim, ylim=c(0.05, 40)
+               )
+    
+    axis(4, labels=F)
+    axis(3, labels=F)
+    axis(1, labels=F)
+    mtext(expression("C:P"[microbial]), side=3, las=0, line=0)
+    
+    screen(6)
+    data <- alldata$N.Pmic
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond], main="", type="o", pch=pch, pt.bg=colscale, endsig=T,xaxt="n", xlim=xlim, ylim=c(0.05, 3.5)
+               )
+    axis(1, labels=F)
+    axis(4, labels=F)
+    axis(3, labels=F)
+    mtext(expression("N:P"[microbial]), side=3, las=0, line=0)
+    
+    
+    screen(7)
+    #par(mar=c(4.1,4.1,2,0.1))
+    
+    data <- alldata$CN_inbal
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1,
+    xlab="", main="", xlim=xlim, ylim=c(0.1, 10),
+     ylab="")
+    axis(4, labels=F)
+    axis(3, labels=F)
+    mtext("wt/wt : wt/wt (SE)", side=2, las=0, line=1.2, cex=.7)
+    mtext(expression("C:N"[litter:microbial]), side=3, las=0, line=0)
+    
+    
+    screen(8)
+    data <- alldata$CP_inbal
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1,
+    xlab="", main="", xlim=xlim, ylim=c(1, 200))
+    axis(4, labels=F)
+    axis(3, labels=F)
+    mtext(expression("C:P"[litter:microbial]), side=3, las=0, line=0)
+    mtext("Litter incubation (days)", side=1, las=0, line=1.2, cex=.7)
+    
+    
+    screen(9)
+    data <- alldata$NP_inbal
+    cond <- is.na(data)!=T
+    timeseries(data[cond], alldata$days[cond], alldata$Litter[cond],
+    type="o", pch=pch, pt.bg=colscale, endsig=T,cex=1,xlim=xlim, ylim=c(1,80),
+    xlab="", main="")
+    axis(4, labels=F)
+    axis(3, labels=F)
+    mtext(expression("N:P"[litter:microbial]), side=3, las=0, line=0)
+    
+    close.screen(all.screens = TRUE)
+    
+    
+    dev.off()
+    @
