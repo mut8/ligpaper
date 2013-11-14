@@ -211,16 +211,16 @@ This study formed part of the national research network MICDIF (Linking microbia
 % \end{figure*}
 % 
 % \newpage
-% \begin{figure}[!ht]
-% \begin{center}
-% %\setkeys{Gin}{width=4in}
-% \setkeys{Gin}{width=\textwidth}
-% \SweaveInput{fig_enz}
-% \end{center}
-% %\caption{
+\begin{figure}[!ht]
+\begin{center}
+%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=\textwidth}
+\SweaveInput{fig_enz}
+\end{center}
+%\caption{
 % %{\bf Respiration rates, concentration of soluble organic C and potential extracellular enzyme activities} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klaus-nleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001, b.d. - below detection limit.}
 % %\label{fig:enz}
-% \end{figure}
+\end{figure}
 % 
 \begin{figure}[!ht]
 \begin{center}
@@ -461,18 +461,23 @@ print(table, size="small", sanitize.text.function = function(x){x}, table.placem
 @
 
 \begin{figure}[p]
-
+\begin{center}
 %\setkeys{Gin}{width=4in}
 %\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_Psequestr.Rnw}
 \caption{
 {\bf Mobilization of litter P} Left: In lignin degrading litter (AK and KL) a net mobilization of Insoluble litter P into the fast turn-over P pools (soluble P and microbial biomass P) occured over the first 6 months incubation. In non lignin-degrading litter (OS and SW) increases biomass P corresponded with decreases in soluble P, i.e., no additional insoluble P mobilized. Right: correlation between P mobilization and lignin accumulation, 0-6 months incubation. Beech litter was collected in: Schottenwald (SW), triangles; Ossiach (OS), diamonds; Klausenleopoldsdorf (KL), squares; Achenkirch (AK), circles. Error bars indicate standard errors (n=4-5).}
+\end{center}
 %\label{fig:phos}
 \end{figure}
 
-\begin{figure}[p]
+%\@fptop{0in}
+\begin{figure}[p!]
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
 \begin{center}
-%\setkeys{Gin}{width=4in}
+\setkeys{Gin}{width=4in}
 %\setkeys{Gin}{width=\textwidth}
 \SweaveInput{fig_pyrpca.Rnw}
 \end{center}

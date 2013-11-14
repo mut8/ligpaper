@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  13 NOV 2013 19:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.7.15)  13 NOV 2013 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,71 +695,98 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 299.
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )) [21]
-<ligpaper-mb.pdf, id=107, 578.16pt x 433.62pt>
+<ligpaper-enz.pdf, id=109, 433.62pt x 578.16pt>
+File: ligpaper-enz.pdf Graphic file (type pdf)
+ <use ligpaper-enz.pdf>
+Package pdftex.def Info: ligpaper-enz.pdf used on input line 222.
+(pdftex.def)             Requested size: 469.75499pt x 626.3708pt.
+
+
+LaTeX Warning: Float too large for page by 22.0758pt on input line 227.
+
+<ligpaper-mb.pdf, id=110, 578.16pt x 433.62pt>
 File: ligpaper-mb.pdf Graphic file (type pdf)
  <use ligpaper-mb.pdf>
 Package pdftex.def Info: ligpaper-mb.pdf used on input line 233.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
- [22 <./ligpaper-mb.pdf>] <ligpaper-metaprot2.pdf, id=117, 1084.05pt x 1300.86p
-t>
+
+<ligpaper-metaprot2.pdf, id=111, 1084.05pt x 1300.86pt>
 File: ligpaper-metaprot2.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot2.pdf>
 Package pdftex.def Info: ligpaper-metaprot2.pdf used on input line 247.
 (pdftex.def)             Requested size: 469.75499pt x 563.70595pt.
- <ligpaper-f2bnew.pdf, id=118, 722.7pt x 361.35pt>
-File: ligpaper-f2bnew.pdf Graphic file (type pdf)
 
-<use ligpaper-f2bnew.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-f2bnew.pdf, id=112, 722.7pt x 361.35pt>
+File: ligpaper-f2bnew.pdf Graphic file (type pdf)
+ <use ligpaper-f2bnew.pdf>
 Package pdftex.def Info: ligpaper-f2bnew.pdf used on input line 259.
 (pdftex.def)             Requested size: 328.82706pt x 164.4145pt.
- [23 <./ligpaper-metaprot2.pdf>]
-<ligpaper-lci.pdf, id=129, 722.7pt x 361.35pt>
+
+<ligpaper-lci.pdf, id=113, 722.7pt x 361.35pt>
 File: ligpaper-lci.pdf Graphic file (type pdf)
  <use ligpaper-lci.pdf>
 Package pdftex.def Info: ligpaper-lci.pdf used on input line 271.
 (pdftex.def)             Requested size: 469.75499pt x 234.88023pt.
- [24 <./ligpaper-f2bnew.pdf> <./ligpaper-lci.pdf>]
-<ligpaper-degrdiff.pdf, id=146, 867.24pt x 505.89pt>
+
+<ligpaper-degrdiff.pdf, id=114, 867.24pt x 505.89pt>
 File: ligpaper-degrdiff.pdf Graphic file (type pdf)
 
 <use ligpaper-degrdiff.pdf>
 Package pdftex.def Info: ligpaper-degrdiff.pdf used on input line 284.
 (pdftex.def)             Requested size: 469.75499pt x 274.02563pt.
- [25 <./ligpaper-degrdiff.pdf>]
-<ligpaper-graphcorr.pdf, id=157, 1734.48pt x 1156.32pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-graphcorr.pdf, id=115, 1734.48pt x 1156.32pt>
 File: ligpaper-graphcorr.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr.pdf>
 Package pdftex.def Info: ligpaper-graphcorr.pdf used on input line 296.
 (pdftex.def)             Requested size: 469.75499pt x 313.16335pt.
- [26 <./ligpaper-graphcorr.pdf>]
-<ligpaper-graphcorr2.pdf, id=167, 650.43pt x 433.62pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-graphcorr2.pdf, id=116, 650.43pt x 433.62pt>
 File: ligpaper-graphcorr2.pdf Graphic file (type pdf)
 
 <use ligpaper-graphcorr2.pdf>
 Package pdftex.def Info: ligpaper-graphcorr2.pdf used on input line 308.
 (pdftex.def)             Requested size: 469.75499pt x 313.17879pt.
- [27 <./ligpaper-graphcorr2.pdf>]
-<ligpaper-metaprot_pca.pdf, id=177, 433.62pt x 433.62pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ligpaper-metaprot_pca.pdf, id=117, 433.62pt x 433.62pt>
 File: ligpaper-metaprot_pca.pdf Graphic file (type pdf)
 
 <use ligpaper-metaprot_pca.pdf>
 Package pdftex.def Info: ligpaper-metaprot_pca.pdf used on input line 324.
 (pdftex.def)             Requested size: 469.75499pt x 469.7781pt.
- [28 <./ligpaper-metaprot_pca.pdf>]
-(./tab_pyrprod.tex [29]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./tab_pyrprod.tex [22]
 Overfull \hbox (8.02017pt too wide) in paragraph at lines 63--112
  [] 
  []
 
-[30])
+[23])
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] [32] [33
+[24] [25] [26 <./ligpaper-enz.pdf>] [27 <./ligpaper-mb.pdf>] [28 <./ligpaper-me
+taprot2.pdf>] [29 <./ligpaper-f2bnew.pdf> <./ligpaper-lci.pdf>] [30 <./ligpaper
+-degrdiff.pdf>] [31 <./ligpaper-graphcorr.pdf>] [32 <./ligpaper-graphcorr2.pdf>
+] [33 <./ligpaper-metaprot_pca.pdf>] [34
 
-] [34] (./tab_partcorr.tex
+] [35] (./tab_partcorr.tex
 ! Missing { inserted.
 <inserted text> 
                 {
@@ -769,28 +796,24 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[35
+[36
 
 
-]) <ligpaper-figphos.pdf, id=218, 722.7pt x 361.35pt>
+]) <ligpaper-figphos.pdf, id=231, 722.7pt x 361.35pt>
 File: ligpaper-figphos.pdf Graphic file (type pdf)
 
 <use ligpaper-figphos.pdf>
 Package pdftex.def Info: ligpaper-figphos.pdf used on input line 537.
 (pdftex.def)             Requested size: 375.80542pt x 187.90308pt.
- <ligpaper-prypca.pdf, id=219, 361.35pt x 578.16pt>
+ <ligpaper-prypca.pdf, id=232, 361.35pt x 578.16pt>
 File: ligpaper-prypca.pdf Graphic file (type pdf)
 
 <use ligpaper-prypca.pdf>
-Package pdftex.def Info: ligpaper-prypca.pdf used on input line 547.
-(pdftex.def)             Requested size: 375.80542pt x 601.28986pt.
+Package pdftex.def Info: ligpaper-prypca.pdf used on input line 552.
+(pdftex.def)             Requested size: 289.07999pt x 462.52863pt.
+ [37
 
-
-LaTeX Warning: Float too large for page by 102.99486pt on input line 552.
-
-[36
-
-] [37 <./ligpaper-figphos.pdf>] [38 <./ligpaper-prypca.pdf>] (./ligpaper.aux)
+] [38 <./ligpaper-figphos.pdf>] [39 <./ligpaper-prypca.pdf>] (./ligpaper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -799,13 +822,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5069 strings out of 495059
- 73119 string characters out of 3182030
- 133509 words of memory out of 3000000
- 8015 multiletter control sequences out of 15000+200000
+ 5074 strings out of 495059
+ 73218 string characters out of 3182030
+ 135509 words of memory out of 3000000
+ 8019 multiletter control sequences out of 15000+200000
  46337 words of font info for 99 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,11n,38p,2192b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,38p,2192b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lluc/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/te
@@ -828,10 +851,10 @@ nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt10.pfb>
-Output written on ligpaper.pdf (38 pages, 424023 bytes).
+Output written on ligpaper.pdf (39 pages, 437982 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
+ 331 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
