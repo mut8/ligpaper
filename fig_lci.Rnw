@@ -1,17 +1,34 @@
-<<lci, fig=T, echo=F, results=hide, width=10, height=5>>=
+<<lci, fig=T, echo=F, results=hide, width=6.83, height=3.415>>=
+x <- c(.08, .50, .51, .93)
+y <- c(.15, .98)
+m <- rbind(c(x[1], x[2], y[1],y[2]), c(x[3], x[4], y[1], y[2]))
+m
+split.screen(m)
 
-par( mfrow=c(1,2), mar=c(4.1,4.1,2.1,.1), tck=0.01)
-timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, endsig=T, ylab="Lignin : (Lignin+Carbohydrates)", xlab="Litter incubation (days)", lwd=2, cex=1.5)
+par( mar=c(0,0,0,0) #mar=c(3.05,3.05,.2,.05),mfrow=c(1,2)
+     , tck=0.01, mgp=c(1.6,0.2,0), cex.lab=.8, cex.axis=.8)
+
+screen(1)
+timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, endsig=T, ylab="", xlab="", lwd=1)
 axis(4, labels=F)
 axis(3, labels=F)
+mtext("LCI = Lignin:(Lignin+Carbohydrates)", side=2, line=1.8, las=0, cex=.8)
+mtext("Litter incubation (days)", side=1, line=1.2, las=0, cex=.8)
 
-par(mar=c(4.1,.1,2.1,4.1))
-timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, normalize=1, legsig=F, endsig=F, massloss=samples$cons_acc_resp_litC, masslossSE=samples$cons_acc_resp_litC_se, yaxt="n", xlab=expression(paste("Carbon loss (g CO"[2], "-C g"^{-1}, " litter-C)")), lwd=2, cex=1.5)
-abline(h=100, lty=2)
+
+#par(mar=c(3.05,.05,.2,3.05))
+screen(2)
+par( mar=c(0,0,0,0) #mar=c(3.05,3.05,.2,.05),mfrow=c(1,2)
+     , tck=0.01, mgp=c(1.6,0.2,0), cex.lab=.8, cex.axis=.8)
+timeseries(orig_cTIC$L/(orig_cTIC$L+orig_cTIC$C), days, type, type="o", pch=pch, pt.bg=colscale, normalize=1, legsig=F, endsig=F, massloss=samples$cons_acc_resp_litC*100, masslossSE=samples$cons_acc_resp_litC_se*100, yaxt="n", #xlab=expression(paste("Carbon loss (g CO"[2], "-C g"^{-1}, " litter-C)"))
+           xlab="Accumulated respirations (%C, SE)", lwd=1)
+abline(h=0, lty=2)
 axis(2, labels=F)
 axis(3, labels=F)
 axis(4)
-mtext("LCI (% of initial LCI)", side=4, padj=5, las=0)
-legend("bottomright", bg="white", pch=pch, lty=1, lwd=2, pt.bg=colscale, typlev)
+mtext("LCI (% change, SE)", side=4, line=1, las=0, cex=.8)
+mtext("% C respired (SE)", side=1, line=1.2, las=0, cex=.8)
+legend("bottomright", bg="white", pch=pch, lty=1.2, lwd=2, pt.bg=colscale, typlev, cex=.7)
+close.screen(all.screens = TRUE)
 
 @

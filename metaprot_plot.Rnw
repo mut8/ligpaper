@@ -54,7 +54,6 @@ colnames(fit.var2)<-c("C lit", "N lit", "P lit", "C:N lit", "C:P lit", "N:P lit"
 labels<-list(vectors=c(expression("C"[litter]),expression("N"[litter]),expression("P"[litter]),expression("C:N"[litter]), expression("C:P"[litter]), expression("N:P"[litter])), factors="")
 plot(envfit(ord, fit.var2, choices=choices), cex=.5, p.max=0.05, col="#777777", labels=labels)
 
-?envfit
 
 fit.var3<-alldata[cond, 51:56]
 colnames(fit.var3)<-c("C mic", "N mic", "P mic", "C:N mic", "C:P mic", "N:P mic")

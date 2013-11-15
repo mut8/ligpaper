@@ -226,7 +226,7 @@ This study formed part of the national research network MICDIF (Linking microbia
 \begin{center}
 %\setkeys{Gin}{width=4in}
 \setkeys{Gin}{width=\textwidth}
-\SweaveInput{fig_mb}
+\SweaveInput{fig_mb2}
 \end{center}
 %\caption{
 %{\bf Microbial biomass C, N and P, microbial C:N:P stoichiometry and resource:consumer stoichiometric imbalance in these elements} in decomposing beech leaf litter from a mesocosm experiment. Beech litter was collected in: triangles, Schottenwald (SW); diamonds, Ossiach (OS); squares, Klausenleopoldsdorf (KL); circles, Achenkirch, AK. Error bars indicate standard errors (n=5). Significant differences between litter types are presented by asterisks above the symbols, significant differences between time points by asterisks to the right of the curves. *, P\textless 0.05, **, P\textless 0.01, ***, P\textless 0.001.}
@@ -388,7 +388,7 @@ cor.rownames<-
 "P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
 "C litter", "extractable C", "N litter", "extractable N", "P litter","extractable P", "C:N litter", "C:P litter", "N:P litter",
 #"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
-"C:N mic", "C:P mic", "N:P mic", "C:N(litter:micr)", "C:P(litter:micr)", "N:P(litter:micr)", "Fungi/bacteria(qPCR)")
+"C:N mic", "C:P mic", "N:P mic", "C:N(litter:microbial)", "C:P(litter:microbial)", "N:P(litter:microbial)", "Fungi/bacteria(qPCR)")
 
 
 colnames(mighty.corr.matrix)<-cor.colnames
@@ -402,7 +402,7 @@ rownames(mighty.corr.matrix) <- cor.rownames
 
 mighty.corr.matrix<-rbind(mighty.corr.matrix, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable", align=c("l", rep("r"
+tab<-xtable(mighty.corr.matrix, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 0 and 181 days, other data were measured after 181 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{\\%loss}$, $Ch_{\\%loss}$ - \\% of initial lignin or carbohydrate loss, $L/C_{\\%loss}$, $Ch/C_{\\%loss}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{\\%loss}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable", align=c("l", rep("r"
 ,7)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")
@@ -441,7 +441,7 @@ colnames(mighty.corr.matrix2)<-cor.colnames
 
 mighty.corr.matrix2<-rbind(mighty.corr.matrix2, tmp.cor)
 
-tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{degr}$, $Ch_{degr}$ - \\% of initial lignin or carbohydrate loss, $L/C_{degr}$, $Ch/C_{degr}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{degr}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable2", align=c("l", rep(
+tab<-xtable(mighty.corr.matrix2, caption="Results of correlation analysis (R) between lignin and carbohydrate decomposition and other decomposition processes (mass loss, respiration), extracellular enzyme activities, litter chemistry, and litter and microbial biomass C:N:P stoichiometry. Significant (p\\textless 0.05) correlations are presented in bold. Changes in litter chemistry (lignin and carbohydrate decomposition) were calculated between 181 and 475 days, other data were measured after 475 days. $\\Delta LCI_{pyr}$ - difference in the pyr-GC/MS based lignocellulose index (lignin:(lignin + carbohydrates)), $L_{\\%loss}$, $Ch_{\\%loss}$ - \\% of initial lignin or carbohydrate loss, $L/C_{\\%loss}$, $Ch/C_{\\%loss}$  - \\% lignin or carbohydrates loss per \\% carbon respired, $L:Ch_{\\%loss}$ - lignin loss : carbohydrate loss, PHENOX:CELL - Potetial phenoloxidase activity : potential cellulase activity.", label="corrtable2", align=c("l", rep(
 "r",7)) )
 
 print(tab, size="small", sanitize.text.function = function(x){x}, table.placement = "h!", caption.placement = "top")

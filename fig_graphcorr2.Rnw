@@ -1,6 +1,5 @@
 <<graphcorr2, fig=T, echo=F, results=hide, width=9, height=6>>=
     
-#pdf("corplot2.pdf", width=9, height=6)
 h3.pch<-c(rep(21,5), rep(22,5), rep(23,5), rep(24,5))
 h3.col<-c(rep(colscale[1],5),rep(colscale[2],5),rep(colscale[3],5),rep(colscale[4],5))
 
@@ -171,5 +170,4 @@ text(par("xaxp")[2]-(par("xaxp")[2]-par("xaxp")[1])*.83,par("yaxp")[2]-(par("yax
     
 close.screen(all.screens = TRUE)
 
-#dev.off()
 @

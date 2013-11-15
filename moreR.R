@@ -1,3 +1,17 @@
+condx<-alldata$days==14
+condx<-alldata$days==97
+condx<-alldata$days==181
+condx<-alldata$days==475
+
+
+corplot(log(alldata$C.N_lit)[condx], log(alldata$C.N_mic)[condx])
+lm(log(alldata$C.N_mic[condx])~log(alldata$C.N_lit[condx]))
+
+corplot(alldata$C.P_lit[condx], alldata$C.Pmic[condx])
+lm_CP<-lm(log(alldata$C.Pmic[condx])~log(alldata$C.P_lit[condx]))
+1/lm_CP$coefficients[2]
+
+corplot(alldata$N.P_lit[condx], alldata$N.Pmic[condx])
 
 timeseries(alldata$CN_inbal, alldata$days, alldata$Litter, pt.bg=colscale, pch=21:24, log="y")
 
