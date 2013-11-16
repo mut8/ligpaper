@@ -388,7 +388,7 @@ cor.rownames<-
 "P mineralization", #"P immobilization", "Glucan depolymerization", "Glucose consumption", "NH4", "NO3", "PO4", 
 "C litter", "extractable C", "N litter", "extractable N", "P litter","extractable P", "C:N litter", "C:P litter", "N:P litter",
 #"K litter", "Ca litter", "Mg litter", "Fe litter", "Mn litter", "Zn litter","Cmic", "Nmic", "Pmic", 
-"C:N mic", "C:P mic", "N:P mic", "C:N(litter:microbial)", "C:P(litter:microbial)", "N:P(litter:microbial)", "Fungi/bacteria(qPCR)")
+"C:N mic", "C:P mic", "N:P mic", "C:N(litter:microbial)", "C:P(litter:microbial)", "N:P(litter:microbal)", "Fungi/bacteria(qPCR)")
 
 
 colnames(mighty.corr.matrix)<-cor.colnames
